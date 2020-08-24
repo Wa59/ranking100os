@@ -1,0 +1,111 @@
+/** ========================
+============================
+@project    : Ranking100OS
+@version    : 1.0
+@author     : Wa59
+@copyright  : 2020
+============================
+begin
+=========================**/
+
+.navbar {
+	border: 0;
+	margin-bottom: 0;
+	background: #ffffff;
+
+	.navbar-flex {
+		height: 100px;
+		justify-content: space-between;
+		align-items: center;
+		display: flex;
+
+		&:after,
+		&:before {
+			content: inherit;
+		}
+	}
+
+
+
+	.navbar-brand, 
+	.navbar-brand img {
+		padding: 0;
+		height: 80px;
+		margin: 0 !important;
+		color: #444444;
+
+		&:hover, &:active, &:focus {
+			color: $brand-st;
+		}
+	}
+
+	.navbar-menu {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: flex-end;
+
+		.navbar-menu-item {
+			margin-left: 1em;
+			a { 
+				color: #444444;
+				text-decoration: none;
+
+				&:hover, &:active, &:focus {
+					color: $brand-st;
+				}
+			}
+		}
+	}
+
+	.navbar-button {
+		background: #bbbbbb;
+		color: #ffffff;
+		text-transform: uppercase;
+		padding: 0.5em 1em;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover, &:active, &:focus {
+			background: $brand-st;
+		}
+	}
+
+	.navbar-search {
+		.search-button {
+			height: 30px;
+			width: 30px;
+			cursor: pointer;
+
+			&:hover, &:active, &:focus {
+				color: $brand-st;
+			}
+		}
+	}
+}
+
+
+/* responsive */
+/*Small devices (landscape phones, 576px and down)*/
+@media (max-width: 575px) {}
+
+/*Medium devices (tablets, 768px and down)*/
+@media (max-width: 768px) { 
+
+}
+
+/*Large devices (desktops, 992px and down)*/
+@media (max-width: 992px) { 
+	
+}
+
+/*Extra large devices (large desktops, 1200px and down)*/
+@media (max-width: 1200px) {}
+
+/*Extra large devices (large desktops, 1200px and down)*/
+@media (max-width: 1440px) {}
+
+/** ========================
+end
+=========================**/

@@ -1,0 +1,73 @@
+/** ========================
+============================
+@project    : Ranking100OS
+@version    : 1.0
+@author     : Wa59
+@copyright  : 2020
+============================
+begin
+=========================**/
+
+h3, h2, h1, p, span, div, table, a { 
+	font-family: 'Axiforma', sans-serif;
+	font-size: 1em;
+}
+
+a {
+	color: $brand-st;
+	transition: all .3s ease;
+
+	&:hover, &:active, &:focus {
+		color: $brand-nd;
+	}
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	border-radius: 30px;
+	padding: 0.5em 1.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	background: $brand-st;
+	font-size: 1.6em;
+	font-weight: bold;
+
+	&:hover, &:active, &:focus {
+		color: white;
+		text-decoration: none;
+		background: $brand-nd;
+	}
+}
+
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+/* responsive */
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575px) {}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1440px) {}
+
+/** ========================
+end
+=========================**/

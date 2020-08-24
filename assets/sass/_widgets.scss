@@ -1,0 +1,296 @@
+/** ========================
+============================
+@project    : Ranking100OS
+@version    : 1.0
+@author     : Wa59
+@copyright  : 2020
+============================
+begin
+=========================**/
+
+.widget {
+	clear: both;
+	padding-top: 5em;
+
+	.widget__feet {
+
+	}
+
+	.widget__title {
+		margin-bottom: 2em;
+		font-size: 1.75em;
+		font-weight: 500;
+		color: #000000;
+	}
+		
+}
+
+.widget-minuto-ceo {
+	margin-top: 7em;
+	.box {
+		position: relative;
+		background: #c4c4c4;
+		width: 300px;
+
+		figure { 
+			height: 170px;
+			width: 300px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.box-text {
+			font-size: 0.75em;
+			padding: 1em 3em;
+			color: #000;
+			h3 { font-weight: bold }
+		}
+
+		&:after {
+			position: absolute;
+			left: 0; top: 0;
+			content: '';
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			background: url('../images/widget-minuto-ceo-box-decor.png') top left no-repeat;
+		}
+	}
+	.box:nth-child(1) {
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+	}
+	.box:nth-child(2) {
+		bottom: 100px;
+		left: 50%;
+		z-index: 3;
+	}
+	.box:nth-child(3) {
+		bottom: 330px;
+		left: -30%;
+		z-index: 1;
+	}
+}
+
+.widget-open-talks {
+	padding-top: 0em;
+
+	.widget__list {
+		clear: both;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		width: 1500%;
+		overflow: hidden;
+
+		.box {
+			position: relative;
+			width: 25%;
+			margin: 1em;
+			width: 345px;
+			height: 192px;
+			float: left;
+			padding: 1em 2em;
+
+			img.bg {
+				position: absolute;
+				top: 0; left: 0;
+				object-fit: cover;
+				width: 100%; height: 100%;
+				z-index: -1;
+			}
+
+			h3 { margin-top: 1em; }
+			p { margin-top: 1em; }
+
+			a {
+				text-align: right;
+				position: absolute;
+				right: 2em;
+				bottom: 1em;
+				width: 100%;
+
+				svg {
+					width: 21px;
+					height: 24px; 
+				}
+			}
+		}
+
+		.box-colored {
+			font-size: 0.75em;
+			background: rgba(0,0,0,0.6);
+			color: #ffffff;
+			a { color: white;}
+		}
+	}
+
+	.widget__list.list-0 {
+		.box { right: 100px;}
+	}
+	.widget__list.list-1 {
+		.box { right: 250px;}
+	}
+
+}
+
+.widget-insights {
+	margin-top: 15em;
+
+	&:after {
+		position: absolute;
+		left: 0; top: -462px;
+		content: '';
+		width: 262px;
+		height: 935px;
+		background: url('../images/widget-insights-after.png') 0 0 no-repeat;
+		z-index: 0;
+	}
+
+	&:before {
+		position: absolute;
+		right: 0; top: 0;
+		content: '';
+		width: 233px;
+		height: 268px;
+		background: url('../images/widget-insights-before.png') 0 0 no-repeat;
+		z-index: 0;
+	}
+
+	position: relative;
+	padding: 1em 0;
+	background: #003f7b;
+	color: #ffffff;
+	text-align: center;
+
+	.widget__title {
+		margin-bottom: 2em;
+		font-size: 1.75em;
+		font-weight: 500;
+		color: #ffffff;
+	}
+
+	p {
+		padding: 0 3em;
+		font-size: 1.75em;
+	}
+
+	a {
+		text-transform: uppercase;
+		color: #ffffff;
+		font-size: 0.75em;
+	}
+}
+
+.widget-indique {
+	margin-top: 15em;
+
+	.box { 
+		position: relative;
+		color: #ffffff;
+		background: #333333;
+		height: 165px; 
+
+		h3 {
+			width: 100%;
+			padding: 0.5em 1em;
+			position: absolute; 
+			bottom: 0; left: 0;
+			font-size: 1.75em;
+		}
+	}
+
+	.box-st { background: $brand-st; }
+	.box-nd { background: $brand-nd; }
+	.box-rd { background: $brand-rd; }
+	.box-th { background: $brand-th; }
+
+	.text {
+		position: relative;
+		font-size: 0.75em;
+		padding: 2em;
+		height: 165px;
+
+		a {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			text-decoration: none;
+			width: 100%;
+			padding: 0 2em 0 2em;
+
+			&:after {
+				position: absolute;
+				content: '';
+				width: calc(100% - 4em);
+				bottom: -5px;
+				height: 1px;
+				background: $brand-st;
+				left: 2em;
+			}
+		}
+	}
+
+	.widget__feet {
+		margin-top: 5em;
+		text-align: center;
+		p { font-size: 1.5em; }
+		a { 
+			margin-top: 3em;
+			font-size: 1em;
+			padding: 1.25em 2em;
+		}
+	}
+}
+
+
+/* responsive */
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575px) {}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {}
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+	.widget-insights {
+		&:after {
+			left: -150px !important;
+		}
+		&:before {
+			right: -150px !important;
+		}
+	}
+	.widget-minuto-ceo .box {
+		bottom: 0 !important; left: 0 !important;
+		margin: 1em auto !important;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+	.widget-insights {
+		&:after {
+			left: -100px !important;
+		}
+		&:before {
+			right: -100px !important;
+		}
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1440px) {}
+
+/** ========================
+end
+=========================**/
