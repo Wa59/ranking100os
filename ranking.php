@@ -35,22 +35,21 @@ array_shift($top_categoria);
         <table>
             <thead>
                 <tr>
-                    <th width="01%"><span>Rank</span></th>
-                    <th width="93%"><span>Empresa</span></th>
-                    <th width="01%"><span>Pontos</span></th>
-                    <th width="05%"></th>
+                    <th width="10%"><span>Rank</span></th>
+                    <th width="60%" style="text-align:left"><span>Empresa</span></th>
+                    <th width="10%"><span>Pontos</span></th>
+                    <th width="20%"></th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($top20_100 as $k => $value) { 
                     if ($value['Ranking'] != 'A-Z') {?>
                         <tr>
-                            <td><span><?php echo $value['Ranking']; ?></span></td>
+                            <td class="number"><span><?php echo $value['Ranking']; ?></span></td>
                             <td>
                                 <img class="img-fluid" src="/assets/images/logos/<?php echo $value['Empresa']; ?>.png" alt="Logotipo <?php echo $value['Empresa']; ?>">
-                                <?php echo $value['Empresa']; ?>
                             </td>
-                            <td><span><?php echo $value['Pontos']; ?></span></td>
+                            <td class="points"><span><?php echo $value['Pontos']; ?></span></td>
                             <td><span><a href="<?php echo $value['Link']; ?>" class="btn">Quero me conectar</a></span></td>
                         </tr>
                     <?php } ?>
@@ -62,10 +61,10 @@ array_shift($top_categoria);
         <table>
             <thead>
                 <tr>
-                    <th width="01%"><span>Rank</span></th>
-                    <th width="93%"><span>Empresa</span></th>
-                    <th width="01%"><span>Pontos</span></th>
-                    <th width="05%"></th>
+                    <th width="10%"><span>Rank</span></th>
+                    <th width="65%"><span>Empresa</span></th>
+                    <th width="10%"><span>Pontos</span></th>
+                    <th width="15%"></th>
                 </tr>
             </thead>
             <tbody>
@@ -90,18 +89,12 @@ array_shift($top_categoria);
         <div class="flex-container">
             <?php foreach ($top20_100 as $k => $value) { 
                 if ($value['Ranking'] == 'A-Z') {?>
-
-
-                    <?php echo $value['Empresa']; ?><br>
-
-                    <?php /* // ?>
                     <div class="box">
                         <figure>
                             <img class="img-fluid" src="/assets/images/logos/<?php echo $value['Empresa']; ?>.png" alt="Logotipo <?php echo $value['Empresa']; ?>">
                         </figure>
                         <a href="<?php echo $value['Link']; ?>" class="btn">Quero me conectar</a>
                     </div>
-                    <?php // */ ?>
                 <?php } ?>
             <?php } ?>
         </div>

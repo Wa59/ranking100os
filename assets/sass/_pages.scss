@@ -37,6 +37,49 @@ begin
 		font-weight: 400;
 		margin-top: 5em;
 	}
+
+	h2 {
+		text-align: center;
+		color: #000000;
+		font-weight: 700;
+		margin: 5em 0 2em 0;
+		font-size: 1.333em;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	table th {
+		text-align: center;
+	}
+
+	table .number {
+		color: $brand-st;
+		font-weight: 900;
+		text-align: center;
+	}
+
+	table .points {
+		color: #444444;
+		text-align: center;
+		font-size: 0.75em;
+	}
+
+	table .btn {
+		font-size: 0.666em;
+	}
+
+	table .img-fluid {
+		height: 30px;
+		width: auto;
+	}
+
+	table td {
+		padding: 0.5em 1em;
+		background: #ffffff;
+		border-bottom: 1px solid #e5e5e5;
+	}
 }
 
 .page-minuto-ceo {
