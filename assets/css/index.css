@@ -7,3 +7,15 @@
     color: #fff;
 }
 
+.home-minuto-ceo .s-videos-row {
+    flex-wrap: nowrap;
+}
+
+.home-open-talks {
+    background: #003F7B;
+    color: #fff;
+}
+.home-open-talks .s-title,
+.home-open-talks .s-buttn {
+    color: #fff;
+}
