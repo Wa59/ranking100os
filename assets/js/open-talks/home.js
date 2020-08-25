@@ -3,9 +3,9 @@ $(document).ready(function($) {
     var items = '';
     if (CorpsOpenTalks) {
         CorpsOpenTalks.map(function(item, i){
-            if (i > 1) return true;
+            if (i > 2) return true;
 
-            items+= '<div class="s-talks-col col col-12 col-md-6 col-lg-4">';
+            items+= '<div class="s-talks-col col col-12 col-md-6 col-lg-4 order-'+ i +'">';
             
                 items+= '<a class="card-talk card" href="#card-talk-modal-'+ i +'" data-target="#card-talk-modal-'+ i +'" data-toggle="modal">';
                 

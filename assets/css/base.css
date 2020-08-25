@@ -773,6 +773,7 @@ h3 {
 .card-talk {
     color: #444;
     border: 0;
+    height: 100%;
     padding: 0;
 }
 .card-talk:active,
@@ -780,11 +781,40 @@ h3 {
 .card-talk:hover {
     color: #444;
 }
+.card-talk:active .c-v-image::before,
+.card-talk:active .c-v-image::after,
+.card-talk:focus .c-v-image::before,
+.card-talk:focus .c-v-image::after,
+.card-talk:hover .c-v-image::before,
+.card-talk:hover .c-v-image::after {
+    opacity: 0;
+}
     .card-talk .c-v-image {
         background: transparent no-repeat 50% 50%;
         background-size: cover;
         padding-top: 57%;
+        position: relative;
     }
+    .card-talk .c-v-image::before {
+        background: rgba(0,0,0,0.5);
+        content: "";
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        transition: opacity 0.3s ease;
+    }
+    .card-talk .c-v-image::after {
+        background: transparent no-repeat 50% 50%;
+        background-image: url(../img/play-btn.svg);
+        background-size: cover;
+        content: "";
+        height: 80px;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease;
+        width: 80px;
+    }
+
     .card-talk .c-v-holdr {
         font-weight: 600;
         font-size: 0.875rem;
@@ -812,6 +842,7 @@ h3 {
 .card-video {
     color: #444;
     border: 0;
+    height: 100%;
     padding: 0;
 }
 .card-video:active,
@@ -819,16 +850,45 @@ h3 {
 .card-video:hover {
     color: #444;
 }
+.card-video:active .c-v-image::before,
+.card-video:active .c-v-image::after,
+.card-video:focus .c-v-image::before,
+.card-video:focus .c-v-image::after,
+.card-video:hover .c-v-image::before,
+.card-video:hover .c-v-image::after {
+    opacity: 0;
+}
     .card-video .c-v-image {
         background: #000 no-repeat 50% 50%;
         background-size: cover;
         padding-top: 100%;
+        position: relative;
+    }
+    .card-video .c-v-image::before {
+        background: rgba(0,0,0,0.5);
+        content: "";
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        transition: opacity 0.3s ease;
+    }
+    .card-video .c-v-image::after {
+        background: transparent no-repeat 50% 50%;
+        background-image: url(../img/play-btn.svg);
+        background-size: cover;
+        content: "";
+        height: 80px;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease;
+        width: 80px;
     }
     .card-video .c-v-holdr {
         font-weight: 600;
         font-size: 0.875rem;
         margin-top: -42px;
         padding: 1rem;
+        position: relative;
     }
     .card-video .c-v-holdr .tit {
         background: #fff;
