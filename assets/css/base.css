@@ -335,6 +335,10 @@ h3 {
     border-color: var(--startups);
     text-decoration: none;
 }
+.test .btn-link.active {
+    border-color: var(--startups);
+    color: var(--startups);
+}
 .test .btn-link .text {
     font-weight: 700;
 }

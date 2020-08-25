@@ -16,9 +16,9 @@ $(document).ready(function($) {
                 items+= '></div><!--/.c-v-image -->';
                 
                 items+= '<div class="c-v-holdr">';
-                    items+= '<span class="tit">Carlos E. B. Andrade</span>';
-                    items+= '<span class="com">Laureate International Univ.</span>';
-                    items+= '<span class="pos">TOP 100</span>';
+                    items+= '<span class="tit">'+ item['Nome'] +'</span>';
+                    items+= '<span class="com">'+ item['Empresa'] +'</span>';
+                    items+= '<span class="pos">'+ item['TOP'] +'</span>';
                 items+= '</div><!--/.c-v-holdr -->';
             
             items+= '</a><!--/.card-video -->';
@@ -35,8 +35,8 @@ $(document).ready(function($) {
                         items+= '<span class="text">Fechar</span>';
                     items+= '</button>';
 
-                    items+= '<h2 class="h3 mt-0 mb-2">Carlos E. B. Andrade</h2>';
-                    items+= '<h3 class="h4 m-0 font-weight-normal">CEO Brazil at Laureate International Universities</h3>';
+                    items+= '<h2 class="h3 mt-0 mb-2">'+ item['Nome'] +'</h2>';
+                    items+= '<h3 class="h4 m-0 font-weight-normal">'+ item['Cargo'] +'</h3>';
 
                 items+= '</div><!--/.modal-head -->';
 
