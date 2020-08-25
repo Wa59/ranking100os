@@ -27,6 +27,18 @@ begin
 	}
 }
 
+.page-ranking {
+	padding-top: 5em;
+	background: url("../images/page-frontpage-bg.png") 0 0 no-repeat;
+	background-position: top center;
+
+	.page__title {
+		font-size: 1.75em;
+		font-weight: 400;
+		margin-top: 5em;
+	}
+}
+
 .page-minuto-ceo {
 	padding-top: 10em;
 

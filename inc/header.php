@@ -33,21 +33,20 @@
         <nav class="s-navbar navbar navbar-static-top" id="banner" role="navigation">
         <div class="s-container container navbar-flex">
 
-            <a class="navbar-brand" href=" " rel="home">
+            <a class="navbar-brand" href="/" rel="home">
                 <img src="/assets/images/logo-100os.png" alt="Logo Ranking 100 Open Startups">
-                <span class="navbar-brand-text">Nome do subsite</span>
+                <span class="navbar-brand-text">Ranking TOP 100 Open Startups</span>
             </a><!--/.navbar-brand -->
             
             <ul class="navbar-menu" id="navbar-menu">
-                <li class="navbar-menu-item"><a href="#">Listas</a></li>
+                <li class="navbar-menu-item"><a href="/ranking.php">Ranking</a></li>
                 <li class="navbar-menu-item"><a href="/minuto-ceo.php">Minuto CEO</a></li>
                 <li class="navbar-menu-item"><a href="#">Open Talks</a></li>
                 <li class="navbar-menu-item"><a href="#">Insights</a></li>
                 <li class="navbar-menu-item"><a href="#">Sobre</a></li>
-                <li class="navbar-menu-item"><a href="#">Opção</a></li>
-                <li class="navbar-menu-item"><a href="#">Opção</a></li>
             </ul><!--/.navbar-menu -->
 
+            <?php /* // ?>
             <a href="#" class="navbar-button">Call to action</a>
 
             <div class="navbar-search">
@@ -56,7 +55,7 @@
                   <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                 </svg>
             </div><!--/.navbar-search -->
-
+            <?php // */ ?>
 
         </div><!--/.s-container -->
         </nav><!--/.s-navbar -->
