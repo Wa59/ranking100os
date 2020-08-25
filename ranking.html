@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranking - 100 Open Startups</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/slick/slick.css" />
+    <link rel="stylesheet" href="assets/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/ranking2020.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-chrome-192x192.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png?v=pgrvqBwnge" />
+    <link rel="manifest" href="/img/favicon/manifest.json?v=pgrvqBwnge" />
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=pgrvqBwnge" color="#5bbad5" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=pgrvqBwnge" />
+    <meta name="apple-mobile-web-app-title" content="100 Open Startups" />
+    <meta name="application-name" content="100 Open Startups" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png?v=pgrvqBwnge" />
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=pgrvqBwnge" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Search Engine -->
+    <meta name="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Ranking 100 Open Startups">
+    <meta itemprop="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta itemprop="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ranking 100 Open Startups">
+    <meta name="twitter:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="twitter:site" content="@100openstartups">
+    <meta name="twitter:creator" content="@100openstartups">
+    <meta name="twitter:image:src" content="https://www.openstartups.net/site/assets/img/t_rankingc.png">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="Ranking 100 Open Startups">
+    <meta property="og:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta property="og:image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+    <meta property="og:url" content="https://www.openstartups.net/site/ranking.html">
+    <meta property="og:site_name" content="100 Open Startups">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="fb:admins" content="1616610695217236">
+    <meta property="fb:app_id" content="1763965840561818">
+    <meta property="og:type" content="website">
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64393643-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-64393643-18');
+    gtag('config', 'UA-64393643-1', {
+        linker: {
+            domains: [
+                '100os.net',
+                '100os.app',
+                '100os.events',
+                'startup.openstartups.net',
+                'app.openstartups.net',
+                'admin.openstartups.net',
+                'dashboard.openstartups.net',
+                'www.openstartups.net',
+                'openstartups.net',
+                'www.oiweek.com',
+                'oiweek.com',
+                'www.opentechs.net',
+                'emerge.openstartups.net',
+                'www.eventbrite.com.br',
+                'eventbrite.com.br',
+                'www.eventbrite.com',
+                'eventbrite.com',
+            ]
+        }
+    });
+    var trackOutboundLink = function(url, targetBlank) {
+        var params = {
+            event_category: 'outbound',
+            event_label: url,
+            transport_type: 'beacon'
+        };
+        if (!targetBlank) {
+            params.event_callback = function() {
+                document.location = url;
+            };
+        }
+        gtag('event', 'click', params);
+    };
+    </script>
+
+</head>
+<body>
+
+    <div class="site site-ranking" id="site">
+
+        <header class="site-header header" id="site-header">
+
+            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <div class="navbar-container container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="assets/img/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
+                </a><!--/.navbar-brand -->
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                        <li class="nav-item mx-3"><span class="nav-link text-muted">|</span></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-collapse -->
+
+                <a class="ml-4 d-lg-navbar-buttn ml-auto ml-ml-4 d-lg-none" href="#modal-start" data-target="#modal-start" data-toggle="modal">
+                    <span class="text font-weight-bold text-uppercase">Começar</span>
+                </a><!--/.navbar-buttn -->
+
+                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                    <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    <span class="text sr-only">Menu</span>
+                </a><!--/.navbar-toggl -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar -->
+
+        </header><!--/.site-header -->
+
+        <div class="main" id="main" aria-labelledby="lbl-main">
+
+            <div class="page page-ranking">
+                <div class="page__head" style="">
+                    <div class="page__container container">
+                        <div class="box-years">
+                            <ul class="year-list">
+                                <li><span>Veja todos os Rankings publicados</span></li>
+                                <li><a class="selected" href=""><span>2020</span></a></li>
+                                <li><a href="https://www.openstartups.net/site/ranking-list.html?tab=top-2019"><span>2019</span></a></li>
+                                <li><a href="https://www.openstartups.net/site/ranking-list.html?tab=top-2018"><span>2018</span></a></li>
+                                <li><a href="https://www.openstartups.net/site/ranking-list.html?tab=top-2017"><span>2017</span></a></li>
+                                <li><a href="https://www.openstartups.net/site/ranking-list.html?tab=top-2016"><span>2016</span></a></li>
+                            </ul>
+                            <ul class="category-list">
+                                <li><a class="selected" href=""><span>Top corps</span></a></li>
+                                <li><a class="display-msg" href="#"><span>Top investidor</span></a></li>
+                                <li><a class="display-msg" href="#"><span>Top ecossistema</span></a></li>
+                                <li><a class="display-msg" href="#"><span>Top startups</span></a></li>
+                            </ul>
+                        </div><!--/.box-years -->
+
+                        <p class="cat-msg">Os Rankings TOP Startups e TOP Categorias serão divulgados durante o <br> Whow! Festival de Inovação, em Novembro de 2020. <a href="#">Quer saber mais?</a></p>
+
+                        <div class="row">
+                            <div class="col col-md-12 col-lg-6">
+                                <h1 class="page__title">As <strong>TOP 100 OPEN CORPS</strong> <br> líderes em Open Innovation de 2020</h1>
+                            </div><!--/.col -->
+                            <div class="col col-md-12 col-lg-6 text-lg-right">
+                                <img src="/assets/img/SELO_TOP_Ranking_cor.png" alt="Logo 100 Open Startups">
+                            </div><!--/.col -->
+                        </div><!--/.row -->
+                    </div><!--/.container -->
+                </div><!--/.page__head -->
+
+                <div class="page__body">
+                <div class="container">
+
+                    <form action="" class="box-filters">
+                        <h2>Filtrar por</h2>
+                        <div class="row">
+                            <div class="form-group col-3">
+                                <label for="ranking">Ranking</label>
+                                <select class="form-control" id="ranking">
+                                    <option value="corps">Corps</option>
+                                    <!--option value="investidor">Investidor</option>
+                                    <option value="ecossistema">Ecossistema</option>
+                                    <option value="startups">Startups</option-->
+                                </select>
+                            </div>
+
+                            <div class="form-group col-3">
+                                <label for="tipo-ranking">Tipo do ranking</label>
+                                <select class="form-control" id="tipo-ranking">
+                                    <option value=""></option>
+                                    <option value="top-oc">TOP OPEN CORPS</option>
+                                    <option value="top-categorias">TOP Categorias</option>
+                                </select>
+                            </div>
+                           
+                            <div class="form-group col-6">
+                                <label for="empresa">Empresa</label>
+                                <input class="form-control" id="empresa" type="text" placeholder="">
+                            </div>
+
+                            <!-- div class="form-group col-3">
+                                <label for="categoria">Categoria</label>
+                                <select class="form-control" id="categoria">
+                                    <option value=""></option>
+                                </select>
+                            </div-->
+                        </div>
+                    </form><!--/.box-filters -->
+
+                    <div class="top-oc">
+                        <div id="top-20-list">
+                            <h2>TOP 20 OPEN CORPS</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th width="10%"><span>Rank</span></th>
+                                        <th width="20%"><span>Empresa</span></th>
+                                        <th width="40%"></th>
+                                        <th width="10%"><span>Pontos</span></th>
+                                        <th width="20%"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div><!--/#top-20-list -->
+                    </div><!--/.top-oc -->
+
+                    <div class="top-categorias" id="top-categorias-list">
+                        <h2>TOP CATEGORIAS OPEN CORPS</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th width="25%"><span>Categoria OPEN CORPS</span></th>
+                                    <th width="25%"><span>Empresa TOP 1</span></th>
+                                    <th width="30%"></th>
+                                    <th width="20%"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div><!--/#top-categorias-list -->
+
+                    <div class="top-oc">
+                        <div id="top-100-list">
+                            <h2>TOP 21-100 OPEN CORPS</h2>
+                            <div class="grid-container">
+                                                    
+                            </div>
+                        </div><!--/#top-100-list -->
+                    </div><!--/.top-oc -->
+
+                </div><!--/.container -->
+                </div><!--/.page__body -->
+            </div><!--/.page -->
+        </div><!--/.main -->
+
+        <footer class="site-footer footer mt-0" id="site-footer">
+
+            <div class="footer-sitemap bg-dark text-light mt-0 py-5">
+            <div class="footer-sitemap-container container">
+
+                <div class="footer-row row align-items-end">
+                <div class="footer-col col-12 col-lg-auto">
+
+                    <img class="img-fluid mb-3" src="assets/img/logo-100os.png" alt="" width="70" />
+                    <p class="f-s-address">Rua Estados Unidos, 1078<br>01427-001 | São Paulo-SP | Brasil</p>
+                    <p class="f-s-address"><a href="mailto:helpme@openstartups.net">helpme@openstartups.net</a></p>
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-lg-auto">
+
+                    <span class="f-s-title">Conteúdos</span>
+
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://blog.openstartups.net/">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/news">Notícias</a></li>
+                        <!--<li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/press">Imprensa</a></li>-->
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/site/ebooks.html">E-books</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto">
+
+                    <span class="f-s-title">Aplicativos</span>
+
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://startup.openstartups.net/">Startup</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://matchmaking.openstartups.net/">Matchmaking</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://dashboard.openstartups.net/br-pt/press">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://100os.events/">Eventos</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-md-auto ml-lg-0">
+
+                    <ul class="f-s-social nav mb-2">
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Facebook" href="https://www.facebook.com/100openstartups/"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Instagram" href="https://www.instagram.com/100openstartups/"><span class="fab fa-instagram"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="LinkedIn" href="https://www.linkedin.com/company/100-open-startups/"><span class="fab fa-linkedin"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Contato" href="mailto:helpme@openstartups.net"><span class="fas fa-envelope"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Regulamento" href="https://www.openstartups.net/files/pdf/Regulamento100OpenStartups_revB_2016.pdf"><span class="fas fa-file-pdf"></span></a></li>
+                    </ul>
+
+                    <span class="f-s-text d-block">O aplicativo para avaliadores está<br class="d-none d-md-block" /> disponível nas lojas:</span>
+
+                    <a class="f-s-download mt-3 mr-3" href="https://itunes.apple.com/app/100-open-startups/id1332822629">
+                        <img class="img-fluid" src="assets/img/badge-apple.png" alt="" />
+                    </a><!--/.f-s-download -->
+
+                    <a class="f-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                        <img class="img-fluid" src="assets/img/badge-google.png" alt="" />
+                    </a><!--/.f-s-download -->
+
+                </div><!--/.footer-col -->
+                </div><!--/.footer-row -->
+
+            </div><!--/.footer-sitemap-container -->
+            </div><!--/.footer-sitemap -->
+
+            <div class="footer-copyright small py-3">
+            <div class="footer-copyright-container container">
+                <p class="m-0">Copyright © 2020 - Allagi Engenharia Ltda.</p>
+            </div><!--/.footer-copyright-container -->
+            </div><!--/.footer-copyright -->
+
+        </footer><!--/.site-footer -->
+
+    </div><!--/.site -->
+
+    <div class="modal modal-menu fade" id="modal-menu" tabindex="-1" role="dialog"
+        aria-labelledby="lbl-modal-menu" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+
+            <ul class="modal-nav nav flex-column">
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                <li class="nav-item my-4 border-t-1"></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+            </ul><!--/.modal-nav -->
+
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+
+    <div class="modal modal-start fade" id="modal-start" tabindex="-1" role="dialog"
+        aria-labelledby="lbl-modal-start" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <h2>Participe da plataforma 100 Open Startups</h2>
+            <h3>Escolha uma das opções de acordo com o seu perfil.</h3>
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+        <div class="modal-rows row">
+        <div class="modal-cols col-12 col-lg-6">
+
+            <a class="m-s-card card" href="https://matchmaking.openstartups.net/">
+            <div class="card-body">
+                <p class="mt-0 font-weight-bold">Executivos e Profissionais</p>
+                <p class="mt-2">Conheça, monitore e contribua com startups de sua área de atuação e interesse na nossa ferramenta de matchmaking.</p>
+            </div><!--/.card-body -->
+            <div class="card-feet card-footer">
+                <p class="mt-0 btn-primary btn py-2"><span class="text">Conecte-se</span></p>
+            </div><!--/.card-feet -->
+            </a><!--/.m-s-card -->
+
+        </div><!--/.modal-cols -->
+        <div class="modal-cols col-12 col-lg-6">
+
+            <a class="m-s-card card" href="https://startup.openstartups.net/">
+            <div class="card-body">
+                <p class="mt-0 font-weight-bold">Startups e Tecnologias</p>
+                <p class="mt-2">Acesse recursos de grandes empresas interessadas em colaborar com sua startup e faça parte do Ranking 100 Open Startups.</p>
+            </div><!--/.card-body -->
+            <div class="card-feet card-footer">
+                <p class="mt-0 btn-primary btn py-2"><span class="text">Cadastre-se</span></p>
+            </div><!--/.card-feet -->
+            </a><!--/.m-s-card -->
+
+        </div><!--/.modal-cols -->
+        <div class="modal-cols col-12 text-center">
+
+            <p class="pt-3">O aplicativo para avaliadores está também disponível nas lojas:</p>
+
+            <a class="m-s-download mt-3 mr-3" href="https://itunes.apple.com/app/100-open-startups/id1332822629">
+                <img class="img-fluid" src="assets/img/badge-apple-black.png" alt="" />
+            </a><!--/.m-s-download -->
+
+            <a class="m-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                <img class="img-fluid" src="assets/img/badge-google-black.png" alt="" />
+            </a><!--/.m-s-download -->
+
+        </div><!--/.modal-cols -->
+        </div><!--/.modal-rows -->
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+
+
+    <!-- Refer -->
+    <script>
+    // and here's the trick (works everywhere)
+    function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+    // use like
+    r(function(){
+            initializeReferForm();
+    });
+    
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    
+    function setCurrentValues() {
+        // Pre-Set current evaluation values passed by query string
+        // Check for query string
+        var email = getParameterByName("email");
+        var name = getParameterByName("name");
+        var startupId = getParameterByName("startupId");
+    
+        if (startupId) {
+            $("#startupId").val(startupId);
+        }
+    
+        if (email) {
+            $("#email").val(email);
+            $("#email").attr("disabled",true);
+        }
+    
+        if (name) {
+            $("#name").val(name);
+            $("#name").attr("disabled",true);
+        }
+    
+        if (name && email)
+            $("#yourdata").hide();
+    
+    }
+    
+    function initializeReferForm(){
+    
+        $("#refer-form").show();
+    
+        setCurrentValues();
+    
+        $("#refer-form").on("click", ".referral-input-group label", function(event){
+            var parent = $(this).parent().parent();
+            if($(this).hasClass("active")){
+                parent.find(".form-control").attr("placeholder", "E-mail do(a) empreendedor(a");
+            }else{
+               parent.find(".form-control").attr("placeholder", "E-mail do(a) executivo(a)");
+            }
+            parent.find(".form-control").attr("disabled", false);
+        })
+
+        // Creat "Add More" handler
+        $("#addmore").click(function(event){
+            var items = $("#referrals .referral-item");
+
+            var item = $(items[0]).clone();
+            console.log(item);
+            item.find('input[type="radio"]').attr('name', 'referralType' + (items.length + 1));
+            item.find('.email-referrals').val('')
+
+            $("#addmore").before(item);
+            // $("#addmore").prev().children(".email-referrals").val("")
+        });
+    
+        // Create submit handler
+        $("#refer-form").submit(function(event) {
+    
+            event.preventDefault();
+            event.stopPropagation();
+    
+            // Reset alerts
+            $("#warning-alert").hide();
+            $("#error-alert").hide();
+            $("#response-alert").hide();
+    
+            // Check for validation
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var startupid = $("#startupId").val();
+    
+    
+            var data = {};
+    
+            // Validation
+    
+            if (!name || name === "")
+                return $("#warning-alert").html("Por favor, entre o seu nome").show();
+            else
+                data.referrerName = name;
+    
+            if (!email || email === "")
+                return $("#warning-alert").html("Por favor, entre o seu e-mail").show();
+            else
+                data.referrerEmail = email;
+    
+    
+            if (startupid) data.startupid = startupid;
+            // Add Emails
+    
+            var items = $("#referrals .referral-item");
+    
+            data.evaluators = [];
+            data.entrepreneurs = [];
+
+            var count = 0;
+    
+            items.each(function(i) {
+                console.log(++count);
+                var item = $(this);
+                console.log(item);
+                var email = item.find(".email-referrals").val();
+                var type = item.find('.referral-input-group input:checked').attr("value");
+                console.log('type ' + type)
+        
+                if (email){
+                	if (type==="company")
+                		data.evaluators.push(email);
+
+                	if (type==="startup")
+                		data.entrepreneurs.push(email);
+                }
+            })
+    
+            // if (evaluators.length>0) data.evaluators = evaluators;
+            // if (entrepreneurs.length>0) data.entrepreneurs = entrepreneurs;
+    
+    
+            $.ajax({
+                type: "POST",
+                url: "https://api.openstartups.net/web/v1/recommendranking",
+                data: JSON.stringify(data),
+                dataType: "json",
+                contentType: 'application/json; charset=UTF-8',
+                success: function(data, textStatus) {
+                        // console.log("SUCCESS");
+                        $("#response-alert").html("Convite enviado com sucesso!").show();
+                        $("#refer-form").find('.email-referrals').val('');
+                        //$("#refer-form").hide();
+                },
+                error: function(error) {
+                    // console.log("ERROR");
+                    console.log(JSON.stringify(error, null, 2));
+                    if (error.responseJSON) {
+                        if (error.responseJSON.error)
+                            return $("#warning-alert").html("ERROR: " + error.responseJSON.error.message).show();
+                        if (error.responseJSON.message)
+                            return $("#warning-alert").html("ERROR: " + error.responseJSON.message).show();
+                        if (error.responseJSON.accepted)
+                            if (error.responseJSON.accepted.length===0)
+                                return $("#warning-alert").html("ERROR: All e-mails rejected").show();
+                        return $("#warning-alert").html("ERROR: " + error.status + " " + error.statusText).show();
+                    } else {
+                        $("#warning-alert").html("ERROR: " + error.status + " " + error.statusText).show();
+                    }
+    
+                }
+            });
+        });
+    }
+    </script>
+
+    <!-- Dinamize Tracking Script -->
+    <script src="//receiver.posclick.dinamize.com/forms/js/324918_1830.js"></script>
+
+    <script src="assets/js/eventbrite.js"></script>
+    <script src="assets/js/omnize.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/ranking/top-startups-2019.js"></script>
+    <script src="assets/js/ranking/top-corps-2020.js"></script>
+    <script src="assets/js/ranking/top-corps-top1cat-2020.js"></script>
+    <script src="assets/js/ranking.js"></script>
+
+
+    <script>
+    function buildTop20CorpsList(array) {
+        array.forEach(item => {
+            if (item.Ranking != 'A-Z') {
+                var html = '';
+
+                html+= '<tr>';
+                    html+= '<td class="number"><span>'+item.Ranking+'</span></td>';
+                    html+= '<td>';
+                        html+= '<img class="img-fluid" src="/assets/img/logos/'+item.Empresa+'.png" alt="Logotipo '+item.Empresa+'">';
+                        html+= '<h3 class="sr-only empresa">'+item.Empresa+'</h3>';
+                    html+= '</td>';
+                    html+= '<td></td>';
+                    html+= '<td class="points"><span>'+item.Pontos+'</span></td>';
+                    html+= '<td><span><a href="'+item.Link+'" class="btn">Quero me conectar</a></span></td>';
+                html+= '</tr>';
+
+                $('#top-20-list').find('tbody').append(html);
+             }
+        });
+    }
+    buildTop20CorpsList(topCorps2020);
+
+    function buildTop20_100CorpsList(array) {
+        array.forEach(item => {
+            if (item.Ranking == 'A-Z') {
+                var html = '';
+
+                html+= '<div class="box">';
+                    html+= '<figure>';
+                        html+= '<img class="img-fluid" src="/assets/img/logos/'+item.Empresa+'.png" alt="Logotipo '+item.Empresa+'">';
+                    html+= '</figure>';
+                    html+= '<h3 class="sr-only empresa">'+item.Empresa+'</h3>';
+                    html+= '<a href="'+item.Link+'" class="btn">Quero me conectar</a>';
+                html+= '</div>';
+
+                $('#top-100-list').find('.grid-container').append(html);
+            }
+        });
+    }
+    buildTop20_100CorpsList(topCorps2020);
+
+    function buildTop1CatList(array) {
+        array.forEach(item => {
+                var html = '';
+
+            html+= '<tr>';
+                html+= '<td class="number"><span>'+item.Premio+'</span></td>';
+                html+= '<td>';
+                    html+= '<img class="img-fluid" src="/assets/img/logos/'+item.Empresa+'.png" alt="Logotipo '+item.Empresa+'">';
+                    html+= '<h3 class="sr-only empresa">'+item.Empresa+'</h3>';
+                html+= '</td>';
+                html+= '<td></td>';
+                html+= '<td><span><a href="'+item.Link+'" class="btn">Quero me conectar</a></span></td>';
+            html+= '</tr>';
+
+            $('#top-categorias-list').find('tbody').append(html);
+        });
+    }
+    buildTop1CatList(topCorpsTop1Cat2020);
+
+    
+
+
+
+    function execFilter() {
+        $('.top-categorias').hide();
+        $('.top-oc').hide();
+        $('tr').show();
+        $('.box').show();
+
+        if ($('#tipo-ranking').val() != '') {
+            $('.'+$('#tipo-ranking').val()).show();
+        }
+
+        if ($('#empresa').val().length > 2) {
+            var searchTerm = $('#empresa').val();
+            $('tbody tr').hide();
+            $('.box').hide();
+            $('.empresa').each(function(){
+                if ($(this).html().toLowerCase().indexOf(searchTerm) >= 0) {
+                    $(this).parent().show();
+                    $(this).parent().parent().show();
+                }
+            });
+        }
+    }
+
+    $(document).ready(function(){
+        $('.display-msg').click(function(e){
+            e.preventDefault();
+            $('.cat-msg').addClass('active');
+        });
+
+        $('#ranking').on('change', function() { execFilter(); });
+        $('#tipo-ranking').on('change', function() { execFilter(); });
+        $('#categoria').on('change', function() { execFilter(); });
+        $('#empresa').on('keyup', function() { execFilter(); });
+    });
+    </script>
+
+    <script src="assets/js/clippings/ranking.js"></script>
+
+    <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
+
+</body>
+</html>

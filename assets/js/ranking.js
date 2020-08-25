@@ -31,8 +31,8 @@ $(document).ready(function($) {
         carousel.slick(carouselAttr);
 
         data.some((item, index) => {
-            console.log('item', item);
-            console.log('index', index);
+            //console.log('item', item);
+            //console.log('index', index);
 
             var carouselCard = '';
             var carouselItemLogo = 'assets/img/bg.png';
