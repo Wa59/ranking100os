@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sobre - Ranking TOP 100 Open Startups</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/slick/slick.css" />
+    <link rel="stylesheet" href="assets/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-chrome-192x192.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png?v=pgrvqBwnge" />
+    <link rel="manifest" href="/img/favicon/manifest.json?v=pgrvqBwnge" />
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=pgrvqBwnge" color="#5bbad5" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=pgrvqBwnge" />
+    <meta name="apple-mobile-web-app-title" content="100 Open Startups" />
+    <meta name="application-name" content="100 Open Startups" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png?v=pgrvqBwnge" />
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=pgrvqBwnge" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Search Engine -->
+    <meta name="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Ranking 100 Open Startups">
+    <meta itemprop="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta itemprop="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ranking 100 Open Startups">
+    <meta name="twitter:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="twitter:site" content="@100openstartups">
+    <meta name="twitter:creator" content="@100openstartups">
+    <meta name="twitter:image:src" content="https://www.openstartups.net/site/assets/img/t_rankingc.png">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="Ranking 100 Open Startups">
+    <meta property="og:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta property="og:image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+    <meta property="og:url" content="https://www.openstartups.net/site/ranking.html">
+    <meta property="og:site_name" content="100 Open Startups">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="fb:admins" content="1616610695217236">
+    <meta property="fb:app_id" content="1763965840561818">
+    <meta property="og:type" content="website">
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64393643-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-64393643-18');
+    gtag('config', 'UA-64393643-1', {
+        linker: {
+            domains: [
+                '100os.net',
+                '100os.app',
+                '100os.events',
+                'startup.openstartups.net',
+                'app.openstartups.net',
+                'admin.openstartups.net',
+                'dashboard.openstartups.net',
+                'www.openstartups.net',
+                'openstartups.net',
+                'www.oiweek.com',
+                'oiweek.com',
+                'www.opentechs.net',
+                'emerge.openstartups.net',
+                'www.eventbrite.com.br',
+                'eventbrite.com.br',
+                'www.eventbrite.com',
+                'eventbrite.com',
+            ]
+        }
+    });
+    var trackOutboundLink = function(url, targetBlank) {
+        var params = {
+            event_category: 'outbound',
+            event_label: url,
+            transport_type: 'beacon'
+        };
+        if (!targetBlank) {
+            params.event_callback = function() {
+                document.location = url;
+            };
+        }
+        gtag('event', 'click', params);
+    };
+    </script>
+
+</head>
+<body>
+
+    <div class="site site-sobre" id="site">
+
+        <header class="site-header header" id="site-header">
+
+            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <div class="navbar-container container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="assets/img/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
+                    <span class="txt-named d-none d-md-block">Ranking TOP 100 Open Startups</span>
+                </a><!--/.navbar-brand -->
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="ranking.html">Ranking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-collapse -->
+
+                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                    <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    <span class="text sr-only">Menu</span>
+                </a><!--/.navbar-toggl -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar -->
+
+        </header><!--/.site-header -->
+
+        <div class="main pt-5" id="main" aria-labelledby="lbl-main">
+
+            <section class="ranking section py-5" id="ranking" aria-labelledby="lbl-ranking">
+
+                <div class="s-hold">
+                <div class="s-hold-container container">
+
+                    <h1 class="s-title" id="lbl-ranking">
+                        <span class="text">Sobre o Ranking</span>
+                    </h1><!--/.s-title -->
+
+                    <div class="s-descr mt-4">
+                        <p class="lead">A 100 Open Startups é a plataforma internacional de maior impacto para conectar grandes empresas e startups (<a href="https://www.openstartups.net/site/sobre.html">saiba mais sobre nossa história</a>). Com <strong>mais de 9.400 relações de negócios</strong> validadas, a plataforma tornou-se case de estudo das principais universidades do mundo e desperta a cada dia em inúmeros executivos e empreendedores o interesse na colaboração para a inovação.</p>
+                        <p>Como parte do método que tem foco principal na geração de negócios, o movimento publica anualmente o Ranking 100 Open Startups com as startups mais atraentes para o mercado corporativo, com o objetivo dar alta visibilidade para as startups selecionadas pelo mercado e, com isso, ampliar as oportunidades para estas iniciativas que encontram-se em estágio adequado para a conexão com grandes empresas.</p>
+                        <p>Hoje, o Ranking 100 Open Startups tornou-se um dos grandes destaques da imprensa nacional e é usado como referência por grandes empresas e investidores. Publicado nos principais veículos de negócio do país, o ranking é posteriormente replicado por outras editorias, ampliando muito a visibilidade e, consequentemente, as oportunidades de negócios para as startups ranqueadas.</p>
+                    </div><!--/.s-descr -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </section><!--/.ranking -->
+
+            <section class="premiacao section py-3">
+
+                <div class="s-hold-container container">
+                <div class="s-hold p-3 p-lg-5 main-bg-white">
+ 
+                    <h2 class="s-title h3 font-weight-bold">
+                        <span class="text">Premiação</span>
+                    </h2><!--/.s-title -->
+
+                    <p class="lead mt-3">A premiação oficial do <a href="https://www.openstartups.net/site/ranking2020.html">Ranking 100 Open Startups 2020</a> será realizada durante o <a href="https://festival.whow.com.br/">Whow! Festival de Inovação</a>, que acontece nos dias 10, 11 e 12 de novembro de 2020.</p>
+                    
+                    <a class="s-buttn mt-3" href="https://festival.whow.com.br/">
+                        <span class="text">Saiba mais sobre o festival</span>
+                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                    </a><!--/.s-buttn -->
+
+                    <hr class="my-3 my-lg-5" />
+
+                    <p class="mt-3">Já liberamos a lista rankeada para as <strong>TOP 100 Open Corps</strong>, as empresas que mais fazem Open Innovation com Startups no Brasil.</p>
+                    
+                    <a class="s-buttn mt-3" href="ranking.html">
+                        <span class="text">Conheça o Ranking TOP 100 Open Corps</span>
+                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                    </a><!--/.s-buttn -->
+                
+                </div><!--/.s-hold -->
+                </div><!--/.s-hold-container -->
+
+            </section><!--/.premiacao -->
+
+            <section class="methodology section py-5" id="methodology" aria-labelledby="lbl-methodology">
+
+                <div class="s-hold-container container">
+                <div class="s-hold" style="max-width: 840px;">
+
+                    <h2 class="s-title" id="lbl-methodology">
+                        <span class="text">Metodologia</span>
+                    </h2><!--/.s-title -->
+
+                    <div class="s-descr mt-4">
+                        <p class="lead">A metodologia do Ranking 100 Open Startups dá pontos para as startups que mais despertam interesse em grandes instituições.</p>
+                        <p>Atualmente, mais de 2.700 grandes empresas contribuem para a constituição do Ranking que destaca as startups com melhor desempenho no período de um ano, despertando interesse e fechando contratos com grandes empresas.</p>
+                    </div><!--/.s-descr -->
+
+                </div><!--/.s-hold -->
+                </div><!--/.s-hold-container -->
+
+                <div class="s-hold mt-5">
+                <div class="s-hold-container container">
+
+                    <div class="accordion" id="acc-methods">
+                    <div class="accordion-card">
+
+                        <a class="accordion-card-link" href="#acc-methods-1" role="button"
+                            data-toggle="collapse" data-target="#acc-methods-1" aria-expanded="false" aria-controls="acc-methods-1">
+                            <h3 class="accordion-card-title" id="lbl-acc-methods-1"><span class="icon fas fa-sort-numeric-down"></span> Como funciona a lógica de pontuação?</h3>
+                        </a><!--/.accordion-card-link -->
+
+                        <!-- <a href="#acc-methods-1" data-toggle="collapse" data-target="#acc-methods-1" class="btn btn-primary" role="buton">test</a> -->
+
+                        <div class="accordion-card-body collapse" id="acc-methods-1"
+                            data-parent="#acc-methods" aria-labelledby="lbl-acc-methods-1">
+                        <div class="accordion-card-body-inside">
+
+                            <div class="s-descr">
+                                <p>São considerados 16 tipos de relacionamento, divididos em 4 grandes grupos, com pontuação equivalente a 1, 5 ou 10 pontos, conforme detalhado na tabela a seguir.</p>
+                            </div><!--/.s-descr -->
+
+                            <div class="table-responsive mt-4">
+                            <table class="table">
+                            <thead>
+                            <tr>
+                                <th width="01%"><span>Grupo</span></th>
+                                <th width="15%"><span>Pontos</span></th>
+                                <th width="65%" style="text-align:left"><span>Categoria</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td rowspan="4" style="background: #fff;">
+                                    <span class="icon fas fa-2x fa-bullhorn mb-3"></span>
+                                    <strong>GRUPO A</strong>
+                                    <br>Posicionamento
+                                </td>
+                                <td rowspan="4" style="background: #fff;"><strong>1 ponto</strong></td>
+                                <td><div class="text-left">1. Capacitação e mentoria</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">2. Matchmaking e conexões</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">3. Reconhecimentos e premiações</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">4. Espaços de coworking</div></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5" style="background: #fff;">
+                                    <span class="icon fas fa-2x fa-unlock-alt mb-3"></span>
+                                    <strong>GRUPO B</strong>
+                                    <br><nobr>Plataforma e</nobr> Parcerias
+                                </td>
+                                <td rowspan="5" style="background: #fff;"><strong>5 pontos</strong></td>
+                                <td><div class="text-left">5. Vouchers de serviço e tecnologia</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">6. Licenciamento de PI da grande empresa</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">7. Acesso a recursos não-financeiros</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">8. Acesso a base de colaboradores</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">9. Acesso a base de clientes e canais de vendas</div></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4" style="background: #fff;">
+                                    <span class="icon fas fa-2x fa-handshake mb-3"></span>
+                                    <strong>GRUPO C</strong>
+                                    <br>Desenvolvimento <nobr>de fornecedores</nobr>
+                                </td>
+                                <td rowspan="4" style="background: #fff;"><strong>10 pontos</strong></td>
+                                <td><div class="text-left">10. Recursos para P&D e prototipagem</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">11. Licenciamento de PI da startup</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">12. Contratação de projeto piloto</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">13. Fornecimento de serviço ou produto inovador</div></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" style="background: #fff;">
+                                    <span class="icon fas fa-2x fa-gem mb-3"></span>
+                                    <strong>GRUPO D</strong>
+                                    <br>Investimento
+                                </td>
+                                <td rowspan="3" style="background: #fff;"><strong>10 pontos</strong></td>
+                                <td><div class="text-left">14. Programa de aceleração</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">15. Investimento com participação acionária minoritária</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="text-left">16. Aquisição e incorporação</div></td>
+                            </tr>
+                            </tbody>
+                            </table><!--/.table -->
+                            </div><!--/.table-responsive -->
+                            <br>
+                            <div class="s-descr">
+                                <p>Contratos com valor pecuniário para a startup acima de R$ 500.000,00 valem até 20 pontos, independente da categoria.</p>
+                                <p>Contratos não formalizados/assinados valem 1 ponto.</p>
+                                <p>A startup pontuará com no máximo um contrato por grande empresa com a qual tem relacionamento. Será considerado o contrato com maior pontuação.</p>
+                            </div><!--/.s-descr -->
+
+                        </div><!--/.accordion-card-body-inside -->
+                        </div><!--/.accordion-card-body -->
+
+                    </div><!--/.accordion-card -->
+                    <div class="accordion-card">
+
+                        <a class="accordion-card-link" href="#acc-methods-2" role="button"
+                            data-toggle="collapse" data-target="#acc-methods-2" aria-expanded="false" aria-controls="acc-methods-2">
+                            <h3 class="accordion-card-title" id="lbl-acc-methods-2"><span class="icon fas fa-database"></span> Qual a fonte dos dados do Ranking?</h3>
+                        </a><!--/.accordion-card-link -->
+
+                        <div class="accordion-card-body collapse" id="acc-methods-2"
+                            data-parent="#acc-methods" aria-labelledby="lbl-acc-methods-2">
+                        <div class="accordion-card-body-inside">
+
+                            <div class="s-descr">
+                                <p>O método de classificação se baseia em informações fornecidas por uma plataforma de relacionamento aberta a qualquer startup, grande empresa, investidor ou outro participante do ecossistema de inovação, sem custo. Esta plataforma possui uma interface digital que visa facilitar as conexões no ecossistema, por meio de um processo de busca por um parceiro e gerenciamento de um portfólio de conexões.</p>
+                                <p>No entanto, toda a plataforma da 100 Open Startups é composta por esta interface digital e por reuniões da vida real em diversos eventos ao longo do ano. Todos os relacionamentos estabelecidos pelos usuários cadastrados serão informados na plataforma digital, seja ela desenvolvida durante um evento promovido por 100 Open Startups ou não.</p>
+                                <p>Os usuários (startups ou grandes empresas) são responsáveis por informar quando um relacionamento é estabelecido e o tipo de relacionamento. A equipe do 100 Open Startups irá verificar as informações com o outro parceiro.</p>
+                            </div><!--/.s-descr -->
+
+                        </div><!--/.accordion-card-body-inside -->
+                        </div><!--/.accordion-card-body -->
+
+                    </div><!--/.accordion-card -->
+                    <div class="accordion-card">
+
+                        <a class="accordion-card-link" href="#acc-methods-3" role="button"
+                            data-toggle="collapse" data-target="#acc-methods-3" aria-expanded="false" aria-controls="acc-methods-3">
+                            <h3 class="accordion-card-title" id="lbl-acc-methods-3"><span class="icon fas fa-users"></span> Como é formada a amostragem de dados do Ranking?</h3>
+                        </a><!--/.accordion-card-link -->
+
+                        <div class="accordion-card-body collapse" id="acc-methods-3"
+                            data-parent="#acc-methods" aria-labelledby="lbl-acc-methods-3">
+                        <div class="accordion-card-body-inside">
+
+                            <div class="s-descr">
+                                <p>A startup: Registrar a startup na interface digital é o primeiro estágio para fazer parte da plataforma. Startups devem fornecer diversas informações sobre seu perfil, como os desafios que esperam resolver, as tendências tecnológicas das quais fazem parte, a indústria (ou indústrias) em que sua solução pode ser aplicada, o estágio de desenvolvimento de sua solução (Idéia, Protótipo, Produto Mínimo Viável ou já no mercado com clientes), a existência de investimento de capital de risco, prêmios recebidos em competições de Startups, contratos firmados com grandes empresas. Para a classificação, as informações das relacionamentos serão usadas para determinar a pontuação inicial.</p>
+                                <p>Grandes empresas e outros atores: outros atores que fazem parte do ecossistema de inovação com interesse em startups, como executivos de grandes empresas, investidores e outros profissionais envolvidos nesse ecossistema, são convidados a fornecer informações sobre seu perfil nessa interface digital.</p>
+                                <p>A razão pela qual esses usuários se registram está relacionada aos benefícios que eles têm. Por exemplo, eles terão acesso matchmaking com o ecossistema de startups, que ajuda o processo de pesquisa, conexão e codesenvolvimento de soluções inovadoras que eles desejam explorar.</p>
+                            </div><!--/.s-descr -->
+
+                        </div><!--/.accordion-card-body-inside -->
+                        </div><!--/.accordion-card-body -->
+
+                    </div><!--/.accordion-card -->
+                    <div class="accordion-card">
+
+                        <a class="accordion-card-link" href="#acc-methods-4" role="button"
+                            data-toggle="collapse" data-target="#acc-methods-4" aria-expanded="false" aria-controls="acc-methods-4">
+                            <h3 class="accordion-card-title" id="lbl-acc-methods-4"><span class="icon fas fa-clipboard-check"></span> De que forma as informações declaradas foram validadas?</h3>
+                        </a><!--/.accordion-card-link -->
+
+                        <div class="accordion-card-body collapse" id="acc-methods-4"
+                            data-parent="#acc-methods" aria-labelledby="lbl-acc-methods-4">
+                        <div class="accordion-card-body-inside">
+
+                            <div class="s-descr">
+                                <p>Todos os dados utilizados no ranking dependem de informações de executivos de grandes empresas ou de startups. Para lidar com a grande quantidade de informações de terceiros, foi criado um sistema para validar esses dados de fontes distribuídas. Quando uma informação elegível para pontuação no ranking é adicionada na plataforma digital, uma fonte adequada receberá um link em seu e-mail cadastrado para validar as informações.</p>
+                                <p>Certas regras foram consideradas para o processo de validação:</p>
+                            </div><!--/.s-descr -->
+
+                            <ul class="s-lists fa-ul mt-0 mb-0 ml-0">
+                                <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> As informações fornecidas pelas startups devem ser validadas por um funcionário de uma grande empresa e auditadas pela equipe do 100 Open Startups. O processo de auditoria consiste em verificar se as informações fornecidas estão alinhadas com as definições utilizadas na metodologia do Ranking.</li>
+                                <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> As informações fornecidas pelas grandes empresas serão auditadas pela equipe do 100 Open Startups.</li>
+                                <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Funcionários de grandes empresas são validados pelo endereço de e-mail corporativo verificado, de acordo com o banco de dados de grandes corporações do programa 100 Open Startups. Novas corporações adicionadas ao banco de dados são revisadas e aprovadas pela equipe do 100 Open Startups.</li>
+                                <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Uma startup pode ser elegível para o ranking TOP 100 se tiver estabelecido um relacionamento com pelo menos três grandes empresas.</li>
+                            </ul><!--/.s-lists -->
+
+                        </div><!--/.accordion-card-body-inside -->
+                        </div><!--/.accordion-card-body -->
+
+                    </div><!--/.accordion-card -->
+                    </div><!--/.accordion -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </section><!--/.methodology -->
+
+            <hr class="my-5" />
+
+            <section class="who section py-5" id="who" aria-labelledby="lbl-who">
+
+                <div class="s-hold">
+                <div class="s-hold-container container">
+
+                    <h2 class="s-title" id="lbl-who">
+                        <span class="text">Quem pode participar do Ranking?</span>
+                    </h2><!--/.s-title -->
+
+                    <h3 class="s-subtitle mt-5">
+                        <span class="text">Startups</span>
+                    </h3><!--/.s-subtitle -->
+
+                    <ul class="s-lists fa-ul mt-0 ml-0">
+                        <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Ser startup cadastrada no 100 Open Startups em conformidade com o regulamento do programa.</li>
+                        <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Ter fechado contratos com grandes empresas, que estiveram ativos durante o período do Ranking.</li>
+                        <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Preencher formulário de dados para startups pelo aplicativo da 100 Open Startups.</li>
+                        <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Para o Ranking TOP 100 ou TOP Categorias, a startup não deve ter faturamento anual superior a R$ 10 milhões, nem deve ter recebido investimento superior a R$ 10 milhões.</li>
+                    </ul><!--/.s-lists -->
+
+                    <h3 class="s-subtitle mt-5">
+                        <span class="text">Empresas</span>
+                    </h3><!--/.s-subtitle -->
+
+                    <ul class="s-lists fa-ul mt-0 ml-0">
+                        <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Possuir mais de 100 funcionários ou ter faturamento superior a R$ 100 milhões no exercício de 2019.</li>
+                        <li class="s-lists-item mt-3"><span class="fa-li fas fa-check"></span> Registrar e/ou validar dados de relacionamento com startups.</li>
+                    </ul><!--/.s-lists -->
+
+                    <div class="s-descr mt-5">
+                        <p>Apenas os contratos validados dentro dos prazos estipulados no <a href="https://www.openstartups.net/site/regulamento.html">regulamento</a> serão considerados para o Ranking 100 Open Startups 2020. Declare seus contratos o mais cedo possível para evitar atrasos na validação pelo seu ponto de contato na grande empresa ou startup.</p>
+                        <p class="lead">Faça parte e destaque-se entre as startups de grande crescimento!</p>
+                    </div><!--/.s-descr -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </section><!--/.who -->
+
+            <div class="main-bg-white mt-5 py-5">
+
+                <section class="benefits section py-5" id="benefits" aria-labelledby="lbl-benefits">
+
+                    <div class="s-hold">
+                    <div class="s-hold-container container">
+
+                        <h2 class="s-title" id="lbl-benefits">
+                            <span class="text">Benefícios</span>
+                        </h2><!--/.s-title -->
+
+                        <div class="accordion mt-4" id="acc-benefits">
+                        <div class="accordion-card">
+
+                            <a class="accordion-card-link" href="#acc-benefits-1" role="button"
+                                data-toggle="collapse" data-target="#acc-benefits-1" aria-expanded="false" aria-controls="acc-benefits-1">
+                                <h3 class="accordion-card-title" id="lbl-acc-benefits-1"><span>01</span> Quais os benefícios de ser uma startup ranqueada?</h3>
+                            </a><!--/.accordion-card-link -->
+
+                            <div class="accordion-card-body collapse" id="acc-benefits-1"
+                                data-parent="#acc-benefits" aria-labelledby="lbl-acc-benefits-1">
+                            <div class="accordion-card-body-inside">
+
+                                <ul class="s-lists m-0 fa-ul">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Fazer parte do principal Ranking que mede objetivamente a atratividade de startups early stage para o mercado corporativo;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Ter máxima visibilidade, como parte da lista oficial utilizada como referência por grandes instituições e investidores líderes;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Ser destacada como startup Level 5 na ferramenta de matchmaking com executivos;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Ter prioridade e benefícios exclusivos nos eventos oficiais e de parceiros do programa 100 Open Startups;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Ter fast track em oportunidades para startups lançadas pelas empresas-membro e parceiros do programa.</li>
+                                </ul><!--/.s-lists -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        <div class="accordion-card">
+
+                            <a class="accordion-card-link" href="#acc-benefits-2" role="button"
+                                data-toggle="collapse" data-target="#acc-benefits-2" aria-expanded="false" aria-controls="acc-benefits-2">
+                                <h3 class="accordion-card-title" id="lbl-acc-benefits-2"><span>02</span> Quais os benefícios de ser uma grande empresa ranqueada?</h3>
+                            </a><!--/.accordion-card-link -->
+
+                            <div class="accordion-card-body collapse" id="acc-benefits-2"
+                                data-parent="#acc-benefits" aria-labelledby="lbl-acc-benefits-2">
+                            <div class="accordion-card-body-inside">
+
+                                <ul class="s-lists m-0 fa-ul">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Reconhecimento das comunidades de inovação do país como uma empresa atraente para startups.</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Acesso com desconto para produtos 100 Open Corps.</li>
+                                </ul><!--/.s-lists -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        </div><!--/.accordion -->
+
+                    </div><!--/.s-hold-container -->
+                    </div><!--/.s-hold -->
+
+                </section><!--/.benefits -->
+                
+                <hr class="my-5 container p-0">
+
+                <section class="news section py-5" id="news" aria-labelledby="lbl-news">
+
+                    <div class="s-hold">
+                    <div class="s-container container text-center">
+
+                        <h2 class="s-title" id="lbl-benefits">
+                            <span class="text">Ranking TOP 100 Open Startups na mídia</span>
+                        </h2><!--/.s-title -->
+
+                        <ul class="s-n-list row align-items-center justify-content-between list-unstyled" id="s-n-list">
+                        </ul><!--/.s-n-list -->
+
+                        <a class="btn-primary btn mt-5" href="ranking-noticias.html">
+                            <span class="text">Ver todas as notícias</span>
+                        </a><!--/.btn-primary -->
+
+                    </div><!--/.s-container -->
+                    </div><!--/.s-hold -->
+
+                </section><!--/.section -->
+
+                <section class="rankings-list section mb-5">
+
+                    <div class="s-hold text-center">
+                    <div class="s-hold-container container">
+                    <div class="test d-lg-flex align-items-center justify-content-lg-between text-center text-lg-left mt-5">
+    
+                        <p class="m-0" style="transform: translateY(2px);">Veja todos os rankings publicados:</p>
+    
+                        <ul class="s-lists nav-pills nav m-0 p-0 justify-content-center flex-column flex-lg-row">
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2020">
+                                <span class="text d-block">2020</span>
+                            </a></li>
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2019">
+                                <span class="text d-block">2019</span>
+                            </a></li>
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2018">
+                                <span class="text d-block">2018</span>
+                            </a></li>
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2017">
+                                <span class="text d-block">2017</span>
+                            </a></li>
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2016">
+                                <span class="text d-block">2016</span>
+                            </a></li>
+                        </ul><!--/.s-lists -->
+    
+                    </div><!--/.test-->
+                    </div><!--/.s-hold-container -->
+                    </div><!--/.s-hold -->
+                
+                </section><!--/.rankings-list -->
+
+            </div><!--/.main-bg-white -->
+
+        </div><!--/.main -->
+
+        <footer class="site-footer footer" id="site-footer">
+
+            <div class="footer-sitemap bg-dark text-light py-5">
+            <div class="footer-sitemap-container container">
+
+                <div class="footer-row row align-items-stretch">
+                <div class="footer-col col-12 col-lg-auto">
+                    
+                    <a href="http://www.openstartups.net/site/index.html">
+                        <img class="img-fluid mb-3" src="https://www.openstartups.net/site/assets/img/logo-100os.png" alt="" width="70">
+                    </a>
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-sm-auto ml-lg-auto">
+                
+                    <span class="f-s-title">Institucional</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/index.html">Pagina Inicial</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/redes.html">Redes</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/ranking.html">Ranking</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-sm-auto d-none d-xl-block">
+                
+                    <span class="f-s-title">Conteúdos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://blog.openstartups.net/">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/news">Notícias</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/press">Imprensa</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/ebooks">E-books</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-sm-auto col-md-auto">
+                
+                    <span class="f-s-title">Aplicativos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://startup.openstartups.net/">Startup</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://matchmaking.openstartups.net/">Matchmaking</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://dashboard.openstartups.net" target="_blank">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="/site/eventos.html">Eventos</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-md-auto ml-lg-0">
+
+                    <ul class="f-s-social nav mb-4">
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Facebook" href="https://www.facebook.com/100openstartups/"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Instagram" href="https://www.instagram.com/100openstartups/"><span class="fab fa-instagram"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="LinkedIn" href="https://www.linkedin.com/company/100-open-startups/"><span class="fab fa-linkedin"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Contato" href="mailto:helpme@openstartups.net"><span class="fas fa-envelope"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Regulamento" href="https://www.openstartups.net/files/pdf/Regulamento100OpenStartups_revB_2016.pdf"><span class="fas fa-file-pdf"></span></a></li>
+                    </ul>
+            
+                    <span class="f-s-text d-block">Participe da Plataforma 100 Open Startups</span>
+
+                    <a class="f-s-download mt-3 mr-3" href="https://apps.apple.com/app/100-open-startups/id1332822629">
+                        <img class="img-fluid" src="https://www.openstartups.net/site/assets/img/badge-apple.png" alt="">
+                    </a><!--/.f-s-download -->
+                    
+                    <a class="f-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                        <img class="img-fluid" src="https://www.openstartups.net/site/assets/img/badge-google.png" alt="">
+                    </a><!--/.f-s-download -->
+
+                </div><!--/.footer-col -->
+                </div><!--/.footer-row -->
+
+            </div><!--/.footer-sitemap-container -->
+            </div><!--/.footer-sitemap -->
+
+            <div class="footer-copyright small py-3">
+            <div class="footer-copyright-container container">
+                <p class="m-0">Copyright © 2020 - Allagi Engenharia Ltda.</p>
+            </div><!--/.footer-copyright-container -->
+            </div><!--/.footer-copyright -->
+
+        </footer><!--/.site-footer -->
+
+    </div><!--/.site -->
+
+    <div class="modal modal-menu fade" id="modal-menu" tabindex="-1" role="dialog"
+        aria-labelledby="lbl-modal-menu" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+
+            <ul class="modal-nav nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="ranking.html">Ranking</a></li>
+                <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
+                <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>  
+            </ul><!--/.modal-nav -->
+
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+     
+    <script src="assets/js/eventbrite.js"></script>
+    <script src="assets/js/omnize.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/ranking/top-startups-2019.js"></script>
+    <script src="assets/js/ranking.js"></script>
+
+    <script src="assets/js/clippings/ranking.js"></script>
+
+    <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
+
+</body>
+</html>

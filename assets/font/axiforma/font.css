@@ -1,0 +1,143 @@
+
+@font-face {
+    font-family: 'Axiforma Black';
+    src: url('kastelov_-_axiforma_black_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_black_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma Black';
+    src: url('kastelov_-_axiforma_black-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Book';
+    src: url('kastelov_-_axiforma_book_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_book_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma Book';
+    src: url('kastelov_-_axiforma_book-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_heavy_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_heavy_italic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_heavy-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_heavy-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_extrabold_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_extrabold_italic-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_extrabold-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_bold_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_bold_italic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_bold-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_semibold_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_semibold_italic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_semibold-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_medium_italic-webfont.woff2') format('woff2'),
+            url('kastelov_-_axiforma_medium_italic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_medium-webfont.woff2') format('woff2'),
+            url('kastelov_-_axiforma_medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_regular-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_light_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_light_italic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_light-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_thin_italic-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_thin_italic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url('kastelov_-_axiforma_thin-webfont.woff2') format('woff2'),
+         url('kastelov_-_axiforma_thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}

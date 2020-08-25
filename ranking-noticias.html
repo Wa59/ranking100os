@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notícias - 100 Open Startups</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="assets/slick/slick.css" />
+    <link rel="stylesheet" href="assets/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/ranking.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-chrome-192x192.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png?v=pgrvqBwnge" />
+    <link rel="manifest" href="/img/favicon/manifest.json?v=pgrvqBwnge" />
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=pgrvqBwnge" color="#5bbad5" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=pgrvqBwnge" />
+    <meta name="apple-mobile-web-app-title" content="100 Open Startups" />
+    <meta name="application-name" content="100 Open Startups" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png?v=pgrvqBwnge" />
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=pgrvqBwnge" />
+    <meta name="theme-color" content="#ffffff" />
+
+
+    <!-- Search Engine -->
+    <meta name="description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta name="image" content="https://www.openstartups.net/img/common/misc/imagem_base_100_os.jpg" />
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="100 Open Startups" />
+    <meta itemprop="description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta itemprop="image" content="https://www.openstartups.net/img/common/misc/imagem_base_100_os.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@100openstartups" />
+    <meta name="twitter:title" content="100 Open Startups" />
+    <meta name="twitter:description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta name="twitter:image" content="https://www.openstartups.net/img/common/misc/imagem_base_100_os.jpg" />
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:url" content="https://www.openstartups.net/site/sobre.html" />
+    <meta property="og:title" content="100 Open Startups" />
+    <meta property="og:description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta property="og:image" content="https://www.openstartups.net/img/common/misc/imagem_base_100_os.jpg" />
+    <meta property="og:site_name" content="100 Open Startups" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:admins" content="1616610695217236">
+    <meta property="fb:app_id" content="1763965840561818">
+
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64393643-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-64393643-18');
+    gtag('config', 'UA-64393643-1', {
+        linker: {
+            domains: [
+                '100os.net',
+                '100os.app',
+                '100os.events',
+                'startup.openstartups.net',
+                'app.openstartups.net',
+                'admin.openstartups.net',
+                'dashboard.openstartups.net',
+                'www.openstartups.net',
+                'openstartups.net',
+                'www.oiweek.com',
+                'oiweek.com',
+                'www.opentechs.net',
+                'emerge.openstartups.net',
+                'www.eventbrite.com.br',
+                'eventbrite.com.br',
+                'www.eventbrite.com',
+                'eventbrite.com',
+            ]
+        }
+    });
+    var trackOutboundLink = function(url, targetBlank) {
+        var params = {
+            event_category: 'outbound',
+            event_label: url,
+            transport_type: 'beacon'
+        };
+        if (!targetBlank) {
+            params.event_callback = function() {
+                document.location = url;
+            };
+        }
+        gtag('event', 'click', params);
+    };
+    </script>
+  
+</head>
+<body>
+
+    <div class="site site-sobre" id="site">
+
+        <header class="site-header header" id="site-header">
+
+            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <div class="navbar-container container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="assets/img/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
+                </a><!--/.navbar-brand -->
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                        <li class="nav-item mx-3"><span class="nav-link text-muted">|</span></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-collapse -->
+
+                <a class="ml-4 d-lg-navbar-buttn ml-auto ml-ml-4 d-lg-none" href="#modal-start" data-target="#modal-start" data-toggle="modal">
+                    <span class="text font-weight-bold text-uppercase">Começar</span>
+                </a><!--/.navbar-buttn -->
+
+                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                    <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    <span class="text sr-only">Menu</span>
+                </a><!--/.navbar-toggl -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar -->
+
+        </header><!--/.site-header -->
+
+    
+        <div class="main" id="main" aria-labelledby="lbl-main">
+
+            <div class="heading section" id="heading">
+
+                <div class="s-hold py-5">
+                <div class="s-hold-container container py-5">
+
+                    <h1 class="s-title" id="lbl-main">
+                        <span class="text">Ranking na mídia</span>
+                    </h1><!--/.s-title -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </div><!--/.heading -->
+
+            <section class="all-news section py-3" id="all-news" aria-labelledby="lbl-news">
+
+                    <div class="s-hold">
+                    <div class="s-container container">
+        
+                        <h2 class="text-center pt-3 mb-2" id="lbl-news">
+                            <span class="text">O Ranking 2019 foi publicado por 187 veículos e gerou 11 milhões de impressões nos principais veículos do país como Valor Investe, GloboNews, CBN, Folha de S. Paulo, Exame e UOL. 
+                                <br>Veja abaixo todas as notícias publicadas.
+                            </span>
+                        </h2><!--/.s-title -->
+
+                        <ul class="s-a-n-list list-unstyled mt-5" id="s-a-n-list">
+                        </ul><!--/.s-n-companies -->
+        
+                    </div><!--/.s-container -->
+                    </div><!--/.s-hold -->
+        
+                </section><!--/.section -->
+
+
+        </div><!--/.main -->
+
+        <footer class="site-footer footer" id="site-footer">
+
+            <div class="footer-sitemap bg-dark text-light mt-0 py-5">
+            <div class="footer-sitemap-container container">
+
+                <div class="footer-row row align-items-end">
+                <div class="footer-col col-12 col-lg-auto">
+                    
+                    <img class="img-fluid mb-3" src="assets/img/logo-100os.png" alt="" width="70" />
+                    <p class="f-s-address">Rua Estados Unidos, 1078<br>01427-001 | São Paulo-SP | Brasil</p>
+                    <p class="f-s-address"><a href="mailto:helpme@openstartups.net">helpme@openstartups.net</a></p>
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-lg-auto">
+                
+                    <span class="f-s-title">Conteúdos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://blog.openstartups.net/">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/news">Notícias</a></li>
+                        <!--<li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/press">Imprensa</a></li>-->
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="ebooks.html">E-books</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto">
+                
+                    <span class="f-s-title">Aplicativos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://startup.openstartups.net/">Startup</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://matchmaking.openstartups.net/">Matchmaking</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://dashboard.openstartups.net" target="_blank">Dashboard</a></li>
+                        <!--<li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="eventos.html">Eventos</a></li>-->
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-md-auto ml-lg-0">
+
+                    <ul class="f-s-social nav mb-2">
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Facebook" href="https://www.facebook.com/100openstartups/"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Instagram" href="https://www.instagram.com/100openstartups/"><span class="fab fa-instagram"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="LinkedIn" href="https://www.linkedin.com/company/100-open-startups/"><span class="fab fa-linkedin"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Contato" href="mailto:helpme@openstartups.net"><span class="fas fa-envelope"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Regulamento" href="https://www.openstartups.net/files/pdf/Regulamento100OpenStartups_revB_2016.pdf"><span class="fas fa-file-pdf"></span></a></li>
+                    </ul>
+            
+                    <span class="f-s-text d-block">Participe da Plataforma 100 Open Startups</span>
+
+                    <a class="f-s-download mt-3 mr-3" href="https://apps.apple.com/app/100-open-startups/id1332822629">
+                        <img class="img-fluid" src="assets/img/badge-apple.png" alt="" />
+                    </a><!--/.f-s-download -->
+                    
+                    <a class="f-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                        <img class="img-fluid" src="assets/img/badge-google.png" alt="" />
+                    </a><!--/.f-s-download -->
+
+                </div><!--/.footer-col -->
+                </div><!--/.footer-row -->
+
+            </div><!--/.footer-sitemap-container -->
+            </div><!--/.footer-sitemap -->
+
+            <div class="footer-copyright small py-3">
+            <div class="footer-copyright-container container">
+                <p class="m-0">Copyright © 2020 - Allagi Engenharia Ltda.</p>
+            </div><!--/.footer-copyright-container -->
+            </div><!--/.footer-copyright -->
+
+        </footer><!--/.site-footer -->
+
+    </div><!--/.site -->
+
+    <div class="modal modal-menu fade" id="modal-menu" tabindex="-1" role="dialog" 
+        aria-labelledby="lbl-modal-menu" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+
+            <ul class="modal-nav nav flex-column">
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                <li class="nav-item my-4 border-t-1"></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+            </ul><!--/.modal-nav -->
+        
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+
+    <div class="modal modal-start fade" id="modal-start" tabindex="-1" role="dialog" 
+        aria-labelledby="lbl-modal-start" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <h2>Participe da plataforma 100 Open Startups</h2>
+            
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+ <div class="modal-body">
+            <div class="modal-rows row">
+            <div class="modal-cols col-12">
+                <a class="m-s-card card" target="_blank" href="https://app.openstartups.net">
+                <div class="card-body">
+                    <p class="mt-0 font-weight-bold">Startups, Tecnologias, Executivos e Profissionais</p>
+                    <p class="mt-2">Cocriando o futuro com negócios inovadores</p>
+                </div><!--/.card-body -->
+                <div class="card-feet card-footer">
+                    <p class="mt-0 btn-primary btn py-2"><span class="text">Conecte-se</span></p>
+                </div><!--/.card-feet -->
+                </a><!--/.m-s-card -->
+    
+            </div><!--/.modal-cols -->        
+            <div class="modal-cols col-12 text-center">
+    
+                <p class="pt-3">O aplicativo também está disponível nas lojas:</p>
+    
+                <a class="m-s-download mt-3 mr-3" href="https://apps.apple.com/app/100-open-startups/id1332822629">
+                    <img class="img-fluid" src="assets/img/badge-apple-black.png" alt="" />
+                </a><!--/.m-s-download -->
+                
+                <a class="m-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                    <img class="img-fluid" src="assets/img/badge-google-black.png" alt="" />
+                </a><!--/.m-s-download -->
+    
+            </div><!--/.modal-cols -->
+            </div><!--/.modal-rows -->
+            </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+    <div class="modal fade rankingpopup" id="popUpRanking" tabindex="-1" role="dialog" aria-labelledby="Ranking 2020" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body justify-content-center">
+            <a href="ranking2020.html" target="_blank"><img class="desktop mx-auto" src="assets/img/ranking/popup_ranking_dtp.png"></a>
+            <a href="ranking2020.html" target="_blank"><img class="mobile mx-auto" src="assets/img/ranking/popup_ranking_mobile.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Dinamize Tracking Script -->
+    <script src="//receiver.posclick.dinamize.com/forms/js/324918_1830.js"></script>
+
+    <script src="assets/js/eventbrite.js"></script>
+    <script src="assets/js/omnize.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/clippings/ranking-noticias.js"></script>
+
+    
+    <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
+
+</body>
+</html>

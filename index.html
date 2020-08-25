@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranking - 100 Open Startups</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/slick/slick.css" />
+    <link rel="stylesheet" href="assets/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-chrome-192x192.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png?v=pgrvqBwnge" />
+    <link rel="manifest" href="/img/favicon/manifest.json?v=pgrvqBwnge" />
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=pgrvqBwnge" color="#5bbad5" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=pgrvqBwnge" />
+    <meta name="apple-mobile-web-app-title" content="100 Open Startups" />
+    <meta name="application-name" content="100 Open Startups" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png?v=pgrvqBwnge" />
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=pgrvqBwnge" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Search Engine -->
+    <meta name="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Ranking 100 Open Startups">
+    <meta itemprop="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta itemprop="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ranking 100 Open Startups">
+    <meta name="twitter:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="twitter:site" content="@100openstartups">
+    <meta name="twitter:creator" content="@100openstartups">
+    <meta name="twitter:image:src" content="https://www.openstartups.net/site/assets/img/t_rankingc.png">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="Ranking 100 Open Startups">
+    <meta property="og:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta property="og:image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+    <meta property="og:url" content="https://www.openstartups.net/site/ranking.html">
+    <meta property="og:site_name" content="100 Open Startups">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="fb:admins" content="1616610695217236">
+    <meta property="fb:app_id" content="1763965840561818">
+    <meta property="og:type" content="website">
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64393643-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-64393643-18');
+    gtag('config', 'UA-64393643-1', {
+        linker: {
+            domains: [
+                '100os.net',
+                '100os.app',
+                '100os.events',
+                'startup.openstartups.net',
+                'app.openstartups.net',
+                'admin.openstartups.net',
+                'dashboard.openstartups.net',
+                'www.openstartups.net',
+                'openstartups.net',
+                'www.oiweek.com',
+                'oiweek.com',
+                'www.opentechs.net',
+                'emerge.openstartups.net',
+                'www.eventbrite.com.br',
+                'eventbrite.com.br',
+                'www.eventbrite.com',
+                'eventbrite.com',
+            ]
+        }
+    });
+    var trackOutboundLink = function(url, targetBlank) {
+        var params = {
+            event_category: 'outbound',
+            event_label: url,
+            transport_type: 'beacon'
+        };
+        if (!targetBlank) {
+            params.event_callback = function() {
+                document.location = url;
+            };
+        }
+        gtag('event', 'click', params);
+    };
+    </script>
+
+</head>
+<body>
+
+    <div class="site site-ranking" id="site">
+
+        <header class="site-header header" id="site-header">
+
+            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <div class="navbar-container container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="assets/img/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
+                    <span class="txt-named d-none d-md-block">Ranking TOP 100 Open Startups</span>
+                </a><!--/.navbar-brand -->
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="ranking.html">Ranking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-collapse -->
+
+                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                    <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    <span class="text sr-only">Menu</span>
+                </a><!--/.navbar-toggl -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar -->
+
+        </header><!--/.site-header -->
+
+        <div class="main pt-5" id="main" aria-labelledby="lbl-main">
+
+            <section class="about section pt-3" id="about" aria-labelledby="lbl-about">
+
+                <div class="s-cont-container container">
+                <div class="s-rows row align-items-center">
+                <div class="s-cols col-12 order-lg-2 col-lg-4 col-xl-5">
+
+                    <img class="img-fluid" data-aos="zoom-in" data-aos-duration="1000" src="assets/img/SELO_TOP_Ranking_cor.png" alt="" />
+
+                </div><!--/.s-cols -->
+                <div class="s-cols col-12 col-lg-8 col-xl-7">
+
+                    <div class="s-descr mb-4">
+                        <p class="lead">Publicado desde 2016, o Ranking 100 Open Startups destaca anualmente as <strong>startups mais atraentes para o mercado corporativo</strong> e as empresas líderes mais engajadas no ecossistema de inovação.</p>
+                        <p class="lead">A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as <strong>relações de negócio estabelecidas entre startups e grandes empresas</strong>.</p>
+                        <p class="lead">A premiação oficial do <a href="https://www.openstartups.net/site/ranking2020.html">Ranking 100 Open Startups 2020</a> será realizada durante o <a href="https://festival.whow.com.br/">Whow! Festival de Inovação</a>, que acontece nos dias 10, 11 e 12 de novembro de 2020.</p>
+                    </div><!--/.s-descr -->
+
+                </div><!--/.s-cols -->
+                </div><!--/.s-rows -->
+                </div><!--/.s-cont-container -->
+
+            </section><!--/.about -->
+                        
+            <section class="rankings-list section">
+
+                <div class="s-hold text-center">
+                <div class="s-hold-container container">
+                <div class="test d-lg-flex align-items-center justify-content-lg-between text-center text-lg-left mt-5">
+
+                    <p class="m-0" style="transform: translateY(2px);">Veja todos os rankings publicados:</p>
+
+                    <ul class="s-lists nav-pills nav m-0 p-0 justify-content-center flex-column flex-lg-row">
+                        <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                        <a class="btn-link btn-block btn p-0" href="ranking.html?tab=2020">
+                            <span class="text d-block">2020</span>
+                        </a></li>
+                        <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                        <a class="btn-link btn-block btn p-0" href="ranking.html?tab=2019">
+                            <span class="text d-block">2019</span>
+                        </a></li>
+                        <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                        <a class="btn-link btn-block btn p-0" href="ranking.html?tab=2018">
+                            <span class="text d-block">2018</span>
+                        </a></li>
+                        <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                        <a class="btn-link btn-block btn p-0" href="ranking.html?tab=2017">
+                            <span class="text d-block">2017</span>
+                        </a></li>
+                        <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                        <a class="btn-link btn-block btn p-0" href="ranking.html?tab=2016">
+                            <span class="text d-block">2016</span>
+                        </a></li>
+                    </ul><!--/.s-lists -->
+
+                </div><!--/.test-->
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+            
+            </section><!--/.rankings-list -->
+
+            <hr class="my-5" />
+
+            <section class="home-insights section py-3">
+
+                <div class="s-hold-container container">
+                <div class="s-hold p-3 p-lg-5 text-center">
+ 
+                    <h2 class="s-title h3 font-weight-bold">
+                        <span class="text">Insights do Ranking</span>
+                    </h2><!--/.s-title -->
+
+                    <p class="lead mt-3">Entenda mais a fundo as métricas e dados derivados do Ranking TOP 100 Open Startups 2020.</p>
+                    
+                    <a class="s-buttn mt-3" href="https://festival.whow.com.br/">
+                        <span class="text">Leia o nosso artigo</span>
+                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                    </a><!--/.s-buttn -->
+                
+                </div><!--/.s-hold -->
+                </div><!--/.s-hold-container -->
+
+            </section><!--/.home-insights -->
+
+        </div><!--/.main -->
+
+        <footer class="site-footer footer" id="site-footer">
+
+            <div class="footer-sitemap bg-dark text-light mt-5 py-5">
+            <div class="footer-sitemap-container container">
+
+                <div class="footer-row row align-items-stretch">
+                <div class="footer-col col-12 col-lg-auto">
+                    
+                    <a href="http://www.openstartups.net/site/index.html">
+                        <img class="img-fluid mb-3" src="https://www.openstartups.net/site/assets/img/logo-100os.png" alt="" width="70">
+                    </a>
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-sm-auto ml-lg-auto">
+                
+                    <span class="f-s-title">Institucional</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/index.html">Pagina Inicial</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/redes.html">Redes</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://www.openstartups.net/site/ranking.html">Ranking</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-sm-auto d-none d-xl-block">
+                
+                    <span class="f-s-title">Conteúdos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://blog.openstartups.net/">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/news">Notícias</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/press">Imprensa</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/ebooks">E-books</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-sm-auto col-md-auto">
+                
+                    <span class="f-s-title">Aplicativos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://startup.openstartups.net/">Startup</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://matchmaking.openstartups.net/">Matchmaking</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://dashboard.openstartups.net" target="_blank">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="/site/eventos.html">Eventos</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-md-auto ml-lg-0">
+
+                    <ul class="f-s-social nav mb-4">
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Facebook" href="https://www.facebook.com/100openstartups/"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Instagram" href="https://www.instagram.com/100openstartups/"><span class="fab fa-instagram"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="LinkedIn" href="https://www.linkedin.com/company/100-open-startups/"><span class="fab fa-linkedin"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Contato" href="mailto:helpme@openstartups.net"><span class="fas fa-envelope"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Regulamento" href="https://www.openstartups.net/files/pdf/Regulamento100OpenStartups_revB_2016.pdf"><span class="fas fa-file-pdf"></span></a></li>
+                    </ul>
+            
+                    <span class="f-s-text d-block">Participe da Plataforma 100 Open Startups</span>
+
+                    <a class="f-s-download mt-3 mr-3" href="https://apps.apple.com/app/100-open-startups/id1332822629">
+                        <img class="img-fluid" src="https://www.openstartups.net/site/assets/img/badge-apple.png" alt="">
+                    </a><!--/.f-s-download -->
+                    
+                    <a class="f-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                        <img class="img-fluid" src="https://www.openstartups.net/site/assets/img/badge-google.png" alt="">
+                    </a><!--/.f-s-download -->
+
+                </div><!--/.footer-col -->
+                </div><!--/.footer-row -->
+
+            </div><!--/.footer-sitemap-container -->
+            </div><!--/.footer-sitemap -->
+
+            <div class="footer-copyright small py-3">
+            <div class="footer-copyright-container container">
+                <p class="m-0">Copyright © 2020 - Allagi Engenharia Ltda.</p>
+            </div><!--/.footer-copyright-container -->
+            </div><!--/.footer-copyright -->
+
+        </footer><!--/.site-footer -->
+
+    </div><!--/.site -->
+
+    <div class="modal modal-menu fade" id="modal-menu" tabindex="-1" role="dialog"
+        aria-labelledby="lbl-modal-menu" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+
+            <ul class="modal-nav nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="ranking.html">Ranking</a></li>
+                <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
+                <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>  
+            </ul><!--/.modal-nav -->
+
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+     
+    <script src="assets/js/eventbrite.js"></script>
+    <script src="assets/js/omnize.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/ranking/top-startups-2019.js"></script>
+    <script src="assets/js/ranking.js"></script>
+
+    <script src="assets/js/clippings/ranking.js"></script>
+
+    <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
+
+</body>
+</html>
