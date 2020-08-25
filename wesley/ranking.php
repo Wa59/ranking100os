@@ -12,9 +12,12 @@ array_walk($top_categoria, function(&$a) use ($top_categoria) {
 });
 array_shift($top_categoria);
 ?>
-<?php require ('./inc/header.php'); ?>
 
 <script>
+function buildList() {
+    
+}
+
 function execFilter() {
     $('#top-20-list').hide();
     $('#top-categorias-list').hide();
@@ -138,7 +141,7 @@ $(document).ready(function(){
                 </thead>
                 <tbody>
                     <?php foreach ($top20_100 as $k => $value) { 
-                        if ($value['Ranking'] != 'A-Z') {?>
+                        if ($value['Ranking'] != 'A-Z') { ?>
                             <tr>
                                 <td class="number"><span><?php echo $value['Ranking']; ?></span></td>
                                 <td>
@@ -204,4 +207,3 @@ $(document).ready(function(){
     </div><!--/.page__body -->
 </div><!--/.page -->
 
-<?php require ('./inc/footer.php'); ?>
