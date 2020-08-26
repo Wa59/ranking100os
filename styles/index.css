@@ -1,0 +1,61 @@
+.ranking .carousel-inner,
+.ranking .carousel-ctrls {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    .ranking .carousel-inner {
+        border-radius: 1rem;
+        box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    .ranking .carousel-ctrls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .ranking .carousel-ctrls li {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-weight: 500;
+        height: 30px;
+        justify-content: center;
+        padding: 0 0.5rem;
+        width: 30px;
+    }
+    .ranking .carousel-ctrls li.active {
+        color: var(--startups);
+    }
+
+.home-insights .s-cols {
+    position: relative;
+}
+.home-insights .s-cols .logo-ranking {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.home-open-talks {
+    background: #003F7B;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.home-open-talks .s-title,
+.home-open-talks .s-buttn {
+    color: #fff;
+}
+.home-open-talks::before {
+    background: transparent no-repeat 50% 0;
+    background-image: url(../images/bg-site.png);
+    background-position: cover;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+}

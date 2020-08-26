@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranking 100 Open Startups - 100 Open Startups</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/ranking.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-chrome-192x192.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png?v=pgrvqBwnge" />
+    <link rel="manifest" href="/img/favicon/manifest.json?v=pgrvqBwnge" />
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=pgrvqBwnge" color="#5bbad5" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=pgrvqBwnge" />
+    <meta name="apple-mobile-web-app-title" content="100 Open Startups" />
+    <meta name="application-name" content="100 Open Startups" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png?v=pgrvqBwnge" />
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=pgrvqBwnge" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Search Engine -->
+    <meta name="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Destaques Ranking 100 Open Startups">
+    <meta itemprop="description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta itemprop="image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Destaques Ranking 100 Open Startups">
+    <meta name="twitter:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta name="twitter:site" content="@100openstartups">
+    <meta name="twitter:creator" content="@100openstartups">
+    <meta name="twitter:image:src" content="https://www.openstartups.net/site/assets/img/t_rankingc.png">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="Destaques Ranking 100 Open Startups">
+    <meta property="og:description" content="O Ranking 100 Open Startups é uma publicação realizada desde 2016 que anualmente destaca as startups mais atraentes para o mercado corporativo. A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as relações de negócio estabelecidas entre startups e grandes empresas.">
+    <meta property="og:image" content="https://www.openstartups.net/site/assets/img/og_rankingc.png">
+    <meta property="og:url" content="https://www.openstartups.net/site/ranking-list.html">
+    <meta property="og:site_name" content="100 Open Startups">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="fb:admins" content="1616610695217236">
+    <meta property="fb:app_id" content="1763965840561818">
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64393643-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-64393643-18');
+    gtag('config', 'UA-64393643-1', {
+        linker: {
+            domains: [
+                '100os.net',
+                '100os.app',
+                '100os.events',
+                'startup.openstartups.net',
+                'app.openstartups.net',
+                'admin.openstartups.net',
+                'dashboard.openstartups.net',
+                'www.openstartups.net',
+                'openstartups.net',
+                'www.oiweek.com',
+                'oiweek.com',
+                'www.opentechs.net',
+                'emerge.openstartups.net',
+                'www.eventbrite.com.br',
+                'eventbrite.com.br',
+                'www.eventbrite.com',
+                'eventbrite.com',
+            ]
+        }
+    });
+    var trackOutboundLink = function(url, targetBlank) {
+        var params = {
+            event_category: 'outbound',
+            event_label: url,
+            transport_type: 'beacon'
+        };
+        if (!targetBlank) {
+            params.event_callback = function() {
+                document.location = url;
+            };
+        }
+        gtag('event', 'click', params);
+    };
+    </script>
+  
+</head>
+<body>
+
+    <div class="site site-ranking-list" id="site">
+
+        <header class="site-header header" id="site-header">
+
+            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <div class="navbar-container container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
+                </a><!--/.navbar-brand -->
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                        <li class="nav-item mx-3"><span class="nav-link text-muted">|</span></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-collapse -->
+
+                <a class="ml-4 d-lg-navbar-buttn ml-auto ml-ml-4 d-lg-none" href="#modal-start" data-target="#modal-start" data-toggle="modal">
+                    <span class="text font-weight-bold text-uppercase">Começar</span>
+                </a><!--/.navbar-buttn -->
+
+                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                    <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    <span class="text">Menu</span>
+                </a><!--/.navbar-toggl -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar -->
+
+        </header><!--/.site-header -->
+    
+        <div class="main" id="main" aria-labelledby="lbl-main">
+
+            <div class="heading section" id="heading">
+
+                <div class="s-hold py-5">
+                <div class="s-hold-container container py-5">
+
+                    <h1 class="s-title" id="lbl-main">
+                        <span class="text">Conheça os destaques do<br> Ranking 100 Open Startups</span>
+                    </h1><!--/.s-title -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </div><!--/.heading -->
+
+            <section class="about section pt-5" id="about" aria-labelledby="lbl-about">
+
+                <div class="s-cont-container container pb-5">
+                <div class="s-rows row align-items-center">
+                <div class="s-cols col-12 col-lg-4 col-xl-5">
+
+                    <img class="img-fluid" data-aos="zoom-in" data-aos-duration="1000" src="images/selo_ranking.svg" alt="" />
+                
+                </div><!--/.s-cols -->
+                <div class="s-cols col-12 col-lg-8 col-xl-7 offset-xl-0">                
+
+                    <h2 class="s-title" id="lbl-about">
+                        <span class="text">Em 2019, o <strong>Ranking 100 Open Startups</strong> foi 3 vezes maior</span>
+                    </h2><!--/.s-title -->
+
+                    <div class="s-descr mt-4">
+                        <p class="lead">Dentre as 8.600 startups candidatas, 895 declararam relacionamentos que foram validados pelo mercado corporativo. Em relação as grandes empresas, 2.200 corporações se candidataram e 876 declararam relacionamentos válidos com startups.</p>
+                    </div><!--/.s-descr -->
+
+                    <a class="s-buttn mt-3" href="ranking-artigo.html">
+                        <span class="text">Um conduíte Open entre a inovação e a cultura corporativa</span>
+                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                    </a><!--/.s-buttn -->
+
+                    <a class="s-buttn mt-2" href="ranking.html">
+                        <span class="text">Entenda a metodologia do Ranking 100 Open Startups</span>
+                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                    </a><!--/.s-buttn -->
+
+                </div><!--/.s-cols -->
+                </div><!--/.s-rows -->
+                </div><!--/.s-cont-container -->
+
+            </section><!--/.about -->
+
+            <section class="older-rankings section pt-0 pb-5">
+
+                <div class="s-hold pb-5">
+                <div class="s-hold-container container">
+
+                    <div class="test d-lg-flex align-items-center justify-content-lg-between text-center text-lg-left mt-0">
+
+                        <p class="lead m-0" style="transform: translateY(2px);">Veja todos os rankings publicados:</p>
+
+                        <ul class="s-lists nav-pills nav m-0 p-0 justify-content-center flex-column flex-lg-row">
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-primary btn-block btn pt-2 pb-2 active" href="#top-2019" data-toggle="tab" aria-controles="top-2019" aria-selected="true">
+                                <span class="text d-block" style="transform:translateY(2px);">2019</span>
+                            </a></li>
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-primary btn-block btn pt-2 pb-2" href="#top-2018" data-toggle="tab" aria-controles="top-2018" aria-selected="false">
+                                <span class="text d-block" style="transform:translateY(2px);">2018</span>
+                            </a></li>
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-primary btn-block btn pt-2 pb-2" href="#top-2017" data-toggle="tab" aria-controles="top-2017" aria-selected="false">
+                                <span class="text d-block" style="transform:translateY(2px);">2017</span>
+                            </a></li>
+                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
+                            <a class="btn-primary btn-block btn pt-2 pb-2" href="#top-2016" data-toggle="tab" aria-controles="top-2016" aria-selected="false">
+                                <span class="text d-block" style="transform:translateY(2px);">2016</span>
+                            </a></li>
+                        </ul><!--/.s-lists -->
+
+                    </div><!--/.test -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </section><!--/.older-rankings -->
+
+            <hr class="mt-0 mb-5">
+
+            <div class="top-years tab-content" id="top-years">
+
+                <div class="top-year-2016 tab-pane fade show" id="top-2016">
+
+                    <section class="top-os section py-5" id="top-2016-os" aria-labelledby="lbl-top-2016-os">
+
+                        <div class="s-hold">
+                        <div class="s-hold-container container">
+        
+                            <h2 class="s-title mb-5" id="lbl-top-2016-os">
+                                <span class="text"><strong class="text-uppercase">Top 100</strong> Open Startups 2016</span>
+                            </h2><!--/.s-title -->
+
+                            <div class="table-responsive">
+                            <table class="table table-hover" id="top-2016-os-table">
+                            <thead>
+                            <tr>
+                                <th width="01%"><span>Rank</span></th>
+                                <th width="15%"><span>Startup</span></th>
+                                <th width="65%"><span>Descrição</span></th>
+                                <th width="20%"><span>Categoria</span></th>
+                                <th width="01%"><span>Localização</span></th>
+                                <th width="01%"><span>Pontos</span></th>
+                                <th width="01%"><span>Match</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="8">Carregando...</td>
+                                </tr>
+                            </tbody>
+                            </table><!--/.table -->
+                            </div><!--/.table-responsive -->
+
+                        </div><!--/.s-hold-container -->
+                        </div><!--/.s-hold -->
+
+                    </section><!--/.top-os -->
+
+                </div><!--/.top-year-2016 -->
+
+                <div class="top-year-2017 tab-pane fade show" id="top-2017">
+
+                    <section class="top-os section py-5" id="top-2017-os" aria-labelledby="lbl-top-2017-os">
+
+                        <div class="s-hold">
+                        <div class="s-hold-container container">
+        
+                            <h2 class="s-title mb-5" id="lbl-top-2017-os">
+                                <span class="text"><strong class="text-uppercase">Top 100</strong> Open Startups 2017</span>
+                            </h2><!--/.s-title -->
+
+                            <div class="table-responsive">
+                            <table class="table table-hover" id="top-2017-os-table">
+                            <thead>
+                            <tr>
+                                <th width="01%"><span>Rank</span></th>
+                                <th width="15%"><span>Startup</span></th>
+                                <th width="65%"><span>Descrição</span></th>
+                                <th width="20%"><span>Categoria</span></th>
+                                <th width="01%"><span>Localização</span></th>
+                                <th width="01%"><span>Pontos</span></th>
+                                <th width="01%"><span>Match</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="8">Carregando...</td>
+                                </tr>
+                            </tbody>
+                            </table><!--/.table -->
+                            </div><!--/.table-responsive -->
+
+                        </div><!--/.s-hold-container -->
+                        </div><!--/.s-hold -->
+
+                    </section><!--/.top-os -->
+
+                </div><!--/.top-year-2017 -->
+
+                <div class="top-year-2018 tab-pane fade show" id="top-2018">
+
+                    <section class="categories section py-5" id="categories-2018" aria-labelledby="lbl-categories-2018">
+
+                        <div class="s-hold">
+                        <div class="s-hold-container container">
+        
+                            <h2 class="s-title mb-5" id="lbl-categories-2018">
+                                <span class="text">Confira o Ranking 100 Open Startups 2018</span>
+                            </h2><!--/.s-title -->
+
+                            <ul class="nav-pills-ranking nav justify-content-start">
+                                <li class="nav-item"><a class="nav-link active" href="#top-2018-os" id="lbl-top-2018-os" role="tab"
+                                    data-toggle="tab" aria-controls="top-2018-os" aria-selected="true">
+                                    <strong>Top 100</strong> Open Startups
+                                </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#top-2018-oc" id="lbl-top-2018-oc" role="tab"
+                                    data-toggle="tab" aria-controls="top-2018-oc" aria-selected="false">
+                                    <strong>Top 50</strong> Open Corps
+                                </a></li>
+                                <li class="nav-item mr-xl-3"><a class="nav-link" href="#top-2018-ev" id="lbl-top-2018-ev" role="tab"
+                                    data-toggle="tab" aria-controls="top-2018-ev" aria-selected="false">
+                                    <strong>Top 200</strong> Evaluators
+                                </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#top-2018-gc" id="lbl-top-2018-gc" role="tab"
+                                    data-toggle="tab" aria-controls="top-2018-gc" aria-selected="false">
+                                    <strong>Top</strong> Grand Challenges
+                                </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#top-2018-se" id="lbl-top-2018-se" role="tab"
+                                    data-toggle="tab" aria-controls="top-2018-se" aria-selected="false">
+                                    <strong>Top</strong> Sectors
+                                </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#top-2018-it" id="lbl-top-2018-it" role="tab"
+                                    data-toggle="tab" aria-controls="top-2018-it" aria-selected="false">
+                                    <strong>Top</strong> Innovation Trends
+                                </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#top-2018-ea" id="lbl-top-2018-ea" role="tab"
+                                    data-toggle="tab" aria-controls="top-2018-ea" aria-selected="false">
+                                    <strong>Top</strong> Enterprise Applications
+                                </a></li>
+                            </ul><!--/.nav-pills-ranking -->
+
+                        </div><!--/.s-hold-container -->
+                        </div><!--/.s-hold -->
+
+                    </section><!--/.categories -->
+
+                    <div class="top-year-2018-content tab-content">
+
+                        <section class="top-os section py-5 tab-pane fade show active" id="top-2018-os" aria-labelledby="lbl-top-2018-os">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP 100</strong> Open Startups 2018</span>
+                                </h3><!--/.s-title -->
+    
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-2018-os-table">
+                                <thead>
+                                <tr>
+                                    <th width="01%"><span>Rank</span></th>
+                                    <th width="15%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="20%"><span>Categoria</span></th>
+                                    <th width="01%"><span>Localização</span></th>
+                                    <th width="01%"><span>Pontos</span></th>
+                                    <th width="01%"><span>Match</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Startups must have matches/contracts with at least 3 different large companies;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Maximum yearly revenues of USD 2,5 MM in 2017;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score according to ranking methodology (1, 5, 10, 20 points);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Tie-break according to: 1. contract score, 2. number of different large companies, 3. matches in the online app and events, 4. number of A grades, 5. average grade.</li>
+                                </ul><!--/.s-lists -->
+    
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-os -->
+
+                        <section class="top-oc section py-5 tab-pane fade show" id="top-2018-oc" aria-labelledby="lbl-top-2018-oc">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP 50</strong> Open Corps 2018</span>
+                                </h3><!--/.s-title -->
+    
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-2018-oc-table">
+                                <thead>
+                                <tr>
+                                    <th width="01%"><span>Rank</span></th>
+                                    <th width="99%"><span>Corporation</span></th>
+                                    <th width="01%"><span>Pontos</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes corporations with least 1 registered contracts with startups in the last 3 years;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Corporations are companies with at least 100 employees;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score includes evaluations score and contracts score according to startup ranking methodology (1, 5, 10, 20 points);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Evaluation score is made of 0.1 point per online evaluation / 0.2 point per demoday evaluation / 1 point per Speed-Dating evaluation.</li>
+                                </ul><!--/.s-lists -->
+    
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-oc -->
+
+                        <section class="top-ev section py-5 tab-pane fade show" id="top-2018-ev" aria-labelledby="lbl-top-2018-ev">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP 200</strong> Evaluators 2018</span>
+                                </h3><!--/.s-title -->
+    
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-2018-ev-table">
+                                <thead>
+                                <tr>
+                                    <th width="01%"><span>Rank</span></th>
+                                    <th width="60%"><span>Nome</span></th>
+                                    <th width="40%"><span>Localização</span></th>
+                                    <th width="01%"><span>Pontos</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes evaluators registered in the 100 Open Startups platform;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Based on online, demoday and speed-dating evaluations for the last 3 years;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Evaluators that changed companies during the period are listed just once;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Evaluator must not be currently an employee or direct provider of 100 Open Startups;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score is made of 0.1 point per online evaluation / 0.2 point per demoday evaluation / 1 point per Speed-Dating evaluation;</li>
+                                </ul><!--/.s-lists -->
+    
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-ev -->
+
+                        <section class="top-gc section py-5 tab-pane fade show" id="top-2018-gc" aria-labelledby="lbl-top-2018-gc">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP</strong> Grand Challenges 2018</span>
+                                </h3><!--/.s-title -->
+
+                                <div class="s-slick-carousel" id="top-2018-gc-carousel">
+                                </div><!--/.s-slick-carousel -->
+
+                                <div class="s-accordion accordion mt-5" id="top-2018-gc-accordion">
+                                </div><!--/.s-accordion -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes startups with valid points at the 100 Open Startups 2018 Ranking;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Size limits of the Top 100 Open Startups ranking do not apply here (minimum number of matches with companies, maximum revenues, etc);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score and tie-break according to ranking methodology (1, 5, 10, 20 points).</li>
+                                </ul><!--/.s-lists -->
+                                        
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-gc -->
+
+                        <section class="top-se section py-5 tab-pane fade show" id="top-2018-se" aria-labelledby="lbl-top-2018-se">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP</strong> Sectors 2018</span>
+                                </h3><!--/.s-title -->
+
+                                <div class="s-slick-carousel" id="top-2018-se-carousel">
+                                </div><!--/.s-slick-carousel -->
+
+                                <div class="s-accordion accordion mt-5" id="top-2018-se-accordion">
+                                </div><!--/.s-accordion -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes startups with valid points at the 100 Open Startups 2018 Ranking;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Size limits of the Top 100 Open Startups ranking do not apply here (minimum number of matches with companies, maximum revenues, etc);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score and tie-break according to ranking methodology (1, 5, 10, 20 points).</li>
+                                </ul><!--/.s-lists -->
+                                        
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-se -->
+
+                        <section class="top-it section py-5 tab-pane fade show" id="top-2018-it" aria-labelledby="lbl-top-2018-it">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP</strong> Innovation Trends 2018</span>
+                                </h3><!--/.s-title -->
+
+                                <div class="s-slick-carousel" id="top-2018-it-carousel">
+                                </div><!--/.s-slick-carousel -->
+
+                                <div class="s-accordion accordion mt-5" id="top-2018-it-accordion">
+                                </div><!--/.s-accordion -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes startups with valid points at the 100 Open Startups 2018 Ranking;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Size limits of the Top 100 Open Startups ranking do not apply here (minimum number of matches with companies, maximum revenues, etc);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score and tie-break according to ranking methodology (1, 5, 10, 20 points).</li>
+                                </ul><!--/.s-lists -->
+                                        
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-it -->
+
+                        <section class="top-ea section py-5 tab-pane fade show" id="top-2018-ea" aria-labelledby="lbl-top-2018-ea">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP</strong> Enterprise Applications 2018</span>
+                                </h3><!--/.s-title -->
+
+                                <div class="s-slick-carousel" id="top-2018-ea-carousel">
+                                </div><!--/.s-slick-carousel -->
+
+                                <div class="s-accordion accordion mt-5" id="top-2018-ea-accordion">
+                                </div><!--/.s-accordion -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes startups with valid points at the 100 Open Startups 2018 Ranking;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Size limits of the Top 100 Open Startups ranking do not apply here (minimum number of matches with companies, maximum revenues, etc);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score and tie-break according to ranking methodology (1, 5, 10, 20 points).</li>
+                                </ul><!--/.s-lists -->
+                                        
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-ea -->
+
+                    </div><!--/.top-year-2018-content -->
+
+                </div><!--/.top-year-2018 -->
+
+                <div class="top-year-2019 tab-pane fade show active" id="top-2019">
+
+                    <section class="categories section py-5" id="categories-2019" aria-labelledby="lbl-categories-2019">
+
+                        <div class="s-hold">
+                        <div class="s-hold-container container">
+        
+                            <h2 class="s-title mb-5" id="lbl-categories-2019">
+                                <span class="text">Confira o Ranking 100 Open Startups 2019</span>
+                            </h2><!--/.s-title -->
+
+                            <ul class="nav-pills-ranking nav justify-content-center row">
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                <a class="nav-link active" href="#top-2019-os" id="lbl-top-2019-os" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-os" aria-selected="true">
+                                    <strong>Top 100</strong> Open Startups
+                                </a></li>
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                <a class="nav-link" href="#top-2019-oc" id="lbl-top-2019-oc" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-oc" aria-selected="false">
+                                    <strong>Top 50</strong> Open Corps
+                                </a></li>
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                <a class="nav-link" href="#top-2019-ev" id="lbl-top-2019-ev" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-ev" aria-selected="false">
+                                    <strong>Top 200</strong> Evaluators
+                                </a></li>
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                <a class="nav-link" href="#top-2019-ec" id="lbl-top-2019-ec" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-ec" aria-selected="false">
+                                    <strong>Top 10</strong> Ecosystem
+                                </a></li>
+                            </ul><!--/.nav-pills-ranking -->
+
+                        </div><!--/.s-hold-container -->
+                        </div><!--/.s-hold -->
+
+                        <div class="s-hold mt-5">
+                        <div class="s-hold-container container-fluid" style="max-width: 1410px;">
+
+                            <ul class="nav-pills-ranking nav justify-content-center row">
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c565" id="lbl-top-2019-c565" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c565" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Human Resources</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c566" id="lbl-top-2019-c566" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c566" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Productivity</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c567" id="lbl-top-2019-c567" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c567" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Marketing</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c568" id="lbl-top-2019-c568" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c568" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Industry</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c569" id="lbl-top-2019-c569" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c569" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Transport & Logistics</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c570" id="lbl-top-2019-c570" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c570" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Computer Vision</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c571" id="lbl-top-2019-c571" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c571" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Education</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c572" id="lbl-top-2019-c572" role="tab"
+                                     data-toggle="tab" aria-controls="top-2019-c572" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Marketplace</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c573" id="lbl-top-2019-c573" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c573" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">VR/AR</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c574" id="lbl-top-2019-c574" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c574" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Environment</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c575" id="lbl-top-2019-c575" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c575" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Retail</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c576" id="lbl-top-2019-c576" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c576" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">IoT</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c577" id="lbl-top-2019-c577" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c577" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Big Data</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c578" id="lbl-top-2019-c578" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c578" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Customer Service</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c579" id="lbl-top-2019-c579" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c579" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Agriculture</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c580" id="lbl-top-2019-c580" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c580" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Legal</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c581" id="lbl-top-2019-c581" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c581" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Financial Services</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c582" id="lbl-top-2019-c582" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c582" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Construction</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c583" id="lbl-top-2019-c583" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c583" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Healthcare</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c584" id="lbl-top-2019-c584" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c584" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Energy</span>
+                                </a></li><!--/.nav-item -->
+                                <li class="nav-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <a class="nav-link" href="#top-2019-c585" id="lbl-top-2019-c585" role="tab"
+                                    data-toggle="tab" aria-controls="top-2019-c585" aria-selected="false">
+                                    <span class="text font-weight-bold">TOP 10</span>
+                                    <span class="text">Biotech</span>
+                                </a></li><!--/.nav-item -->
+                            </ul><!--/.nav-pills-ranking -->
+            
+                        </div><!--/.s-hold-container -->
+                        </div><!--/.s-hold -->
+
+                    </section><!--/.categories -->
+
+                    <div class="top-year-2019-content tab-content">
+
+                        <section class="top-os section py-5 tab-pane fade show active" id="top-2019-os" aria-labelledby="lbl-top-2019-os">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP 100</strong> Open Startups 2019</span>
+                                </h3><!--/.s-title -->
+    
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-2019-os-table">
+                                <thead>
+                                <tr>
+                                    <th width="01%"><span>Rank</span></th>
+                                    <th width="15%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="20%"><span>Categoria</span></th>
+                                    <th width="01%"><span>Localização</span></th>
+                                    <th width="01%"><span>Pontos</span></th>
+                                    <th width="01%"><span>Match</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Startups com relacionamentos/contratos com grandes empresas conforme contratos/relacionamentos declarados, validados e auditados;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> São considerados os relacionamentos/contratos que estiveram ativos entre Jun/2018 e Mai/2019 (período do ranking);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Startups devem ter relacionamentos com no mínimo 3 empresas diferentes ou pelo menos 10 pontos;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Limite máximo de faturamento em 2018 ou investimento recebido até o momento R$ 10 milhões;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Pontuação conforme metodologia do ranking (1, 5, 10, 20 pontos);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Desempate por numero de empresas com as quais tem relacioanmento, número de contratos, matches no aplicativo, quantidade de notas A nas avaliações, nota média de avaliações.</li>
+                                </ul><!--/.s-lists -->
+    
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-os -->
+
+                        <section class="top-oc section py-5 tab-pane fade show" id="top-2019-oc" aria-labelledby="lbl-top-2019-oc">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP 50</strong> Open Corps 2019</span>
+                                </h3><!--/.s-title -->
+    
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-2019-oc-table">
+                                <thead>
+                                <tr>
+                                    <th width="01%"><span>Rank</span></th>
+                                    <th width="99%"><span>Corporation</span></th>
+                                    <th width="01%"><span>Pontos</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Grandes empresas com relacionamentos com startups no período do ranking;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Apenas grandes empresas com pelo menos 100 funcionários;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Pontuação da grande empresa equivalente à pontuação das startups (1, 5, 10 ou 20 pontos). ;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Desempate por numero de contratos, número de startups com as quais tem relacionamento, avaliações de startups realizadas.</li>
+                                </ul><!--/.s-lists -->
+    
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-oc -->
+
+                        <section class="top-ev section py-5 tab-pane fade show" id="top-2019-ev" aria-labelledby="lbl-top-2019-ev">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP 200</strong> Evaluators 2019</span>
+                                </h3><!--/.s-title -->
+    
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-2019-ev-table">
+                                <thead>
+                                <tr>
+                                    <th width="01%"><span>Rank</span></th>
+                                    <th width="60%"><span>Nome</span></th>
+                                    <th width="40%"><span>Localização</span></th>
+                                    <th width="01%"><span>Pontos</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Avaliadores cadastrados no 100 Open Startups;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Baseado em avaliações realizadas online, em eventos de demoday e eventos de speed-dating no período do ranking;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> 0,1 ponto por avaliação  online / 0,2 ponto por avaliação em demoday / 1 ponto por avaliação em Speed-Dating;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Desempate pelo maior número de avaliações em Speed-Dating, maior número de avaliações em Demoday, maior número de avaliações online, data de cadastro mais antiga na 100 Open Startups;</li>
+                                </ul><!--/.s-lists -->
+    
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-ev -->
+
+                        <section class="top-ec section py-5 tab-pane fade show" id="top-2019-ec" aria-labelledby="lbl-top-2019-ec">
+
+                            <div class="s-hold">
+                            <div class="s-hold-container container">
+
+                                <h3 class="s-title mb-5">
+                                    <span class="text"><strong class="text-uppercase">TOP 10</strong> Ecosystem 2019</span>
+                                </h3><!--/.s-title -->
+    
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-2019-ec-table">
+                                <thead>
+                                <tr>
+                                    <th width="01%"><span>Rank</span></th>
+                                    <th width="99%"><span>Nome</span></th>
+                                    <th width="01%"><span>Pontos</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                                <ul class="s-lists fa-ul small mt-4 ml-0">
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Agentes do ecossistema mencionados pelas startups do ranking 2019;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Não inclui Corporações (já incluídas em Open Corps);</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Pontuação equivalente à quantidade de startups que mencionaram o agente do ecossistema na sua inscrição;</li>
+                                    <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Desempate pelo total de pontos das startups de cada agente.</li>
+                                </ul><!--/.s-lists -->
+    
+                            </div><!--/.s-hold-container -->
+                            </div><!--/.s-hold -->
+    
+                        </section><!--/.top-ec -->
+
+
+                    </div><!--/.top-year-2019-content -->
+
+                </div><!--/.top-year-2019 -->
+
+            </div><!--/.top-year-tab-content -->
+
+            <hr class="my-5" />
+            
+            <section class="featured section py-5" id="featured" aria-labelledby="lbl-featured" data-aos="flip-up" data-aos-delay="300">
+
+                <div class="s-hold">
+                <div class="s-hold-container container">
+
+                    <h2 class="s-title sr-only" id="lbl-featured">
+                        <span class="text">Destaques</span>
+                    </h2><!--/.s-title -->
+
+                    <div class="s-carousel carousel slide" id="featured-carousel" data-ride="carousel">
+                        <div class="s-carousel-inner carousel-inner">
+
+                           
+
+                            <a class="s-carousel-item carousel-item active" href="produtos/100-10-1.html" target="_blank">
+                                <img class="d-none d-md-block w-100" src="banners/BannerLogos-site1000s-hor-d.jpg" alt="" />
+                                <img class="d-md-none w-100" src="banners/BannerLogos-site1000s-vert-m.jpg" alt="" />
+                            </a><!--/.s-carousel-item -->
+    
+                           
+    
+                            <a class="s-carousel-item carousel-item" href="https://100os.net/ingressoWhow" target="_blank">
+                                <img class="d-none d-md-block w-100" src="banners/banner_desktop_site100os_v3.png" alt="" />
+                                <img class="d-md-none w-100" src="banners/banner_mobile_site100os_v3.png" alt="" />
+                            </a><!--/.s-carousel-item -->
+    
+                            <a class="s-carousel-item carousel-item" href="https://www.openangels.net/" target="_blank">
+                                <img class="d-none d-md-block w-100" src="banners/banner-d-oa.png" alt="" />
+                                <img class="d-md-none w-100" src="banners/banner-m-oa.png" alt="" />
+                            </a><!--/.s-carousel-item -->
+
+                        </div><!--/.s-carousel-inner -->
+                        <ol class="s-carousel-ctrls carousel-indicators">
+                            <li data-target="#featured-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#featured-carousel" data-slide-to="1" class=""></li>
+                            <li data-target="#featured-carousel" data-slide-to="2" class=""></li>
+                        </ol><!--/.s-carousel-ctrls -->
+                    </div><!--/.s-carousel -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </section><!--/.featured -->
+
+        </div><!--/.main -->
+
+        <footer class="site-footer footer mt-5" id="site-footer">
+
+            <div class="footer-sitemap bg-dark text-light mt-0 py-5">
+            <div class="footer-sitemap-container container">
+
+                <div class="footer-row row align-items-end">
+                <div class="footer-col col-12 col-lg-auto">
+                    
+                    <img class="img-fluid mb-3" src="images/logo-100os.png" alt="" width="70" />
+                    <p class="f-s-address">Rua Estados Unidos, 1078<br>01427-001 | São Paulo-SP | Brasil</p>
+                    <p class="f-s-address"><a href="mailto:helpme@openstartups.net">helpme@openstartups.net</a></p>
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-lg-auto">
+                
+                    <span class="f-s-title">Conteúdos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://blog.openstartups.net/">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/news">Notícias</a></li>
+                        <!--<li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/press">Imprensa</a></li>-->
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="ebooks.html">E-books</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto">
+                
+                    <span class="f-s-title">Aplicativos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://startup.openstartups.net/">Startup</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://matchmaking.openstartups.net/">Matchmaking</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://dashboard.openstartups.net" target="_blank">Dashboard</a></li>
+                        <!--<li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="eventos.html">Eventos</a></li>-->
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-md-auto ml-lg-0">
+
+                    <ul class="f-s-social nav mb-2">
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Facebook" href="https://www.facebook.com/100openstartups/"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Instagram" href="https://www.instagram.com/100openstartups/"><span class="fab fa-instagram"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="LinkedIn" href="https://www.linkedin.com/company/100-open-startups/"><span class="fab fa-linkedin"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Contato" href="mailto:helpme@openstartups.net"><span class="fas fa-envelope"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Regulamento" href="https://www.openstartups.net/files/pdf/Regulamento100OpenStartups_revB_2016.pdf"><span class="fas fa-file-pdf"></span></a></li>
+                    </ul>
+            
+                    <span class="f-s-text d-block">Participe da Plataforma 100 Open Startups</span>
+
+                    <a class="f-s-download mt-3 mr-3" href="https://apps.apple.com/app/100-open-startups/id1332822629">
+                        <img class="img-fluid" src="images/badge-apple.png" alt="" />
+                    </a><!--/.f-s-download -->
+                    
+                    <a class="f-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                        <img class="img-fluid" src="images/badge-google.png" alt="" />
+                    </a><!--/.f-s-download -->
+
+                </div><!--/.footer-col -->
+                </div><!--/.footer-row -->
+
+            </div><!--/.footer-sitemap-container -->
+            </div><!--/.footer-sitemap -->
+
+            <div class="footer-copyright small py-3">
+            <div class="footer-copyright-container container">
+                <p class="m-0">Copyright © 2020 - Allagi Engenharia Ltda.</p>
+            </div><!--/.footer-copyright-container -->
+            </div><!--/.footer-copyright -->
+
+        </footer><!--/.site-footer -->
+
+    </div><!--/.site -->
+
+    <div class="modal modal-menu fade" id="modal-menu" tabindex="-1" role="dialog" 
+        aria-labelledby="lbl-modal-menu" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+
+            <ul class="modal-nav nav flex-column">
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                <li class="nav-item my-4 border-t-1"></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+            </ul><!--/.modal-nav -->
+        
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+
+    <div class="modal modal-start fade" id="modal-start" tabindex="-1" role="dialog" 
+        aria-labelledby="lbl-modal-start" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <h2>Participe da plataforma 100 Open Startups</h2>
+
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+            <div class="modal-body">
+            <div class="modal-rows row">
+            <div class="modal-cols col-12">
+                <a class="m-s-card card" target="_blank" href="https://app.openstartups.net">
+                <div class="card-body">
+                    <p class="mt-0 font-weight-bold">Startups, Tecnologias, Executivos e Profissionais</p>
+                    <p class="mt-2">Cocriando o futuro com negócios inovadores</p>
+                </div><!--/.card-body -->
+                <div class="card-feet card-footer">
+                    <p class="mt-0 btn-primary btn py-2"><span class="text">Conecte-se</span></p>
+                </div><!--/.card-feet -->
+                </a><!--/.m-s-card -->
+    
+            </div><!--/.modal-cols -->        
+            <div class="modal-cols col-12 text-center">
+    
+                <p class="pt-3">O aplicativo também está disponível nas lojas:</p>
+    
+                <a class="m-s-download mt-3 mr-3" href="https://apps.apple.com/app/100-open-startups/id1332822629">
+                    <img class="img-fluid" src="images/badge-apple-black.png" alt="" />
+                </a><!--/.m-s-download -->
+                
+                <a class="m-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                    <img class="img-fluid" src="images/badge-google-black.png" alt="" />
+                </a><!--/.m-s-download -->
+    
+            </div><!--/.modal-cols -->
+            </div><!--/.modal-rows -->
+            </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+    <div class="modal fade rankingpopup" id="popUpRanking" tabindex="-1" role="dialog" aria-labelledby="Ranking 2020" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body justify-content-center">
+            <a href="ranking2020.html" target="_blank"><img class="desktop mx-auto" src="images/ranking/popup_ranking_dtp.png"></a>
+            <a href="ranking2020.html" target="_blank"><img class="mobile mx-auto" src="images/ranking/popup_ranking_mobile.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Dinamize Tracking Script -->
+    <script src="//receiver.posclick.dinamize.com/forms/js/324918_1830.js"></script>
+
+    <script src="scripts/eventbrite.js"></script>
+    <script src="scripts/omnize.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="slick/slick.min.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script src="scripts/ranking/top-categories-2018.js"></script>
+    <script src="scripts/ranking/top-categories-2019.js"></script>
+    <script src="scripts/ranking/top-corps-2018.js"></script>
+    <script src="scripts/ranking/top-corps-2019.js"></script>
+    <script src="scripts/ranking/top-ecosystem-2019.js"></script>
+    <script src="scripts/ranking/top-evaluators-2018.js"></script>
+    <script src="scripts/ranking/top-evaluators-2019.js"></script>
+    <script src="scripts/ranking/top-startups-2016.js"></script>
+    <script src="scripts/ranking/top-startups-2017.js"></script>
+    <script src="scripts/ranking/top-startups-2018.js"></script>
+    <script src="scripts/ranking/top-startups-2019.js"></script>
+    <script src="scripts/ranking-list.js"></script>
+    
+    <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@import url(../fonts/font.css);
+
+@import url(./_bootstrap.css);
+@import url(./_reset.css);
+@import url(./_structure.css);
+
+@import url(./_cards.css);
+@import url(./_sections.css);
+
+:root {
+    --angels:   #66b35e;
+    --corps:    #000000;
+    --techs:    #ec7f22;
+    --startups: #45aaf2;
+
+    --darken-angels: #519c4a;
+    --darken-corps: #222222;
+    --darken-techs: #d36b12;
+    --darken-startups: #0f83d7;
+}

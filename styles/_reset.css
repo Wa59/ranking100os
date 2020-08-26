@@ -1,0 +1,54 @@
+html, body {
+    color: #444;
+    font-family: 'Axiforma', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+p {
+    margin: 0;
+}
+p.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+p.lead strong {
+    color: #000;
+    font-weight: 800;
+}
+
+a {
+    color: var(--startups);
+    text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+    color: var(--darken-startups);
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    color: #000;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.truncate {
+    width : 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

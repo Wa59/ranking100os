@@ -1,0 +1,132 @@
+/* CAROUSEL CARD */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.s-r-carousel-card {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 290px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+.s-r-carousel-card .grid-1 {
+    border-right: 1px solid #eee;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.s-r-carousel-card .grid-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.s-r-carousel-card-grid {
+    padding: 3rem;
+    text-align: center;
+}
+
+    .s-r-carousel-card .card-ranking {
+        align-items: flex-end;
+        display: flex;
+        height: 195px;
+        justify-content: center;
+        max-width: 290px;
+    }
+
+    .s-r-carousel-card .card-points {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .s-r-carousel-card .card-points .numb {
+        color: #3FA9F5;
+        line-height: 1;
+        font-size: 4em;
+        font-weight: 800;
+    }
+    .s-r-carousel-card .card-points .text {
+        color: #000000;
+        display: block;
+        font-size: 1.5em;
+        font-weight: 900;
+        line-height: 1;
+        margin-top: -1em;
+        text-align: right;
+        text-transform: uppercase;
+        transform: translateX(0.75em);
+    }
+    
+    .s-r-carousel-card .card-image {
+        align-items: center;
+        display: flex;
+        height: 212px;
+        justify-content: center;
+        width: 100%;
+    }
+    .s-r-carousel-card .card-image img {
+        object-fit: scale-down;
+        max-height: 100%;
+        max-width: 290px;
+    }
+
+
+/* MINUTO CEO & OPEN TALKS */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.s-ot-list-card .card-image-bg,
+.s-mc-list-card .card-image-bg {
+    position: relative;
+}
+
+.card:focus .card-image-bg::before,
+.card:focus .card-image-bg::after,
+.card:hover .card-image-bg::before,
+.card:hover .card-image-bg::after {
+    opacity: 0;
+}
+
+.s-ot-list-card .card-image-bg::before,
+.s-mc-list-card .card-image-bg::before {
+    background: rgba(0,0,0,0.65);
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    transition: opacity 0.3s ease;
+}
+.s-ot-list-card .card-image-bg::after,
+.s-mc-list-card .card-image-bg::after {
+    background: transparent no-repeat 50% 50%;
+    background-image: url(../images/ico-playBtn.svg);
+    background-size: cover;
+    content: "";
+    height: 80px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+    width: 80px;
+}
+
+.s-mc-list-card .card-holder {
+    text-align: center;
+}
+.s-mc-list-card .card-holder .feats {
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (min-width: 578px) {
+    .col-sm-auto .s-mc-list-card {
+        width: 225px;
+    }
+}
+
+.s-ot-list-card .card-image-bg {
+    padding-top: 57%;
+}
+.s-ot-list-card .card-holder .feats {
+    left: 1rem;
+}
+@media (min-width: 578px) {
+    .col-xl-auto .s-ot-list-card {
+       width: 300px;
+    }
+}

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranking Top 100 Open Startups 2019 - 100 Open Startups</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/ranking.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png?v=pgrvqBwnge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-chrome-192x192.png?v=pgrvqBwnge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png?v=pgrvqBwnge" />
+    <link rel="manifest" href="/img/favicon/manifest.json?v=pgrvqBwnge" />
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=pgrvqBwnge" color="#5bbad5" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=pgrvqBwnge" />
+    <meta name="apple-mobile-web-app-title" content="100 Open Startups" />
+    <meta name="application-name" content="100 Open Startups" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png?v=pgrvqBwnge" />
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=pgrvqBwnge" />
+    <meta name="theme-color" content="#ffffff" />
+
+
+    <!-- Search Engine -->
+    <meta name="description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta name="image" content="https://www.openstartups.net" />
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="100 Open Startups" />
+    <meta itemprop="description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta itemprop="image" content="https://www.openstartups.net" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@100openstartups" />
+    <meta name="twitter:title" content="100 Open Startups" />
+    <meta name="twitter:description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta name="twitter:image" content="https://www.openstartups.net" />
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:url" content="https://www.openstartups.net/br-pt/" />
+    <meta property="og:title" content="100 Open Startups" />
+    <meta property="og:description" content="A 100 Open Startups é plataforma líder em open innovation. Possui foco na conexão de oportunidades de inovação entre empresas, startups, comunidade científica e investidores. É responsável pela Open Innovation Week - Oiweek, plataforma de eventos referência no setor, criada em 2008, e pelo Ranking 100 Open Startups, criado em 2016." />
+    <meta property="og:image" content="https://www.openstartups.net" />
+    <meta property="og:site_name" content="100 Open Startups" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+
+
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64393643-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-64393643-18');
+    gtag('config', 'UA-64393643-1', {
+        linker: {
+            domains: [
+                '100os.app',
+                '100os.events',
+                'startup.openstartups.net',
+                'app.openstartups.net',
+                'admin.openstartups.net',
+                'dashboard.openstartups.net',
+                'www.openstartups.net',
+                'openstartups.net',
+                'www.oiweek.com',
+                'oiweek.com',
+                'www.opentechs.net',
+                'emerge.openstartups.net',
+                'www.eventbrite.com.br',
+                'eventbrite.com.br',
+                'www.eventbrite.com',
+                'eventbrite.com',
+            ]
+        }
+    });
+    var trackOutboundLink = function(url, targetBlank) {
+        var params = {
+            event_category: 'outbound',
+            event_label: url,
+            transport_type: 'beacon'
+        };
+        if (!targetBlank) {
+            params.event_callback = function() {
+                document.location = url;
+            };
+        }
+        gtag('event', 'click', params);
+    };
+    </script>
+  
+</head>
+<body>
+
+    <div class="site site-ranking" id="site">
+
+        <header class="site-header header" id="site-header">
+
+            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <div class="navbar-container container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="images/logo-100os-big.png" alt="Logotipo do 100 Open Startups" />
+                </a><!--/.navbar-brand -->
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                        <li class="nav-item"><a class="nav-link active" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                        <li class="nav-item mx-3"><span class="nav-link text-muted">|</span></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-collapse -->
+
+                <a class="ml-4 d-lg-navbar-buttn ml-auto ml-ml-4 d-lg-none" href="#modal-start" data-target="#modal-start" data-toggle="modal">
+                    <span class="text font-weight-bold text-uppercase">Começar</span>
+                </a><!--/.navbar-buttn -->
+
+                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                    <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    <span class="text">Menu</span>
+                </a><!--/.navbar-toggl -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar -->
+
+        </header><!--/.site-header -->
+    
+        <div class="main" id="main" aria-labelledby="lbl-main">
+
+            <div class="heading section" id="heading">
+
+                <div class="s-hold py-5">
+                <div class="s-hold-container container py-5">
+
+                    <h1 class="s-title" id="lbl-main">
+                        <span class="text">Conheça os vencedores do<br> Ranking 100 Open Startups</span>
+                    </h1><!--/.s-title -->
+
+                    <div class="s-descr mt-4">
+                        <p class="lead">Foram mais de 895 startups inscritas para participarem do Ranking 100 Open Startups de 2019, declarando contraros com grandes empresas.</p>
+                    </div><!--/.s-descr -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </div><!--/.heading -->
+
+            <section class="about section" id="about" aria-labelledby="lbl-about">
+
+                <div class="s-cont-container container py-5">
+                <div class="s-rows row align-items-center">
+                <div class="s-cols col-12 col-lg-4 col-xl-4">
+
+                    <img class="img-fluid d-xl-none" src="images/selo_ranking.png" alt="" />
+                    <img class="img-fluid d-none d-xl-block" data-aos="zoom-in" data-aos-duration="1000" src="images/selo_ranking-bg.png" alt="" />
+                
+                </div><!--/.s-cols -->
+                <div class="s-cols col-12 col-lg-8 col-xl-7 offset-xl-1">                
+
+                    <h2 class="s-title" id="lbl-about">
+                        <span class="text">Conheça as <strong style="color:#45AAF2">startups</strong> mais atraentes e as <strong style="color:#FF8700">corporações</strong> mais engajadas</span>
+                    </h2><!--/.s-title -->
+
+                    <div class="s-descr mt-4">
+                        <p class="lead">A atratividade é medida por meio de critérios objetivos, vinculados estritamente com as <strong>relações de negócio estabelecidas entre startups e grandes empresas</strong>.</p>
+                    </div><!--/.s-descr -->
+
+                    <a class="s-buttn mt-3" href="ranking.html">
+                        <span class="text">Entenda mais sobre o Ranking 100 Open Startups</span>
+                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                    </a><!--/.s-buttn -->
+
+                </div><!--/.s-cols -->
+                </div><!--/.s-rows -->
+                </div><!--/.s-cont-container -->
+
+            </section><!--/.about -->
+
+            <section class="categories section py-5" id="categories" aria-labelledby="lbl-categories">
+
+                <div class="s-hold">
+                <div class="s-hold-container container">
+
+                    <h2 class="s-title mb-5" id="lbl-categories">
+                        <span class="text">Confira <strong class="text-uppercase">TODAS</strong> as categorias do ranking</span>
+                    </h2><!--/.s-title -->
+
+                    <ul class="nav-pills-ranking nav">
+                        <li class="nav-item"><a class="nav-link active" href="#top-os" id="lbl-top-os" role="tab"
+                            data-toggle="tab" aria-controls="top-os" aria-selected="true">
+                            <strong>Top 100</strong> Open Startups
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#top-oc" id="lbl-top-oc" role="tab"
+                            data-toggle="tab" aria-controls="top-oc" aria-selected="false">
+                            <strong>Top 50</strong> Open Corps
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#top-ev" id="lbl-top-ev" role="tab"
+                            data-toggle="tab" aria-controls="top-ev" aria-selected="false">
+                            <strong>Top 200</strong> Evaluators
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#top-ec" id="lbl-top-ec" role="tab"
+                            data-toggle="tab" aria-controls="top-ec" aria-selected="false">
+                            <strong>Top 10</strong> Ecosystem
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#top-gd" id="lbl-top-gd" role="tab"
+                            data-toggle="tab" aria-controls="top-gd" aria-selected="false">
+                            <strong>Top</strong> Grandes desafios
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#top-se" id="lbl-top-se" role="tab"
+                            data-toggle="tab" aria-controls="top-se" aria-selected="false">
+                            <strong>Top</strong> Setores
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#top-te" id="lbl-top-te" role="tab"
+                            data-toggle="tab" aria-controls="top-te" aria-selected="false">
+                            <strong>Top</strong> Tendências
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#top-ae" id="lbl-top-ae" role="tab"
+                            data-toggle="tab" aria-controls="top-ae" aria-selected="false">
+                            <strong>Top</strong> Aplicações empresariais
+                        </a></li>
+                    </ul><!--/.nav-pills-ranking -->
+
+                </div><!--/.s-hold-container -->
+                </div><!--/.s-hold -->
+
+            </section><!--/.categories -->
+
+            <div class="tab-content" id="tab-content">
+
+                <hr>
+
+                <section class="top-os tab-pane section active" id="top-os" role="tabpanel" aria-labelledby="lbl-top-os">
+
+                    <div class="s-hold py-5">
+                    <div class="s-hold-container container">
+    
+                        <h2 class="s-title sr-only">
+                            <span class="text">Top 100 Open Startups</span>
+                        </h2><!--/.s-title -->
+
+                        <div class="table-responsive">
+                        <table class="table table-hover" id="top-os-table">
+                        <thead>
+                        <tr>
+                            <th width="1%"><span>Rank</span></th>
+                            <th width="10%"><span>Startup</span></th>
+                            <th width="65%"><span>Descrição</span></th>
+                            <th width="10%"><span>Categoria</span></th>
+                            <th width="10%"><span>Subcategoria</span></th>
+                            <th width="1%"><span>Localização</span></th>
+                            <th width="1%"><span>Pts.</span></th>
+                            <th width="1%"><span>Share</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">Carregando...</td>
+                            </tr>
+                        </tbody>
+                        </table><!--/.table -->
+                        </div><!--/.table-responsive -->
+
+                        <ul class="s-lists fa-ul small mx-0 mt-3 mb-0">
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Startups must have matches/contracts with at least 3 different large companies</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Maximum yearly revenues of USD 2,5 MM in 2017</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score according to ranking methodology (1, 5, 10, 20 points)</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Tie-break according to: 1. contract score, 2. number of different large companies, 3. matches in the online app and events, 4. number of A grades, 5. average grade.</li>
+                        </ul><!--/.s-lists -->
+
+                    </div><!--/.s-hold-container -->
+                    </div><!--/.s-hold -->
+
+                </section><!--/.top-os -->
+
+                <section class="top-oc tab-pane section" id="top-oc" role="tabpanel" aria-labelledby="lbl-top-oc">
+
+                    <div class="s-hold py-5">
+                    <div class="s-hold-container container">
+    
+                        <h2 class="s-title sr-only">
+                            <span class="text">Top 50 Open Corps</span>
+                        </h2><!--/.s-title -->
+
+                        <div class="table-responsive">
+                        <table class="table table-hover" id="top-oc-table">
+                        <thead>
+                        <tr>
+                            <th width="1%"><span>Rank</span></th>
+                            <th><span>Grande empresa</span></th>
+                            <th width="1%"><span>Pts.</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">Carregando...</td>
+                            </tr>
+                        </tbody>
+                        </table><!--/.table -->
+                        </div><!--/.table-responsive -->
+
+                        <ul class="s-lists fa-ul small mx-0 mt-3 mb-0">
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes corporations with least 1 registered contracts with startups in the last 3 years;</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span>Corporations are companies with at least 100 employees;</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span>Score includes evaluations score and contracts score according to startup ranking methodology (1, 5, 10, 20 points);</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span>Evaluation score is made of 0.1 point per online evaluation / 0.2 point per demoday evaluation / 1 point per Speed-Dating evaluation.</li>
+                        </ul><!--/.s-lists -->
+
+                    </div><!--/.s-hold-container -->
+                    </div><!--/.s-hold -->
+
+                </section><!--/.top-oc -->
+
+                <section class="top-ev tab-pane section" id="top-ev" role="tabpanel" aria-labelledby="lbl-top-ev">
+
+                    <div class="s-hold py-5">
+                    <div class="s-hold-container container">
+    
+                        <h2 class="s-title sr-only">
+                            <span class="text">Top 200 Evaluators</span>
+                        </h2><!--/.s-title -->
+
+                        <div class="table-responsive">
+                        <table class="table table-hover" id="top-ev-table">
+                        <thead>
+                        <tr>
+                            <th width="1%"><span>Rank</span></th>
+                            <th><span>Nome</span></th>
+                            <th><span>Localização</span></th>
+                            <th width="1%"><span>Pts.</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4">Carregando...</td>
+                            </tr>
+                        </tbody>
+                        </table><!--/.table -->
+                        </div><!--/.table-responsive -->
+
+                        <ul class="s-lists fa-ul small mx-0 mt-3 mb-0">
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Includes evaluators registered in the 100 Open Startups platform;</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Based on online, demoday and speed-dating evaluations for the last 3 years;</li> 
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Evaluators that changed companies during the period are listed just once;</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Evaluator must not be currently an employee or direct provider of 100 Open Startups;</li>
+                            <li class="s-lists-item"><span class="fa-li fas fa-check"></span> Score is made of 0.1 point per online evaluation / 0.2 point per demoday evaluation / 1 point per Speed-Dating evaluation.</li>
+                        </ul><!--/.s-lists -->
+
+                    </div><!--/.s-hold-container -->
+                    </div><!--/.s-hold -->
+
+                </section><!--/.top-ev -->
+
+                <section class="top-ec tab-pane section" id="top-ec" role="tabpanel" aria-labelledby="lbl-top-ec">
+
+                    <div class="s-hold py-5">
+                    <div class="s-hold-container container">
+    
+                        <h2 class="s-title sr-only">
+                            <span class="text">Top 10 Ecosystem</span>
+                        </h2><!--/.s-title -->
+
+                        <div class="table-responsive">
+                        <table class="table table-hover" id="top-ec-table">
+                        <thead>
+                        <tr>
+                            <th width="1%"><span>Rank</span></th>
+                            <th><span>Nome</span></th>
+                            <th width="1%"><span>Pts.</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">Carregando...</td>
+                            </tr>
+                        </tbody>
+                        </table><!--/.table -->
+                        </div><!--/.table-responsive -->
+
+                    </div><!--/.s-hold-container -->
+                    </div><!--/.s-hold -->
+
+                </section><!--/.top-ec -->
+
+                <section class="top-gd tab-pane section" id="top-gd" role="tabpanel" aria-labelledby="lbl-top-gd">
+
+                    <div class="s-hold py-5">
+                    <div class="s-hold-container container">
+    
+                        <h2 class="s-title sr-only">
+                            <span class="text">Top Grandes Desafios</span>
+                        </h2><!--/.s-title -->
+
+                        <div class="accordion mt-4" id="acc-top-gd">
+                        <div class="accordion-card">
+                        
+                            <a class="accordion-card-link" href="#acc-top-gd-1" role="button"
+                                data-toggle="collapse" data-target="#acc-top-gd-1" aria-expanded="false" aria-controls="acc-top-gd-1">
+                                <h3 class="accordion-card-title" id="lbl-acc-top-gd-1">Top Education</h3>
+                                <img class="accordion-card-image" src="images/top-logo-education-black.png" alt="">
+                            </a><!--/.accordion-card-link -->
+    
+                            <div class="accordion-card-body collapse" id="acc-top-gd-1"
+                                data-parent="#acc-top-gd" aria-labelledby="lbl-acc-top-gd-1">
+                            <div class="accordion-card-body-inside">
+
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-gd-table-education">
+                                <thead>
+                                <tr>
+                                    <th width="1%"><span>Rank</span></th>
+                                    <th width="10%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="1%"><span>Localização</span></th>
+                                    <th width="1%"><span>Pts.</span></th>
+                                    <th width="1%"><span>Share</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        <div class="accordion-card">
+                        
+                            <a class="accordion-card-link" href="#acc-top-gd-2" role="button"
+                                data-toggle="collapse" data-target="#acc-top-gd-2" aria-expanded="false" aria-controls="acc-top-gd-2">
+                                <h3 class="accordion-card-title" id="lbl-acc-top-gd-2">Top Energy</h3>
+                                <img class="accordion-card-image" src="images/top-logo-energy-black.png" alt="">
+                            </a><!--/.accordion-card-link -->
+    
+                            <div class="accordion-card-body collapse" id="acc-top-gd-2"
+                                data-parent="#acc-top-gd" aria-labelledby="lbl-acc-top-gd-2">
+                            <div class="accordion-card-body-inside">
+
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-gd-table-energy">
+                                <thead>
+                                <tr>
+                                    <th width="1%"><span>Rank</span></th>
+                                    <th width="10%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="1%"><span>Localização</span></th>
+                                    <th width="1%"><span>Pts.</span></th>
+                                    <th width="1%"><span>Share</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        <div class="accordion-card">
+                        
+                            <a class="accordion-card-link" href="#acc-top-gd-3" role="button"
+                                data-toggle="collapse" data-target="#acc-top-gd-3" aria-expanded="false" aria-controls="acc-top-gd-3">
+                                <h3 class="accordion-card-title" id="lbl-acc-top-gd-3">Top Environment</h3>
+                                <img class="accordion-card-image" src="images/top-logo-environment-black.png" alt="">
+                            </a><!--/.accordion-card-link -->
+    
+                            <div class="accordion-card-body collapse" id="acc-top-gd-3"
+                                data-parent="#acc-top-gd" aria-labelledby="lbl-acc-top-gd-3">
+                            <div class="accordion-card-body-inside">
+
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-gd-table-environment">
+                                <thead>
+                                <tr>
+                                    <th width="1%"><span>Rank</span></th>
+                                    <th width="10%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="1%"><span>Localização</span></th>
+                                    <th width="1%"><span>Pts.</span></th>
+                                    <th width="1%"><span>Share</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        <div class="accordion-card">
+                        
+                            <a class="accordion-card-link" href="#acc-top-gd-4" role="button"
+                                data-toggle="collapse" data-target="#acc-top-gd-4" aria-expanded="false" aria-controls="acc-top-gd-4">
+                                <h3 class="accordion-card-title" id="lbl-acc-top-gd-4">Top Healthcare</h3>
+                                <img class="accordion-card-image" src="images/top-logo-healthcare-black.png" alt="">
+                            </a><!--/.accordion-card-link -->
+    
+                            <div class="accordion-card-body collapse" id="acc-top-gd-4"
+                                data-parent="#acc-top-gd" aria-labelledby="lbl-acc-top-gd-4">
+                            <div class="accordion-card-body-inside">
+
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-gd-table-healthcare">
+                                <thead>
+                                <tr>
+                                    <th width="1%"><span>Rank</span></th>
+                                    <th width="10%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="1%"><span>Localização</span></th>
+                                    <th width="1%"><span>Pts.</span></th>
+                                    <th width="1%"><span>Share</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        <div class="accordion-card">
+                        
+                            <a class="accordion-card-link" href="#acc-top-gd-5" role="button"
+                                data-toggle="collapse" data-target="#acc-top-gd-5" aria-expanded="false" aria-controls="acc-top-gd-5">
+                                <h3 class="accordion-card-title" id="lbl-acc-top-gd-5">Top Industry</h3>
+                                <img class="accordion-card-image" src="images/top-logo-industry-black.png" alt="">
+                            </a><!--/.accordion-card-link -->
+    
+                            <div class="accordion-card-body collapse" id="acc-top-gd-5"
+                                data-parent="#acc-top-gd" aria-labelledby="lbl-acc-top-gd-5">
+                            <div class="accordion-card-body-inside">
+
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-gd-table-industry">
+                                <thead>
+                                <tr>
+                                    <th width="1%"><span>Rank</span></th>
+                                    <th width="10%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="1%"><span>Localização</span></th>
+                                    <th width="1%"><span>Pts.</span></th>
+                                    <th width="1%"><span>Share</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        <div class="accordion-card">
+                    
+                            <a class="accordion-card-link" href="#acc-top-gd-6" role="button"
+                                data-toggle="collapse" data-target="#acc-top-gd-6" aria-expanded="false" aria-controls="acc-top-gd-6">
+                                <h3 class="accordion-card-title" id="lbl-acc-top-gd-6">Top Transport & Logistics</h3>
+                                <img class="accordion-card-image" src="images/top-logo-transport-black.png" alt="">
+                            </a><!--/.accordion-card-link -->
+    
+                            <div class="accordion-card-body collapse" id="acc-top-gd-6"
+                                data-parent="#acc-top-gd" aria-labelledby="lbl-acc-top-gd-6">
+                            <div class="accordion-card-body-inside">
+
+                                <div class="table-responsive">
+                                <table class="table table-hover" id="top-gd-table-transport">
+                                <thead>
+                                <tr>
+                                    <th width="1%"><span>Rank</span></th>
+                                    <th width="10%"><span>Startup</span></th>
+                                    <th width="65%"><span>Descrição</span></th>
+                                    <th width="1%"><span>Localização</span></th>
+                                    <th width="1%"><span>Pts.</span></th>
+                                    <th width="1%"><span>Share</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Carregando...</td>
+                                    </tr>
+                                </tbody>
+                                </table><!--/.table -->
+                                </div><!--/.table-responsive -->
+
+                            </div><!--/.accordion-card-body-inside -->
+                            </div><!--/.accordion-card-body -->
+
+                        </div><!--/.accordion-card -->
+                        </div><!--/.accordion -->
+
+                    </div><!--/.s-hold-container -->
+                    </div><!--/.s-hold -->
+
+                </section><!--/.top-gd -->
+
+            </div><!--/.tab-content -->
+
+        </div><!--/.main -->
+
+        <footer class="site-footer footer mt-5" id="site-footer">
+
+            <div class="footer-sitemap bg-dark text-light mt-0 py-5">
+            <div class="footer-sitemap-container container">
+
+                <div class="footer-row row align-items-end">
+                <div class="footer-col col-12 col-lg-auto">
+                    
+                    <img class="img-fluid mb-3" src="images/logo-100os.png" alt="" width="70" />
+                    <p class="f-s-address">Av. Queiroz Filho, 1.700 - Vila 44<br>05319-000 | São Paulo-SP | Brasil</p>
+                    <p class="f-s-address"><a href="mailto:helpme@openstartups.net">helpme@openstartups.net</a></p>
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-lg-auto">
+                
+                    <span class="f-s-title">Conteúdos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://blog.openstartups.net/">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/news">Notícias</a></li>
+                        <!--<li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/press">Imprensa</a></li>-->
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://www.openstartups.net/br-pt/ebooks">E-books</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto">
+                
+                    <span class="f-s-title">Aplicativos</span>
+                
+                    <ul class="f-s-lists nav flex-column">
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="http://startup.openstartups.net/">Startup</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://app.openstartups.net/">Matchmaking</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://dashboard.openstartups.net/br-pt/press">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link px-0 pb-0 pt-2" href="https://100os.app/">Eventos</a></li>
+                    </ul><!--/.f-s-lists -->
+
+                </div><!--/.footer-col -->
+                <div class="footer-col col-12 col-md-auto ml-md-auto ml-lg-0">
+
+                    <ul class="f-s-social nav mb-2">
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Facebook" href="https://www.facebook.com/100openstartups/"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Instagram" href="https://www.instagram.com/100openstartups/"><span class="fab fa-instagram"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="LinkedIn" href="https://www.linkedin.com/company/100-open-startups/"><span class="fab fa-linkedin"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Contato" href="mailto:helpme@openstartups.net"><span class="fas fa-envelope"></span></a></li>
+                        <li class="nav-item"><a class="nav-link pl-0 pr-3" title="Regulamento" href="https://www.openstartups.net/files/pdf/Regulamento100OpenStartups_revB_2016.pdf"><span class="fas fa-file-pdf"></span></a></li>
+                    </ul>
+            
+                    <span class="f-s-text d-block">O aplicativo para avaliadores está<br class="d-none d-md-block" /> disponível nas lojas:</span>
+
+                    <a class="f-s-download mt-3 mr-3" href="https://itunes.apple.com/app/100-open-startups/id1332822629">
+                        <img class="img-fluid" src="images/badge-apple.png" alt="" />
+                    </a><!--/.f-s-download -->
+                    
+                    <a class="f-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                        <img class="img-fluid" src="images/badge-google.png" alt="" />
+                    </a><!--/.f-s-download -->
+
+                </div><!--/.footer-col -->
+                </div><!--/.footer-row -->
+
+            </div><!--/.footer-sitemap-container -->
+            </div><!--/.footer-sitemap -->
+
+            <div class="footer-copyright small py-3">
+            <div class="footer-copyright-container container">
+                <p class="m-0">Copyright © 2019 - Allagi Engenharia Ltda.</p>
+            </div><!--/.footer-copyright-container -->
+            </div><!--/.footer-copyright -->
+
+        </footer><!--/.site-footer -->
+
+    </div><!--/.site -->
+
+    <div class="modal modal-menu fade" id="modal-menu" tabindex="-1" role="dialog" 
+        aria-labelledby="lbl-modal-menu" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+
+            <ul class="modal-nav nav flex-column">
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="https://www.openstartups.net/site/oiweek">OIWEEK DIGITAL</a></li>
+                <li class="nav-item"><a class="nav-link" style="font-weight: 500" href="ranking.html">Ranking 100 Open Startups</a></li>
+                <li class="nav-item my-4 border-t-1"></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#grand-challenges">Desafios</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="redes.html">Redes</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="http://blog.openstartups.net/">Blog</a></li>    
+            </ul><!--/.modal-nav -->
+        
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+
+    <div class="modal modal-start fade" id="modal-start" tabindex="-1" role="dialog" 
+        aria-labelledby="lbl-modal-start" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+        <div class="modal-head modal-header">
+
+            <h2>Participe da plataforma 100 Open Startups</h2>
+            <h3>Escolha uma das opções de acordo com o seu perfil.</h3>
+
+            <button class="close" data-dismiss="modal" aria-label="Fechar">
+                <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+                <span class="text">Fechar</span>
+            </button>
+
+        </div><!--/.modal-head -->
+
+        <div class="modal-body">
+        <div class="modal-rows row">
+        <div class="modal-cols col-12 col-lg-6">
+
+            <a class="m-s-card card" href="https://app.openstartups.net/">
+            <div class="card-body">
+                <p class="mt-0 font-weight-bold">Executivos e Profissionais</p>
+                <p class="mt-2">Conheça, monitore e contribua com startups de sua área de atuação e interesse na nossa ferramenta de matchmaking.</p>            
+            </div><!--/.card-body -->
+            <div class="card-feet card-footer">
+                <p class="mt-0 btn-primary btn py-2"><span class="text">Conecte-se</span></p>
+            </div><!--/.card-feet -->
+            </a><!--/.m-s-card -->
+
+        </div><!--/.modal-cols -->        
+        <div class="modal-cols col-12 col-lg-6">
+
+            <a class="m-s-card card" href="https://startup.openstartups.net/">
+            <div class="card-body">
+                <p class="mt-0 font-weight-bold">Startups e Tecnologias</p>
+                <p class="mt-2">Acesse recursos de grandes empresas interessadas em colaborar com sua startup e faça parte do Ranking 100 Open Startups.</p>
+            </div><!--/.card-body -->
+            <div class="card-feet card-footer">
+                <p class="mt-0 btn-primary btn py-2"><span class="text">Cadastre-se</span></p>
+            </div><!--/.card-feet -->
+            </a><!--/.m-s-card -->
+
+        </div><!--/.modal-cols -->        
+        <div class="modal-cols col-12 text-center">
+
+            <p class="pt-3">O aplicativo para avaliadores está também disponível nas lojas:</p>
+
+            <a class="m-s-download mt-3 mr-3" href="https://itunes.apple.com/app/100-open-startups/id1332822629">
+                <img class="img-fluid" src="images/badge-apple-black.png" alt="" />
+            </a><!--/.m-s-download -->
+            
+            <a class="m-s-download mt-3" href="https://play.google.com/store/apps/details?id=net.openstartups.app">
+                <img class="img-fluid" src="images/badge-google-black.png" alt="" />
+            </a><!--/.m-s-download -->
+
+        </div><!--/.modal-cols -->
+        </div><!--/.modal-rows -->
+        </div><!--/.modal-body -->
+
+    </div><!--/.modal-content -->
+    </div><!--/.modal-dialog-->
+    </div><!--/.modal -->
+    
+    <script src="scripts/eventbrite.js"></script>
+    <script src="scripts/intercom.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="slick/slick.min.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
+
+
+    <script src="scripts/ranking/top-oc.js"></script>
+    <script src="scripts/ranking/top-os.js"></script>
+    <script src="scripts/ranking.js"></script>
+    
+    <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
+
+</body>
+</html>

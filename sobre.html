@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="assets/slick/slick.css" />
-    <link rel="stylesheet" href="assets/slick/slick-theme.css" />
-    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="styles/base.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
@@ -125,7 +125,7 @@
             <div class="navbar-container container">
 
                 <a class="navbar-brand" href="index.html">
-                    <img class="img-fluid" src="assets/img/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
+                    <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
                     <span class="txt-named d-none d-md-block">Ranking TOP 100 Open Startups</span>
                 </a><!--/.navbar-brand -->
 
@@ -154,12 +154,12 @@
 
         <div class="main" id="main" aria-labelledby="lbl-main">
 
-            <section class="ranking section py-5" id="ranking" aria-labelledby="lbl-ranking">
+            <section class="heading section py-5" id="heading" aria-labelledby="lbl-heading">
 
-                <div class="s-hold">
                 <div class="s-hold-container container">
+                <div class="s-hold py-3 mx-auto" style="max-width: 840px;">
 
-                    <h1 class="s-title" id="lbl-ranking">
+                    <h1 class="s-title" id="lbl-heading">
                         <span class="text">Sobre o Ranking</span>
                     </h1><!--/.s-title -->
 
@@ -170,44 +170,14 @@
                         <p>Hoje, o Ranking 100 Open Startups tornou-se um dos grandes destaques da imprensa nacional e é usado como referência por grandes empresas e investidores. Publicado nos principais veículos de negócio do país, o ranking é posteriormente replicado por outras editorias, ampliando muito a visibilidade e, consequentemente, as oportunidades de negócios para as startups ranqueadas.</p>
                     </div><!--/.s-descr -->
 
-                </div><!--/.s-hold-container -->
-                </div><!--/.s-hold -->
-
-            </section><!--/.ranking -->
-
-            <section class="premiacao section py-3">
-
-                <div class="s-hold-container container">
-                <div class="s-hold p-3 p-md-5 main-bg-white">
-                <div class="s-rows row align-items-center">
-                <div class="s-cols col-12 order-lg-2 offset-lg-1 col-lg-4 col-xl-4 d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1000">
-
-                    <img class="img-fluid" src="assets/img/SELO_TOP_Ranking_cor.png" alt="" />
-
-                </div><!--/.s-cols -->
-                <div class="s-cols col-12 col-lg-7 col-xl-7">
-
-                    <h2 class="s-title h3 font-weight-bold">
-                        <span class="text">Premiação</span>
-                    </h2><!--/.s-title -->
-
-                    <p class="lead mt-3">A premiação oficial do <a href="rankings.html">Ranking 100 Open Startups 2020</a> será realizada durante o <a href="https://festival.whow.com.br/">Whow! Festival de Inovação</a>, que acontece nos dias 10, 11 e 12 de novembro de 2020.</p>
-                    
-                    <a class="s-buttn mt-3" href="https://festival.whow.com.br/">
-                        <span class="text">Saiba mais sobre o festival</span>
-                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
-                    </a><!--/.s-buttn -->
-
-                </div><!--/.s-cols -->
-                </div><!--/.s-rows -->        
                 </div><!--/.s-hold -->
                 </div><!--/.s-hold-container -->
 
-            </section><!--/.premiacao -->
+            </section><!--/.heading -->
 
-            <section class="methodology section py-5" id="methodology" aria-labelledby="lbl-methodology">
+            <section class="methodology section bg-white py-5" id="methodology" aria-labelledby="lbl-methodology">
 
-                <div class="s-hold-container container">
+                <div class="s-hold-container container pt-3">
                 <div class="s-hold" style="max-width: 840px;">
 
                     <h2 class="s-title" id="lbl-methodology">
@@ -222,7 +192,7 @@
                 </div><!--/.s-hold -->
                 </div><!--/.s-hold-container -->
 
-                <div class="s-hold mt-5">
+                <div class="s-hold pt-5 pb-3">
                 <div class="s-hold-container container">
 
                     <div class="accordion" id="acc-methods">
@@ -415,11 +385,9 @@
 
             </section><!--/.methodology -->
 
-            <hr class="my-5" />
-
             <section class="who section py-5" id="who" aria-labelledby="lbl-who">
 
-                <div class="s-hold">
+                <div class="s-hold py-3">
                 <div class="s-hold-container container">
 
                     <h2 class="s-title" id="lbl-who">
@@ -447,7 +415,7 @@
                     </ul><!--/.s-lists -->
 
                     <div class="s-descr mt-5">
-                        <p>Apenas os contratos validados dentro dos prazos estipulados no <a href="https://www.openstartups.net/site/regulamento.html">regulamento</a> serão considerados para o Ranking 100 Open Startups 2020. Declare seus contratos o mais cedo possível para evitar atrasos na validação pelo seu ponto de contato na grande empresa ou startup.</p>
+                        <p>Apenas os contratos validados dentro dos prazos estipulados no <a href="regulamento.html">regulamento</a> serão considerados para o Ranking 100 Open Startups 2020. Declare seus contratos o mais cedo possível para evitar atrasos na validação pelo seu ponto de contato na grande empresa ou startup.</p>
                         <p class="lead">Faça parte e destaque-se entre as startups de grande crescimento!</p>
                     </div><!--/.s-descr -->
 
@@ -456,11 +424,11 @@
 
             </section><!--/.who -->
 
-            <div class="main-bg-white mt-5 py-5">
+            <div class="main-bg-white mt-3 pb-3">
 
                 <section class="benefits section py-5" id="benefits" aria-labelledby="lbl-benefits">
 
-                    <div class="s-hold">
+                    <div class="s-hold pt-3">
                     <div class="s-hold-container container">
 
                         <h2 class="s-title" id="lbl-benefits">
@@ -518,7 +486,7 @@
 
                 </section><!--/.benefits -->
                 
-                <hr class="my-5 container p-0">
+                <hr class="my-3 container p-0">
 
                 <section class="news section py-5" id="news" aria-labelledby="lbl-news">
 
@@ -532,7 +500,7 @@
                         <ul class="s-n-list row align-items-center justify-content-between list-unstyled" id="s-n-list">
                         </ul><!--/.s-n-list -->
 
-                        <a class="btn-primary btn mt-5" href="na-midia.html">
+                        <a class="btn-primary btn mt-5" href="sobre-midia.html">
                             <span class="text">Ver todas as notícias</span>
                         </a><!--/.btn-primary -->
 
@@ -540,43 +508,6 @@
                     </div><!--/.s-hold -->
 
                 </section><!--/.news -->
-
-                <section class="rankings-list section mb-5">
-
-                    <div class="s-hold text-center">
-                    <div class="s-hold-container container">
-                    <div class="test d-lg-flex align-items-center justify-content-lg-between text-center text-lg-left mt-5">
-    
-                        <p class="m-0" style="transform: translateY(2px);">Veja todos os rankings publicados:</p>
-    
-                        <ul class="s-lists nav-pills nav m-0 p-0 justify-content-center flex-column flex-lg-row">
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2020">
-                                <span class="text d-block">2020</span>
-                            </a></li>
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2019">
-                                <span class="text d-block">2019</span>
-                            </a></li>
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2018">
-                                <span class="text d-block">2018</span>
-                            </a></li>
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2017">
-                                <span class="text d-block">2017</span>
-                            </a></li>
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-link btn-block btn p-0" href="ranking.html?tab=top-2016">
-                                <span class="text d-block">2016</span>
-                            </a></li>
-                        </ul><!--/.s-lists -->
-    
-                    </div><!--/.test-->
-                    </div><!--/.s-hold-container -->
-                    </div><!--/.s-hold -->
-                
-                </section><!--/.rankings-list -->
 
             </div><!--/.main-bg-white -->
 
@@ -698,19 +629,19 @@
     </div><!--/.modal-dialog-->
     </div><!--/.modal -->
      
-    <script src="assets/js/eventbrite.js"></script>
-    <script src="assets/js/omnize.js"></script>
+    <script src="scripts/eventbrite.js"></script>
+    <script src="scripts/omnize.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="assets/slick/slick.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/main.js"></script>
 
-    <script src="assets/js/clippings/current.js"></script>
+    <script src="data/clippings/current.js"></script>
 
     <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
 

@@ -1,0 +1,259 @@
+/* ACCORDION */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.accordion-card {
+    border: 1px solid #fff;
+    border-radius: 0;
+    box-shadow: 0 0 16px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+.accordion-card-link {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 20px 18px;
+}
+.accordion-card-link[aria-expanded="true"] {
+    background: #D9EFFF;
+}
+
+    .accordion-card-title {
+        color: #333;
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .accordion-card-title span {
+        color: var(--startups);
+        display: inline-block;
+        font-weight: 700;
+        padding: 0 10px 0 0;
+    }
+    .accordion-card-image {
+        margin: -10px 0 -6px;
+        height: 40px;
+        width: auto;
+    }
+
+.accordion-card-body-inside {
+    background: #fff;
+    padding: 23px 20px 18px;
+}
+
+.accordion-card + .accordion-card {
+    margin-top: 1rem;
+}
+
+
+/* BADGE */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.badge {
+    background: var(--startups);
+    color: #fff;
+    font-size: 0.725rem;
+    font-weight: 500;
+    padding: 0.5rem 0.5rem 0.25rem;
+}
+
+
+/* BUTTON */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.btn {
+    border-radius: 2rem;
+    padding: 0.875rem 1.5rem;
+}
+.btn .text {
+    display: inline-block;
+    font-weight: 400;
+    transform: translateY(2px);
+    text-transform: uppercase;
+}
+.btn .icon {
+    transform: translateY(2px);
+}
+.btn.btn-primary {
+    background-color: var(--startups);
+    border-color: var(--startups);
+    color: #fff;
+}
+.btn.btn-primary:active,
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+    background-color: var(--darken-startups);
+    border-color: var(--darken-startups);
+    color: #fff;
+}
+
+
+/* CARD */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.card {
+    background: #fff;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1.5rem rgba(0,0,0,.1);
+    color: #444;
+    height: 100%;
+    overflow: hidden;
+}
+.card:active,
+.card:focus,
+.card:hover {
+    color: #444;    
+    text-decoration: none;
+}
+
+    .card .card-image-bg {
+        background: #000 no-repeat 50% 50%;
+        background-size: auto 150%;
+        padding-top: 100%
+    }
+    .card .card-holder {
+        padding: 1rem;
+        position: relative;
+    }
+    .card .card-holder span {
+        display: block;
+    }
+
+    .card .card-holder .title {
+        font-weight: 400;
+    }
+    .card .card-holder .descr {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+    .card .card-holder .feats {
+        background: #fff;
+        color: var(--startups);
+        display: inline-block;
+        font-size: 0.875rem;
+        font-weight: 900;
+        padding: 0.75rem 0.75rem 0;
+        position: absolute;
+        bottom: 100%; left: 0;
+    }
+
+
+/* MODAL */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.modal {
+    background-color: rgba(25, 71, 104, 0.85);
+    color: #fff;
+    z-index: 999999;
+}
+.modal .modal-dialog {
+    align-items: flex-start;
+    display: flex;
+    min-height: 100%;
+}
+.modal .modal-content {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+    .modal .modal-head {
+        border: 0;
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+    .modal .modal-head h2,
+    .modal .modal-head h3 {
+        color: #fff;
+    }
+    .modal .modal-head h3 {
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+    .modal .modal-head .close {
+        color: #fff;
+        float: none;
+        font-size: 0.875rem;
+        font-weight: bold;
+        opacity: 1;
+        margin: 0 0 2rem;
+        padding: 1rem 0 0;
+        position: relative;
+        top: 0; left: 0;
+        text-shadow: none;
+        text-transform: uppercase;
+    }
+
+    .modal .modal-body {
+        border: 0;
+        padding: 0;
+    }
+
+    .modal .modal-rows { margin: -2rem -1rem 0; }
+    .modal .modal-cols { padding: 2rem 1rem 0;}
+
+
+    /* MENU */
+    /* --------------------------------------------------------------------- */
+
+    .modal-menu .modal-head .close {
+        left: 50%;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+    .modal-menu .modal-dialog {
+        max-width: 400px !important;
+    }
+    .modal-menu .modal-nav .nav-link {
+        color: #fff;
+        font-size: 1.8rem;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+    .modal-menu .modal-nav .border-t-1 {
+        border-top: 1px solid rgba(255,255,255,0.5);
+    }
+
+
+/* TABLE */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.table {
+    border: 0;
+    border-bottom: 2px solid #e9e9e9;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.table th > span,
+.table td > span {
+    display: block;
+    transform: translateY(2px);
+}
+.table thead th {
+    background: #747474;
+    border-top: 0;
+    border-bottom: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+.table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+.table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.table tbody td {
+    border-top: 1px solid #E9E9E9;
+    text-align: center;
+    vertical-align: middle;
+}
+.table tbody td strong {
+    font-weight: 700;
+}
+.table tbody tr:nth-child(even) td {
+    background: rgba(0,0,0,0.015);
+}
