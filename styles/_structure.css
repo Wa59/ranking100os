@@ -98,6 +98,10 @@
     .navbar-nav .nav-link.active::after {
         top: auto; bottom: -10px;
     }
+    
+    @media (min-width: 992px) {
+        .navbar-nav .nav-link { margin-left: 0.45rem; }
+    }
 
 
     .navbar-ranking {

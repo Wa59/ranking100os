@@ -43,7 +43,7 @@ $(document).ready(function($) {
 
                 html+= '</td>';
                 html+= '<td class="text-left">' + item['Empresa'] + '</td>';
-                html+= '<td>' + item['Categoria'] + '</td>';
+                // html+= '<td>' + item['Categoria'] + '</td>';
                 html+= '<td>' + item['Pontos'] + '</td>';
                 html+= '<td>' + item['MatchLink'] + '</td>';
             html+= '</tr>';

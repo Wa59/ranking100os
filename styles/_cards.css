@@ -134,6 +134,57 @@
 
 
 
+.s-r-corps-category {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 190px;
+}
+
+.s-r-corps-category .btn {
+    font-size: 0.625rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+.s-r-corps-category .btn span {
+    display: block;
+    transform: translateY(1px);
+}
+
+.s-r-corps-category .card-image {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+}
+.s-r-corps-category .card-image img {
+    object-fit: scale-down;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+    .s-r-corps-category .card-holdr {
+        font-size: 0.875rem;
+        width: 100%;
+    }
+    .s-r-corps-category .card-holdr .tit {
+        display: block;
+        font-weight: 700;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+    .s-r-corps-category .card-holdr .cat {
+        display: block;
+        width: 100%;
+    }
+
+
+
 /* MINUTO CEO & OPEN TALKS */
 /* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
 

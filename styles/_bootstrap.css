@@ -272,7 +272,7 @@
     display: inline-flex;
     height: 80px;
     justify-content: center;
-    max-width: 100%;
+    max-width: 150px;
     padding: 0 1rem;
 }
 .table tbody .table-image img {

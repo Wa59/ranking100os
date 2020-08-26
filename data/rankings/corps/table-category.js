@@ -4,7 +4,10 @@ var categories = {
 
 $(document).ready(function($) {
 
-    function load() {
+    var list = $('#tableBodyCategory');
+    var cols = list.attr('data-col') ? list.attr('data-col') : 'col-6 col-md-4 col-lg-3 col-xl-2';
+
+    function load(baseHtml) {
         var html = '';
 
         if (!years[cYear]) {
@@ -14,34 +17,31 @@ $(document).ready(function($) {
         $('#top-category').show();
 
         categories[cYear].forEach(function(item, index){
-
+            
             // Check if the Match is avaliable
-            item['MatchLink'] = '-';
-            if (item['Link']) {
-                item['MatchLink'] = '<a class="btn btn-primary btn-sm px-3 py-2" href="'+ item['Link'] +'">';
-                item['MatchLink']+= '<span>Quero me conectar</span>';
-                item['MatchLink']+= '</a>';
-            }
-
-            // Include line on the table
-            html+= '<tr>';
-                html+= '<td class="text-glow">' + item['Ranking'] + '</td>';
-                html+= '<td>';
-
-                    html+= '<div class="table-image">';
-                        html+= '<img class="img-fluid" src="data/rankings/corps/logos/'+ item['Empresa'] +'.png" alt="Logotipo '+ item['Empresa'] +'">';
-                    html+= '</div><!--/.table-image -->';
-
-                html+= '</td>';
-                html+= '<td class="text-left">' + item['Empresa'] + '</td>';
-                html+= '<td>' + item['Categoria'] + '</td>';
-                html+= '<td>' + item['Pontos'] + '</td>';
-                html+= '<td>' + item['MatchLink'] + '</td>';
-            html+= '</tr>';
+            item['MatchLink'] = '';
+            years[cYear].forEach(function(i) {
+                if (i['Link']) {
+                    item['MatchLink'] = '<a class="btn btn-primary btn-sm px-3 py-2" href="'+ i['Link'] +'">';
+                    item['MatchLink']+= '<span>Quero me conectar</span>';
+                    item['MatchLink']+= '</a>';
+                }
+            });
+            
+            var temp = baseHtml;
+            temp = temp.replace(/##ID##/i, index);
+            temp = temp.replace(/##ITEM_COMPANY##/g, item['Empresa']);
+            temp = temp.replace(/##ITEM_CATEGORIA##/g, item['Premio']);
+            temp = temp.replace(/##ITEM_MATCH##/g, item['MatchLink']);
+            
+            // Include column on the template
+            html+= '<div class="s-cols col '+ cols + '">';
+                html+= temp;
+            html+= '</div><!--/.s-cols -->';
         });
-        $('#tableCategory').html(html);
+        list.html(html);
     }
 
-    load();
+    $.get('templates/rankings/s-r-corps-category.html', load, 'html');
 
 }); // document.ready

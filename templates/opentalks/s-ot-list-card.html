@@ -12,3 +12,34 @@
     </div><!--/.card-holder -->
 
 </a><!--/.s-ot-list-card -->
+
+
+<div class="modal card-video-modal fade" id="s-ot-list-modal-##ID##" 
+    tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+    
+    <div class="modal-head modal-header text-center">
+        
+        <button class="close" data-dismiss="modal" aria-label="Fechar">
+            <span class="icon fas fa-times mr-1" aria-hidden="true"></span>
+            <span class="text">Fechar</span>
+        </button>
+        
+        <h2 class="h3 mt-0 mb-2">##ITEM_TITLE##</h2>
+        <h3 class="h4 m-0 font-weight-normal">##ITEM_POSITION##</h3>
+    
+    </div><!--/.modal-head -->
+    <div class="modal-body mt-3">
+        
+        <div class="modal-embed embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/##ITEM_VIDEO##" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+        </div><!--/.modal-embed -->
+    
+    </div><!--/.modal-body -->
+
+</div><!--/.modal-content -->
+</div><!--/.modal-dialog-->
+</div><!--/.modal -->
