@@ -182,25 +182,57 @@
             </section><!--/.about -->
                         
             <section class="rankings-list section">
-
-                <div class="box">
-                    <div class="row">
-                        <div class="col col-md-12 col-lg-4 col-lg-4">
-                            <figure class="ranking-container">
-                                <img alt="20" src="posicao">
-                            </figure>
-                        </div>
-                        <div class="col col-md-12 col-lg-8 col-lg-8">
-                            <figure class="logo-container">
-                                <img alt="20" src="logo">
-                            </figure>
-                        </div>
-                    </div><!--/.row -->
-
-                </div>
-
                 <div class="s-hold text-center">
                 <div class="s-hold-container container">
+
+                <div id="ATP">
+
+
+                    <h2>Destaques <strong>TOP 100 OPEN CORPS</strong> 2020</h2>
+
+
+
+                    <div id="carouselATP" class="carousel slide">
+          
+                        <div class="carousel-inner">
+
+                        </div><!--/.carousel-inner -->
+
+                        <a class="carousel-control-prev" href="#carouselATP" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselATP" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div><!--/#carouselATP -->
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselATP" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselATP" data-slide-to="1"></li>
+                        <li data-target="#carouselATP" data-slide-to="2"></li>
+                        <li data-target="#carouselATP" data-slide-to="3"></li>
+                        <li data-target="#carouselATP" data-slide-to="4"></li>
+                        <li data-target="#carouselATP" data-slide-to="5"></li>
+                        <li data-target="#carouselATP" data-slide-to="6"></li>
+                        <li data-target="#carouselATP" data-slide-to="7"></li>
+                        <li data-target="#carouselATP" data-slide-to="8"></li>
+                        <li data-target="#carouselATP" data-slide-to="9"></li>
+                        <li data-target="#carouselATP" data-slide-to="10"></li>
+                        <li data-target="#carouselATP" data-slide-to="11"></li>
+                        <li data-target="#carouselATP" data-slide-to="12"></li>
+                        <li data-target="#carouselATP" data-slide-to="13"></li>
+                        <li data-target="#carouselATP" data-slide-to="14"></li>
+                        <li data-target="#carouselATP" data-slide-to="15"></li>
+                        <li data-target="#carouselATP" data-slide-to="16"></li>
+                        <li data-target="#carouselATP" data-slide-to="17"></li>
+                        <li data-target="#carouselATP" data-slide-to="18"></li>
+                        <li data-target="#carouselATP" data-slide-to="19"></li>
+                    </ol>
+
+                </div><!--/#ATP -->
+
                 <div class="test d-lg-flex align-items-center justify-content-lg-between text-center text-lg-left mt-5">
 
                     <p class="m-0" style="transform: translateY(2px);">Veja todos os rankings publicados:</p>
@@ -440,10 +472,84 @@
     <script src="assets/js/ranking/2020/opentalk.js"></script>
 
     <script>
-        console.log(topCorps2020);
-        console.log(topCorpsTop1Cat2020);
-        console.log(minutoCeo2020);
-        console.log(opentalk2020);
+    $(document).ready(function(){ 
+        var first = true;
+
+        topCorps2020.forEach(item => {
+            if (item.Ranking != 'A-Z') {
+               
+                var ranking = item.Ranking;
+                var empresa = item.Empresa;
+                var pontos = item.Pontos;
+                var link = item.Link;
+
+                var video_minuto_ceo = '';
+                minutoCeo2020.forEach(ceo => {
+                    if (ceo.Empresa == empresa) {
+                        video_minuto_ceo = ceo.Video;
+                    }
+                });
+
+                var video_opentalk = '';
+                opentalk2020.forEach(person => {
+                    if (person.Empresa == empresa) {
+                        video_opentalk = person.Video;
+                    }
+                });
+
+                var html = '';
+
+                if (first) {
+                    html+= '<div class="box carousel-item active">';
+                } else {
+                    html+= '<div class="box carousel-item">';
+                }
+                    html+= '<div class="row">';
+                        html+= '<div class="col col-md-12 col-lg-4 col-lg-4">';
+                            html+= '<figure class="ranking-container">';
+                                html+= '<img alt="'+ranking+'" src="assets/img/ranking-'+ranking+'.png">';
+                            html+= '</figure>';
+                        html+= '</div>';
+                        html+= '<div class="col col-md-12 col-lg-8 col-lg-8">';
+                            html+= '<figure class="logo-container">';
+                                html+= '<img alt="'+empresa+'" src="/assets/img/logos/'+empresa+'.png">';
+                            html+= '</figure>';
+                        html+= '</div>';
+                    html+= '</div><!--/.row -->';
+                    html+= '<div class="flex-container">';
+                        html+= '<div class="points-container">';
+                            html+= '<span class="number">'+pontos+'</span>';
+                            html+= '<span class="text">Pontos</span>';
+                        html+= '</div>';
+
+                        if (video_minuto_ceo != '') {
+                            html+= '<div class="video-container">';
+                                html+= '<h3>Minuto CEO</h3>';
+                                html+= '<div class="embed-responsive embed-responsive-16by9">';
+                                    html+= '<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/'+video_minuto_ceo+'" frameborder="0" allowfullscreen></iframe>';
+                                html+= '</div>';
+                            html+= '</div>';
+                        }
+
+                        if (video_opentalk != '') {
+                            html+= '<div class="video-container">';
+                                html+= '<h3>Open Talk</h3>';
+                                html+= '<div class="embed-responsive embed-responsive-16by9">';
+                                    html+= '<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/'+video_opentalk+'" frameborder="0" allowfullscreen></iframe>';
+                                html+= '</div>';
+                            html+= '</div>';
+                        }
+
+                        html+= '<a href="'+link+'" class="btn">Quero me conectar</a>';
+                    html+= '</div><!--/.flex-container -->';
+                html+= '</div><!--/.box -->';
+
+                first = false;
+
+                $('#ATP').find('.carousel-inner').append(html);
+             }
+        });
+    });
     </script>
 
     <script src="assets/js/ranking.js"></script>

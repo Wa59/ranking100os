@@ -5,7 +5,8 @@ var minutoCeo2020 = [
     "Empresa": "Natura",
     "Position": 1,
     "TOP": "TOP 1",
-    "Video": ""
+    "Video": "y-A4dVEQEjU",
+    "OK": "ok"
   },
   {
     "Nome": "Jefferson De Paula",
@@ -13,15 +14,26 @@ var minutoCeo2020 = [
     "Empresa": "ArcelorMittal",
     "Position": 2,
     "TOP": "TOP 2",
-    "Video": ""
+    "Video": "Vhzz6oCKWYE",
+    "OK": "ok"
   },
   {
-    "Nome": "Carlos Emanuel Baptista Andrade",
+    "Nome": "Rodolfo Santos",
+    "Cargo": "CEO at BMG UpTech",
+    "Empresa": "BMG",
+    "Position": 3,
+    "TOP": "TOP 3",
+    "Video": "uYhftfPMi2I",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Carlos Andrade",
     "Cargo": "Diretor-VP de Estratégia e Desenvolvimento de Negócios",
     "Empresa": "EDP",
     "Position": 4,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "VWg7Z4cxrTQ",
+    "OK": "ok"
   },
   {
     "Nome": "Cesário Nakamura",
@@ -29,7 +41,8 @@ var minutoCeo2020 = [
     "Empresa": "Alelo",
     "Position": 5,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "j3XCiiHEEvQ",
+    "OK": "ok"
   },
   {
     "Nome": "Manfredo Rübens",
@@ -37,7 +50,8 @@ var minutoCeo2020 = [
     "Empresa": "BASF",
     "Position": 6,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "Szxb8pbMNpI",
+    "OK": "ok"
   },
   {
     "Nome": "José Massad",
@@ -45,7 +59,8 @@ var minutoCeo2020 = [
     "Empresa": "Raízen",
     "Position": 7,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "lnU8FXrR0sI",
+    "OK": "ok"
   },
   {
     "Nome": "Gerardo Rozanski",
@@ -53,7 +68,8 @@ var minutoCeo2020 = [
     "Empresa": "Unilever",
     "Position": 8,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "vHisH1IdlnM",
+    "OK": "ok"
   },
   {
     "Nome": "Rodrigo Galindo",
@@ -61,7 +77,8 @@ var minutoCeo2020 = [
     "Empresa": "Cogna",
     "Position": 11,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "rsrFr_EIKjU",
+    "OK": "ok"
   },
   {
     "Nome": "Thierry Fournier",
@@ -69,7 +86,8 @@ var minutoCeo2020 = [
     "Empresa": "Saint-Gobain",
     "Position": 14,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "ESb3cKGuc_U",
+    "OK": "ok"
   },
   {
     "Nome": "André Abucham",
@@ -77,7 +95,8 @@ var minutoCeo2020 = [
     "Empresa": "Engeform Engenharia",
     "Position": 15,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "mWKofUNitGY",
+    "OK": "ok"
   },
   {
     "Nome": "Marcos Sirelli",
@@ -85,7 +104,8 @@ var minutoCeo2020 = [
     "Empresa": "Porto Seguro",
     "Position": 16,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "Womjc2KXU74",
+    "OK": "ok"
   },
   {
     "Nome": "Jean Borges",
@@ -93,7 +113,8 @@ var minutoCeo2020 = [
     "Empresa": "Algar Telecom",
     "Position": 17,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "wSRdJvP2_ZY",
+    "OK": "ok"
   },
   {
     "Nome": "Carlos Brandão",
@@ -101,7 +122,8 @@ var minutoCeo2020 = [
     "Empresa": "Iguá Saneamento",
     "Position": 19,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "FcSGXszUJsk",
+    "OK": "ok"
   },
   {
     "Nome": "Italo Freitas",
@@ -109,7 +131,8 @@ var minutoCeo2020 = [
     "Empresa": "AES Tietê",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "5yfW3QS-LiI",
+    "OK": "ok"
   },
   {
     "Nome": "Marc Reichardt",
@@ -117,7 +140,8 @@ var minutoCeo2020 = [
     "Empresa": "Bayer",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "jab4iT9WX4k",
+    "OK": "ok"
   },
   {
     "Nome": "William Marcelo Nicolau",
@@ -125,7 +149,8 @@ var minutoCeo2020 = [
     "Empresa": "Cipatex",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "zzr3hPbBqzM",
+    "OK": "ok"
   },
   {
     "Nome": "Ricardo Botelho",
@@ -133,7 +158,8 @@ var minutoCeo2020 = [
     "Empresa": "Energisa",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "PH0-y-__B6Q",
+    "OK": "ok"
   },
   {
     "Nome": "Mauricio Bahr",
@@ -141,7 +167,8 @@ var minutoCeo2020 = [
     "Empresa": "ENGIE Brasil",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "JwIq3HFjyz0",
+    "OK": "ok"
   },
   {
     "Nome": "Viviane Martins",
@@ -149,7 +176,8 @@ var minutoCeo2020 = [
     "Empresa": "Falconi",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "mUCSawtVIL4",
+    "OK": "ok"
   },
   {
     "Nome": "Antonio Filosa",
@@ -157,7 +185,8 @@ var minutoCeo2020 = [
     "Empresa": "FCA Fiat Chrysler Automobiles",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "kiBSWKF1qnY",
+    "OK": "ok"
   },
   {
     "Nome": "Carlos Marinelli",
@@ -165,7 +194,8 @@ var minutoCeo2020 = [
     "Empresa": "Grupo Fleury",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "oBPlwdLTP1s",
+    "OK": "ok"
   },
   {
     "Nome": "Dr. Alessandro Ferreira",
@@ -173,7 +203,8 @@ var minutoCeo2020 = [
     "Empresa": "Hermes Pardini",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "kc0jQe3m7xc",
+    "OK": "ok"
   },
   {
     "Nome": "Paul Stoffels",
@@ -181,7 +212,8 @@ var minutoCeo2020 = [
     "Empresa": "Johnson & Johnson",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "BO5RWhchpfo",
+    "OK": "ok"
   },
   {
     "Nome": "Marcelo Cardoso",
@@ -189,7 +221,8 @@ var minutoCeo2020 = [
     "Empresa": "Laureate International Universities",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "x3BWTtYeRlI",
+    "OK": "ok"
   },
   {
     "Nome": "Roberto Leoncini",
@@ -197,7 +230,8 @@ var minutoCeo2020 = [
     "Empresa": "Mercedes-Benz",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "vJZg4UHXu5o",
+    "OK": "ok"
   },
   {
     "Nome": "Marcelo Nunes",
@@ -205,7 +239,8 @@ var minutoCeo2020 = [
     "Empresa": "PareBem Estacionamentos",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "DMLA2Jlxk3A",
+    "OK": "ok"
   },
   {
     "Nome": "Alvaro Cruz",
@@ -213,7 +248,8 @@ var minutoCeo2020 = [
     "Empresa": "Positivo Tecnologia",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "bifEhUKhGq0",
+    "OK": "ok"
   },
   {
     "Nome": "Juliana Azevedo",
@@ -221,7 +257,8 @@ var minutoCeo2020 = [
     "Empresa": "Procter & Gamble",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "JJ6kq-2XUG0",
+    "OK": "ok"
   },
   {
     "Nome": "Patrick Eckert",
@@ -229,7 +266,8 @@ var minutoCeo2020 = [
     "Empresa": "Roche",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "4mERPnZ7YqI",
+    "OK": "ok"
   },
   {
     "Nome": "Andreia Dutra",
@@ -237,7 +275,8 @@ var minutoCeo2020 = [
     "Empresa": "Sodexo",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "SI8Ri4g3ah0",
+    "OK": "ok"
   },
   {
     "Nome": "Juliano Tubino",
@@ -245,7 +284,8 @@ var minutoCeo2020 = [
     "Empresa": "TOTVS",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "BynvqL2-Gns",
+    "OK": "ok"
   },
   {
     "Nome": "Sergio Leite de Andrade",
@@ -253,7 +293,8 @@ var minutoCeo2020 = [
     "Empresa": "Usiminas",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "GKoXy1n7d68",
+    "OK": "ok"
   },
   {
     "Nome": "Marcos Bicudo",
@@ -261,14 +302,52 @@ var minutoCeo2020 = [
     "Empresa": "Vedacit",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "mGe_VorfGNo",
+    "OK": "ok"
   },
   {
     "Nome": "Percival Jatoba",
-    "Cargo": "CEO da Visa",
+    "Cargo": "Vice-Presidente de Soluções e Inovação da Visa do Brasil",
     "Empresa": "VISA",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "inu1_avB8Ns",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Efraim Horn",
+    "Cargo": "CEO",
+    "Empresa": "Cyrela",
+    "Position": "A-Z",
+    "TOP": "TOP 100",
+    "Video": "HSpdmGw2tfk",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Diego Gomes",
+    "Cargo": "Diretor Industrial",
+    "Empresa": "Grupo Petrópolis",
+    "Position": "A-Z",
+    "TOP": "TOP 100",
+    "Video": "azY4L2xbnDw",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Moacir Marafon",
+    "Cargo": "CEO",
+    "Empresa": "SoftPlan",
+    "Position": "A-Z",
+    "TOP": "TOP 100",
+    "Video": "odJ1fehzOVc",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Paulo Roseiro",
+    "Cargo": "R&D Director at Grupo Boticário",
+    "Empresa": "Grupo Boticário",
+    "Position": "A-Z",
+    "TOP": "TOP 100",
+    "Video": "77EvNtIK3aA",
+    "OK": "ok"
   }
 ];

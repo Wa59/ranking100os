@@ -5,7 +5,8 @@ var opentalk2020 = [
     "Empresa": "Natura",
     "Position": 1,
     "TOP": "TOP 1",
-    "Video": ""
+    "Video": "dWbPkjefzNY",
+    "OK": "ok"
   },
   {
     "Nome": "Paula Harraca/Rodrigo Carazolli",
@@ -13,7 +14,8 @@ var opentalk2020 = [
     "Empresa": "ArcelorMittal",
     "Position": 2,
     "TOP": "TOP 2",
-    "Video": ""
+    "Video": "jNrtqtSWpew",
+    "OK": "ok"
   },
   {
     "Nome": "Rodolfo Santos",
@@ -21,7 +23,8 @@ var opentalk2020 = [
     "Empresa": "BMG",
     "Position": 3,
     "TOP": "TOP 3",
-    "Video": ""
+    "Video": "b5CzH9FKO-Q",
+    "OK": "ok"
   },
   {
     "Nome": "Rafael Marciano",
@@ -29,7 +32,8 @@ var opentalk2020 = [
     "Empresa": "EDP",
     "Position": 4,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "cAM_f64SWAs",
+    "OK": "ok"
   },
   {
     "Nome": "Marcio Alencar",
@@ -37,7 +41,8 @@ var opentalk2020 = [
     "Empresa": "Alelo",
     "Position": 5,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "uSqjwfQc16Y",
+    "OK": "ok"
   },
   {
     "Nome": "Mirella Lisboa",
@@ -45,7 +50,8 @@ var opentalk2020 = [
     "Empresa": "BASF",
     "Position": 6,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "GjjgXtDdbAI",
+    "OK": "ok"
   },
   {
     "Nome": "Pedro Leal Noce",
@@ -53,15 +59,17 @@ var opentalk2020 = [
     "Empresa": "Raízen",
     "Position": 7,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "MEHI-Eti2ng",
+    "OK": "ok"
   },
   {
     "Nome": "Juliana Glezer",
-    "Cargo": "Juliana Glezer",
+    "Cargo": "Digital Transformation | Open Innovation and Portfolio Management",
     "Empresa": "Nestlé",
     "Position": 9,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "OULs8lfO9Rs",
+    "OK": ""
   },
   {
     "Nome": "Anieli Scandarolli",
@@ -69,7 +77,8 @@ var opentalk2020 = [
     "Empresa": "Cogna",
     "Position": 11,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "xC5rrH0HAhc",
+    "OK": "ok"
   },
   {
     "Nome": "André Medina",
@@ -77,7 +86,8 @@ var opentalk2020 = [
     "Empresa": "Andrade Gutierrez",
     "Position": 12,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "u2SVTeWBruo",
+    "OK": "ok"
   },
   {
     "Nome": "Marga Jobim Diniz Guimaraes/Pamella Mendes",
@@ -85,7 +95,8 @@ var opentalk2020 = [
     "Empresa": "Saint-Gobain",
     "Position": 14,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "Ja8FQRtRbRk",
+    "OK": "ok"
   },
   {
     "Nome": "Rafael Alpire",
@@ -93,7 +104,8 @@ var opentalk2020 = [
     "Empresa": "Engeform Engenharia",
     "Position": 15,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "fSxxIOXHIMk",
+    "OK": "ok"
   },
   {
     "Nome": "Zaima Milazzo",
@@ -101,7 +113,8 @@ var opentalk2020 = [
     "Empresa": "Algar Telecom",
     "Position": 17,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "",
+    "OK": "cade o link ?"
   },
   {
     "Nome": "Éder Campos",
@@ -109,7 +122,8 @@ var opentalk2020 = [
     "Empresa": "Iguá Saneamento",
     "Position": 19,
     "TOP": "TOP 20",
-    "Video": ""
+    "Video": "ve1ngxaSQ40",
+    "OK": "ok"
   },
   {
     "Nome": "Julia da Rosa Howat Rodrigues",
@@ -117,7 +131,8 @@ var opentalk2020 = [
     "Empresa": "AES Tietê",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "7yf6OlYqR1w",
+    "OK": "ok"
   },
   {
     "Nome": "Caspar van Rijnbach",
@@ -125,7 +140,8 @@ var opentalk2020 = [
     "Empresa": "Bayer",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "M7-UdGqyky8",
+    "OK": "ok"
   },
   {
     "Nome": "Livia Tizzo",
@@ -133,7 +149,8 @@ var opentalk2020 = [
     "Empresa": "Braskem",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "IrVBrWKVVC8",
+    "OK": "ok"
   },
   {
     "Nome": "Jeanny Camargo",
@@ -141,7 +158,8 @@ var opentalk2020 = [
     "Empresa": "CCP",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "NB_4CmaYuZ8",
+    "OK": "ok"
   },
   {
     "Nome": "Suelen Santos",
@@ -149,7 +167,8 @@ var opentalk2020 = [
     "Empresa": "Cipatex",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "oT4eMLVBOOo",
+    "OK": "ok"
   },
   {
     "Nome": "Guilherme Sawaya",
@@ -157,7 +176,8 @@ var opentalk2020 = [
     "Empresa": "Cyrela",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "7ORJStrCwz8",
+    "OK": "ok"
   },
   {
     "Nome": "Carlos Gothe",
@@ -165,7 +185,8 @@ var opentalk2020 = [
     "Empresa": "ENGIE Brasil",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "lZ9I-W7xoRg",
+    "OK": "ok"
   },
   {
     "Nome": "Rodrigo Gazzinelli",
@@ -173,7 +194,8 @@ var opentalk2020 = [
     "Empresa": "Falconi",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "2fsT3uo7t1c",
+    "OK": "ok"
   },
   {
     "Nome": "Gustavo Varela Delgado",
@@ -181,7 +203,8 @@ var opentalk2020 = [
     "Empresa": "FCA Fiat Chrysler Automobiles",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "3tISTtJhdsw",
+    "OK": "ok"
   },
   {
     "Nome": "Amanda Curti",
@@ -189,7 +212,8 @@ var opentalk2020 = [
     "Empresa": "Grupo Fleury",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "C2ZXUrUTduw",
+    "OK": "ok"
   },
   {
     "Nome": "Lívea Barbosa / Rodrigo Rodrigues",
@@ -197,7 +221,8 @@ var opentalk2020 = [
     "Empresa": "Johnson & Johnson",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "",
+    "OK": "cade o link ?"
   },
   {
     "Nome": "Fernando Bocchi",
@@ -205,7 +230,8 @@ var opentalk2020 = [
     "Empresa": "M. Dias Branco",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "IqZSz0p7f_Y",
+    "OK": "ok"
   },
   {
     "Nome": "Maurico Mazza",
@@ -213,7 +239,8 @@ var opentalk2020 = [
     "Empresa": "Mercedes-Benz",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "DAO2UWO6Z9U",
+    "OK": "ok"
   },
   {
     "Nome": "Bruno Rodrigues",
@@ -221,7 +248,8 @@ var opentalk2020 = [
     "Empresa": "PareBem Estacionamentos",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "f0Pt87mmcG0",
+    "OK": "ok"
   },
   {
     "Nome": "Nicolas Simone",
@@ -229,7 +257,8 @@ var opentalk2020 = [
     "Empresa": "Petrobras",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "4ZKBRYnJroY",
+    "OK": "ok"
   },
   {
     "Nome": "Denis Chama",
@@ -237,7 +266,8 @@ var opentalk2020 = [
     "Empresa": "Philip Morris Brasil",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "0M_bPvcBxpA",
+    "OK": "ok"
   },
   {
     "Nome": "Carolina Rodrigues",
@@ -245,7 +275,8 @@ var opentalk2020 = [
     "Empresa": "Procter & Gamble",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "E26PJ_8_MsY",
+    "OK": "ok"
   },
   {
     "Nome": "Ricardo Trinco Mendes",
@@ -253,7 +284,8 @@ var opentalk2020 = [
     "Empresa": "Renault",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "2Y4lWPdcdrE",
+    "OK": "ok"
   },
   {
     "Nome": "Laura Nagle Detomini",
@@ -261,7 +293,8 @@ var opentalk2020 = [
     "Empresa": "Roche",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "c58OAYolcsU",
+    "OK": "ok"
   },
   {
     "Nome": "Rubenson Chaves",
@@ -269,7 +302,8 @@ var opentalk2020 = [
     "Empresa": "Sodexo",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "aEsMA2y2Juo",
+    "OK": "ok"
   },
   {
     "Nome": "Guilherme Tossulino",
@@ -277,7 +311,8 @@ var opentalk2020 = [
     "Empresa": "Softplan",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "5fVGdQ4CFAo",
+    "OK": "ok"
   },
   {
     "Nome": "Vitor Andrade",
@@ -285,7 +320,8 @@ var opentalk2020 = [
     "Empresa": "TOTVS",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "QL_qRJUloSQ",
+    "OK": "ok"
   },
   {
     "Nome": "Éricka Menegaz",
@@ -293,7 +329,8 @@ var opentalk2020 = [
     "Empresa": "Usiminas",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "Rtd9znTIHus",
+    "OK": "ok"
   },
   {
     "Nome": "Luis Fernando Guggenberger",
@@ -301,7 +338,8 @@ var opentalk2020 = [
     "Empresa": "Vedacit",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "",
+    "OK": "cade o link ?"
   },
   {
     "Nome": "Erico Fileno",
@@ -309,7 +347,8 @@ var opentalk2020 = [
     "Empresa": "Visa",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "ofc9SNtyLUE",
+    "OK": "ok"
   },
   {
     "Nome": "Eduardo Vasconcelos",
@@ -317,6 +356,52 @@ var opentalk2020 = [
     "Empresa": "Whirlpool Corporation",
     "Position": "A-Z",
     "TOP": "TOP 100",
-    "Video": ""
+    "Video": "n5j2Yq_actQ",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Stephanie Blum",
+    "Cargo": "Head of Open Innovation",
+    "Empresa": "BRF",
+    "Position": "",
+    "TOP": "",
+    "Video": "2PBbjLh28-g",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Alaercio Nicoletti",
+    "Cargo": "Gerente de Melhoria Contínua e Inovação",
+    "Empresa": "Grupo Petrópolis",
+    "Position": "",
+    "TOP": "",
+    "Video": "NhDLz4sz1LA",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Dante Minucci/Renan Rocha",
+    "Cargo": "Gerente Geral – TI e Novas Tecnologias/CTO at Unidas",
+    "Empresa": "Unidas",
+    "Position": "",
+    "TOP": "",
+    "Video": "DjgEEsRd9R4",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Cecília Varanda/Luis Dente",
+    "Cargo": "Gerente de Transformação Digital & Colíder da Garagem de Inovação da Unilever Brasil/Diretor de Vendas, Trade & Transformação Digital da Unilever Foods Solutions",
+    "Empresa": "Unilever",
+    "Position": "",
+    "TOP": "",
+    "Video": "OtGzgNcXpYM",
+    "OK": "ok"
+  },
+  {
+    "Nome": "Alexandre Castro",
+    "Cargo": "Gerente de Inovação",
+    "Empresa": "Energisa",
+    "Position": "",
+    "TOP": "",
+    "Video": "NDYVjtsjMks",
+    "OK": "ok"
   }
 ];
