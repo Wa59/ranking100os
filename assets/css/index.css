@@ -1,10 +1,17 @@
 .home-insights .s-hold {
-    background: #003F7B;
-    color: #fff;
+    background:#fff;
+    color: #003F7B;
 }
-.home-insights .s-hold .s-title,
-.home-insights .s-hold .s-buttn {
-    color: #fff;
+.home-insights .s-cols {
+    position: relative;
+}
+.home-insights .img-fluid {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-40%);
+}
+.home-insights .s-hold .s-title {
+    color: #003F7B;
 }
 
 .home-minuto-ceo .s-videos-row {

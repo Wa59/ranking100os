@@ -1263,6 +1263,7 @@ $(document).ready(function($) {
         items+= '</a><!--/.card-news -->';
         items+= '</div><!--/.s-news-col -->';
     });
+    $('#s-news-row-2019').html('');
     $('#s-news-row-2019').append(items);
 
 }); // document.ready

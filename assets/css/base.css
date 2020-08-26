@@ -236,15 +236,20 @@ h3 {
 
     .navbar-toggl {
         align-items: center;
+        border-radius: 0;
         display: flex;
         font-size: 1.25em;
         height: 50px;
         justify-content: center;
-        padding: 0;
-        width: 50px;
+        padding: 0 1rem;
     }
     .navbar-toggl .icon {
-        transform: translateY(-1px);
+        transform: translateY(0px);
+    }
+    .navbar-toggl .text {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 0.5rem;
     }
 
     .navbar-nav .nav-link {
@@ -923,4 +928,12 @@ h3 {
         flex-basis: 20%;
         width: 20%;
     }
+}
+
+
+
+.premiacao.section .img-fluid {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-40%);
 }
