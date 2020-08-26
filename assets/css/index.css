@@ -310,18 +310,20 @@
     #ATP .flex-container { display: block; }
     #ATP .points-container { width: 100%; padding: 0; margin: 0; border: initial; }
     #ATP .points-container .number { font-size: 3em; }
-    #ATP .points-container .text { margin-bottom: -2em; font-size: 1.25em; text-align: center; left: 1em;}
-    #ATP .video-container { width: 70%; margin: 1em auto 0 auto; }
-    #ATP .video-minuto-ceo { width: 70%; margin: 0 auto; padding: 0; border: initial; }
+    #ATP .points-container .text { margin-bottom: -1em; font-size: 1.25em; text-align: center; left: 1em;}
+    #ATP .video-container a { height: 90px;}
+    #ATP .video-container { width: 60%; margin: 1em auto 0 auto; }
+    #ATP .video-minuto-ceo { width: 60%; margin: 0 auto; padding: 0; border: initial; }
     #ATP .box { padding: 1em; }
-    #ATP .box .ranking-container { border: initial; height: 100px; margin: 1em auto; }
+    #ATP .box .ranking-container { border: initial; max-height: 100px; margin: 1em auto; }
+    #ATP .box .ranking-container img { max-height: 80px; }
     #ATP .box .logo-container { height: 120px; margin: 0; }
     #ATP .carousel-control-prev-icon { transform: translateX(-0.75em); }
     #ATP .carousel-control-next-icon { transform: initial; }
-    #ATP .carousel-control-prev-icon:after { color: #000000; }
-    #ATP .carousel-control-next-icon:after { color: #000000; }
-    #ATP .btn-container { padding: 0; border: 0; margin-top: 1em; }
-    #ATP .btn { font-size: 1em; }
+    #ATP .carousel-control-prev-icon:after { color: #bbb; }
+    #ATP .carousel-control-next-icon:after { color: #bbb; }
+    #ATP .btn-container { padding: 0; border: 0; margin-top: 2em; }
+    #ATP .btn { font-size: 0.9em; }
 }
 
 
