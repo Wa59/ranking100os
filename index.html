@@ -186,14 +186,9 @@
                 <div class="s-hold-container container">
 
                 <div id="ATP">
-
-
                     <h2>Destaques <strong>TOP 100 OPEN CORPS</strong> 2020</h2>
 
-
-
                     <div id="carouselATP" class="carousel slide">
-          
                         <div class="carousel-inner">
 
                         </div><!--/.carousel-inner -->
@@ -563,17 +558,18 @@
                     html+= '<div class="box carousel-item">';
                 }
                     html+= '<div class="row">';
-                        html+= '<div class="col col-md-12 col-lg-4 col-lg-4">';
+                        html+= '<div class="col-6 col-lg-4">';
                             html+= '<figure class="ranking-container">';
                                 html+= '<img alt="'+ranking+'" src="assets/img/ranking-'+ranking+'.png">';
                             html+= '</figure>';
                         html+= '</div>';
-                        html+= '<div class="col col-md-12 col-lg-8 col-lg-8">';
+                        html+= '<div class="col-6 col-lg-8">';
                             html+= '<figure class="logo-container">';
                                 html+= '<img alt="'+empresa+'" src="/assets/img/logos/'+empresa+'.png">';
                             html+= '</figure>';
                         html+= '</div>';
                     html+= '</div><!--/.row -->';
+                    
                     html+= '<div class="flex-container">';
                         html+= '<div class="points-container">';
                             html+= '<span class="number">'+pontos+'</span>';
@@ -581,24 +577,27 @@
                         html+= '</div>';
 
                         if (video_minuto_ceo != '') {
-                            html+= '<div class="video-container">';
+                            html+= '<div class="video-container video-minuto-ceo">';
                                 html+= '<h3>Minuto CEO</h3>';
-                                html+= '<div class="embed-responsive embed-responsive-16by9">';
-                                    html+= '<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/'+video_minuto_ceo+'" frameborder="0" allowfullscreen></iframe>';
-                                html+= '</div>';
+                                html+= '<a href="https://youtu.be/'+video_minuto_ceo+'" class="thumb-container">';
+                                    html+= '<img alt="Thumbnail do vídeo" src="https://img.youtube.com/vi/'+video_minuto_ceo+'/hqdefault.jpg">';
+                                html+= '</a>';
                             html+= '</div>';
                         }
 
                         if (video_opentalk != '') {
                             html+= '<div class="video-container">';
                                 html+= '<h3>Open Talk</h3>';
-                                html+= '<div class="embed-responsive embed-responsive-16by9">';
-                                    html+= '<iframe class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/'+video_opentalk+'" frameborder="0" allowfullscreen></iframe>';
-                                html+= '</div>';
+                                html+= '<a href="https://youtu.be/'+video_opentalk+'" class="thumb-container">';
+                                    html+= '<img alt="Thumbnail do vídeo" src="https://img.youtube.com/vi/'+video_opentalk+'/hqdefault.jpg">';
+                                html+= '</a>';
                             html+= '</div>';
                         }
 
-                        html+= '<a href="'+link+'" class="btn">Quero me conectar</a>';
+                        html+= '<div class="btn-container">';
+                          html+= '<a href="'+link+'" class="btn">Quero me conectar</a>';
+                        html+= '</div>';
+
                     html+= '</div><!--/.flex-container -->';
                 html+= '</div><!--/.box -->';
 
