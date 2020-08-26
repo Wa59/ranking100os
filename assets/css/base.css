@@ -200,6 +200,37 @@ h3 {
     overflow: hidden;
     width: 100%;
 }
+
+.site::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 262px;
+    height: 896px;
+    pointer-events: none;
+    background: url(../img/bg-site-before.png) 0 0 no-repeat;
+}
+
+.site::after {
+    content: '';
+    position: absolute;
+    top: 25em;
+    right: 0;
+    z-index: 0;
+    width: 282px;
+    height: 786px;
+    pointer-events: none;
+    background: url(../img/bg-site-after.png) 0 0 no-repeat;
+}
+
+@media (max-width: 1300px) { 
+    .site::before { left: -200px; }
+    .site::after { display: none }
+}
+
+
 .site-header {
     height: 90px;
 }
@@ -320,10 +351,10 @@ h3 {
     filter: invert(50%) sepia(91%) saturate(1249%) hue-rotate(184deg) brightness(107%) contrast(90%);
 }
 
-
-
 .test {
-    background: rgba(69,170,242,0.1);
+    position: relative;
+    z-index: 2;
+    background: #eeeeee;
     font-weight: 500;
     margin-top: 3rem;
     padding: 2rem;

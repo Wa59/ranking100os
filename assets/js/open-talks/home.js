@@ -1,8 +1,8 @@
 $(document).ready(function($) {
 
     var items = '';
-    if (CorpsOpenTalks) {
-        CorpsOpenTalks.map(function(item, i){
+    if (opentalk2020) {
+        opentalk2020.map(function(item, i){
             if (i > 2) return true;
 
             items+= '<div class="s-talks-col col col-12 col-md-6 col-lg-4 order-'+ i +'">';
@@ -10,7 +10,7 @@ $(document).ready(function($) {
                 items+= '<a class="card-talk card" href="#card-talk-modal-'+ i +'" data-target="#card-talk-modal-'+ i +'" data-toggle="modal">';
                 
                     items+= '<div class="c-v-image"';
-                        items+= 'style="background-image: url(https://img.youtube.com/vi/VDjlj59PTRQ/maxresdefault.jpg);"';
+                        items+= 'style="background-image: url(https://img.youtube.com/vi/'+ item['Video'] +'/hqdefault.jpg);"';
                     items+= '></div><!--/.c-v-image -->';
                     
                     items+= '<div class="c-v-holdr">';
@@ -40,7 +40,7 @@ $(document).ready(function($) {
 
                     items+= '<div class="modal-body mt-3">';
                     items+= '<div class="modal-embed embed-responsive embed-responsive-16by9">';
-                        items+= '<iframe width="560" height="315" src="https://www.youtube.com/embed/VDjlj59PTRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                        items+= '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ item['Video'] +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                     items+= '</div><!--/.modal-embed -->';
                     items+= '</div><!--/.modal-body -->';
 
