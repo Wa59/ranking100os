@@ -1245,15 +1245,24 @@ var clippingsNoticias = [
 
 $(document).ready(function($) {
 
-  var items = '';
+    var items = '';
 
-  clippingsNoticias.forEach(function(item, index){
-      items+= '<li class="mt-3">';
-      items+= '<p>' + item.date + ' por ' + item.auth + '</p>';
-      items+= '<a class="" href="' + item.href + '" title="' + item.name + '" target="_blank">';
-        items+='<p>' + item.name + '</p>';
-      items+= '</a></li>';
-  });
-  $('#s-a-n-list').append(items);
+    clippingsNoticias.forEach(function(item, index){
+        items+= '<div class="s-news-col col col-12">';
+        items+= '<a class="card-news card" href="' + item.href + '" target="_blank">';
+        
+            items+= '<div class="c-n-dated">';
+                items+= '<span class="dat">' + item.date + '</span>';
+            items+= '</div><!--/.c-n-dated -->';
+
+            items+= '<div class="c-n-holdr">';
+                items+= '<span class="tit">' + item.auth + '</span>';
+                items+= '<span class="com">' + item.name + '</span>';
+            items+= '</div><!--/.c-n-holdr -->';
+        
+        items+= '</a><!--/.card-news -->';
+        items+= '</div><!--/.s-news-col -->';
+    });
+    $('#s-news-row-2019').append(items);
 
 }); // document.ready
