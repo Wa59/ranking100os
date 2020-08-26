@@ -17,15 +17,26 @@
         <img class="img-fluid" src="data/rankings/corps/logos/##ITEM_TITLE##.png" alt="Logotipo ##ITEM_TITLE##" />
     </div><!--/.card-image -->
 
-    <a class="card-btn btn-primary btn-sm btn py-2 px-4" href="##ITEM_HREF##">
+    <a class="card-btn btn-primary btn-sm btn mt-4 py-2 px-4" href="##ITEM_HREF##">
         <span class="text">Quero me conectar</span>
     </a><!--/.card-btn -->
 
 </div><!--/.s-r-carousel-card-grid -->
-<div class="s-r-carousel-card-grid grid-3" data-mc="##ITEM_TITLE##">
-    3
-</div><!--/.s-r-carousel-card-grid -->
-<div class="s-r-carousel-card-grid grid-4" data-ot="##ITEM_TITLE##">
-    4
+<div class="s-r-carousel-card-grid grid-3 ##MC_DISPLAY## ##OT_DISPLAY##">
+
+    <a class="s-mc-list-card card ##MC_DISPLAY##" href="http://youtu.be/##MC_VIDEO##" target="_blank">
+        <div class="card-image card-image-bg"
+            style="background-image: url(https://img.youtube.com/vi/##MC_VIDEO##/hqdefault.jpg);">
+        </div><!--/.card-image -->
+        <div class="card-space mt-3 small">##MC_TITLE##, ##MC_POSITION##</div>
+    </a><!--/.s-mc-list-card -->
+    
+    <a class="s-ot-list-card card ##OT_DISPLAY##" href="http://youtu.be/##OT_VIDEO##" target="_blank">
+        <div class="card-image card-image-bg"
+            style="background-image: url(https://img.youtube.com/vi/##OT_VIDEO##/hqdefault.jpg);">
+        </div><!--/.card-image -->
+        <div class="card-space mt-3 small">Open Talk com ##OT_TITLE##</div>
+    </a><!--/.s-ot-list-card -->
+
 </div><!--/.s-r-carousel-card-grid -->
 </div><!--/.s-r-carousel-card -->

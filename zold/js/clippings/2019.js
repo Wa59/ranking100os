@@ -763,7 +763,7 @@ var clippings = [
   },
   {
     date : '22/07/19',
-    name : 'Com 21 categorias, edição 2019 do ranking Top 100 Open Startups tem recorde de participação',
+    name : 'Com 21 categorias, edição 2019 do Ranking 100 Open Startups tem recorde de participação',
     href : 'https://www.segs.com.br/demais/181870-com-21-categorias-edicao-2019-do-ranking-top-100-open-startups-tem-recorde-de-participacao',
     auth : 'Segs',
   },
@@ -811,7 +811,7 @@ var clippings = [
   },
   {
     date : '22/07/19',
-    name : 'Com 21 categorias, edição 2019 do ranking Top 100 Open Startups tem recorde de participação',
+    name : 'Com 21 categorias, edição 2019 do Ranking 100 Open Startups tem recorde de participação',
     href : 'https://www.segs.com.br/demais/181870-com-21-categorias-edicao-2019-do-ranking-top-100-open-startups-tem-recorde-de-participacao?tmpl=component&print=1',
     auth : 'Segs',
   },
@@ -883,7 +883,7 @@ var clippings = [
   },
   {
     date : '19/07/19',
-    name : 'Com 21 categorias, edição 2019 do ranking Top 100 Open Startups tem recorde de participação',
+    name : 'Com 21 categorias, edição 2019 do Ranking 100 Open Startups tem recorde de participação',
     href : 'http://www.tibahia.com/tecnologia_informacao/conteudo_unico.aspx?c=N_EVENTO&fb=B_FULL&hb=B_CENTRA&bl=LAT1&r=N_EVENTO&nid=53672',
     auth : 'TI Bahia.com',
   },
@@ -1225,7 +1225,7 @@ var clippings = [
   // },
   {
     date : '17/07/19',
-    name : 'Ranking Top 100 Open Startups',
+    name : 'Ranking 100 Open Startups',
     href : 'https://www.mundorh.com.br/ranking-top-100-open-startups',
     auth : 'MundoRH'
   },

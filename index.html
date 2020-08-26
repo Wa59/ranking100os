@@ -122,12 +122,12 @@
 
         <header class="site-header header" id="site-header">
 
-            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <nav class="navbar navbar-expand-lg fixed-top" aria-label="Menu principal">
             <div class="navbar-container container">
 
                 <a class="navbar-brand" href="index.html">
                     <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
-                    <span class="txt-named d-none d-md-block">Ranking TOP 100 Open Startups</span>
+                    <span class="txt-named d-none d-md-block">Ranking 100 Open Startups</span>
                 </a><!--/.navbar-brand -->
 
                 <div class="navbar-collapse collapse" id="navbar-collapse">
@@ -143,13 +143,43 @@
 
                 </div><!--/.navbar-collapse -->
 
-                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-lg-none" href="#modal-menu" role="button"
+                    data-target="#modal-menu" data-toggle="modal">
+                    <span class="text">Menu</span> 
                     <span class="icon fa fa-bars" aria-hidden="true"></span>
-                    <span class="text">Menu</span>
                 </a><!--/.navbar-toggl -->
 
             </div><!--/.navbar-container -->
             </nav><!--/.navbar -->
+
+            <nav class="navbar-ranking navbar navbar-expand-sm fixed-top navbar-dark" aria-label="Menu ranking">
+            <div class="navbar-container container px-0 px-lg-3 justify-content-center">
+
+                <span class="navbar-brand d-none d-lg-block mr-auto">
+                    <span class="text">Veja todos os<br class="d-block d-sm-none"> rankings publicados:</span>
+                </span><!--/.s-mockd -->
+
+                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-sm-none" href="#navbar-ranking-collapse" role="button"
+                    data-toggle="collapse" data-target="#navbar-ranking-collapse" 
+                    aria-controls="navbar-ranking-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text">Rankings</span> 
+                    <span class="icon fa fa-chevron-down" aria-hidden="true"></span>
+                </a><!--/.navbar-toggl -->
+
+                <div class="navbar-ranking-collapse collapse navbar-collapse" id="navbar-ranking-collapse">
+
+                    <ul class="navbar-nav ml-md-auto mt-2 mt-lg-0 flex-sm-row align-items-center justify-content-between">
+                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html">TOP 100 <strong>Open Startups</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html">TOP 100 <strong>Open Corps</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html">TOP 10 <strong>Investidores</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html">TOP 10 <strong>Ecossistema</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html">TOP 100 <strong>Avaliadores</strong></a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-ranking-collapse -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar-ranking -->
 
         </header><!--/.site-header -->
 
@@ -165,7 +195,7 @@
                     </h2><!--/.s-title -->
 
                     <div class="s-descr mt-4">
-                        <p class="lead">Convidamos os executivos das empresas líderes em programas de Open Innovation e engajadas no ecossistema de inovação para contar um pouco da sua história.</p>
+                        <p class="lead">Conheça as empresas que mais fazem open innovation com startups no Brasil.</p>
                     </div><!--/.s-descr -->
                 
                 </div><!--/.s-hold -->
@@ -180,8 +210,8 @@
                     </li><!--/.carousel-item -->
                     </ol><!--/.carousel-inner -->
 
-                    <ol class="carousel-ctrls">
-                        <li data-target="#carouselRanking" data-slide-to="0" class="active">01</li>
+                    <ol class="carousel-ctrls carousel-indicators">
+                        <!-- <li class="link ml-auto"><a href="ranking?tab=corps">Ver todas as TOP 100 Open Corps</a></li> -->
                     </ol><!--/.carousel-ctrls -->
 
                 </div><!--/.s-hold -->
@@ -190,7 +220,7 @@
                 <div class="s-hold-container pt-5 pb-3 container">
                 <div class="s-hold mx-auto text-center" style="max-width: 840px;">
     
-                    <a class="btn-primary btn" href="rankings.html?tab=corps">
+                    <a class="btn-primary btn" href="rankings-corps.html">
                         <span class="text">Ver o Ranking completo</span>
                     </a><!--/.btn-primary -->
                 
@@ -199,10 +229,10 @@
                 
             </section><!--/.ranking -->
                     
-            <section class="home-insights section py-3">
+            <section class="home-insights section pb-5">
 
                 <div class="s-hold-container container">
-                <div class="s-hold bg-white" style="margin:1px; padding:1px">
+                <div class="s-hold mt-3 bg-white" style="margin:1px; padding:1px">
                 <div class="s-rows row align-items-center">
                 <div class="s-cols col-12 col-lg-8 col-xl-7">
 
@@ -213,7 +243,7 @@
                         </h2><!--/.s-title -->
     
                         <div class="s-descr mt-4">
-                            <p class="lead">E a análise do Ranking das 100 empresas que mais fazem open innovation com startups no Brasil</p>
+                            <p class="lead">Veja a análise completa dos dados do Ranking das 100 empresas que mais fazem open innovation com startups no Brasil.</p>
                         </div><!--/.s-descr -->
     
                         <span class="s-buttn d-block mt-3 text-primary" style="font-weight:600;">
@@ -245,7 +275,7 @@
                     </h2><!--/.s-title -->
 
                     <div class="s-descr mt-4">
-                        <p class="lead">Convidamos os executivos das empresas líderes em programas de Open Innovation e engajadas no ecossistema de inovação para contar um pouco da sua história.</p>
+                        <p class="lead">O que dizem os CEOs das empresas líderes do Ranking sobre a importância da open innovation e desta conquista?</p>
                     </div><!--/.s-descr -->
                     
                     <a class="s-buttn mt-4" href="minuto-ceo.html">
@@ -256,7 +286,7 @@
                 </div><!--/.s-hold -->
                 </div><!--/.s-hold-container -->
                 
-                <div class="s-cont pt-5 pb-3 px-3 px-md-5 mx-auto" style="max-width: 1900px;">
+                <div class="s-cont py-5 px-3 px-md-5 mx-auto" style="max-width: 1900px;">
                 <div class="s-rows row justify-content-center" id="s-mc-list" data-num="5" data-col="col-6 col-sm-auto">
                 <div class="s-cols col col-12">
                     <span class="loading">Carregando...</span>
@@ -268,7 +298,7 @@
 
             <section class="home-open-talks section py-5">
 
-                <div class="s-cont py-3 container">
+                <div class="s-cont py-5 container">
                 <div class="s-rows row ">
                 <div class="s-cols col col-12 col-md-6 col-lg-8 col-xl-7">
 
@@ -277,7 +307,7 @@
                     </h2><!--/.s-title -->
 
                     <div class="s-descr mt-4">
-                        <p class="lead">Convidamos os executivos das empresas líderes em programas de Open Innovation e engajadas no ecossistema de inovação para contar um pouco da sua história.</p>
+                        <p class="lead">Executivos responsáveis por open innovation das empresas vencedoras do Ranking falam sobre os programas de inovação e as oportunidades para startups.</p>
                     </div><!--/.s-descr -->
 
                     <a class="s-buttn mt-4" href="open-talks.html">
@@ -289,7 +319,7 @@
                 <div class="s-cols col col-12 col-md-6 col-lg-4 offset-xl-1">
 
                     <div class="s-hot-list-card p-5" style="background: rgba(0,0,0,0.1);">
-                        <p class="s-descr my-0">Acompanhar as Open Talks durante a Oiweek. A Oiweek é um evento mensal organizado pela 100 Open Startups.</p>
+                        <p class="s-descr my-0">As Open Talks com líderes em open innovation são parte da Oiweek. Acompanhe todo mês destaques com a visão e as oportunidades das empresas líderes do mercado.</p>
                         <a class="s-buttn mt-4" href="http://oiweek.com.br/">
                             <span class="text">Conheça a Oiweek</span>
                             <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
@@ -310,13 +340,13 @@
                 
             </section><!--/.home-open-talks -->
 
-            <section class="news section py-5" id="news" aria-labelledby="lbl-news">
+            <section class="news section bg-white py-5" id="news" aria-labelledby="lbl-news">
 
-                <div class="s-hold py-3">
+                <div class="s-hold py-5">
                 <div class="s-container container text-center">
 
                     <h2 class="s-title" id="lbl-benefits">
-                        <span class="text">Ranking TOP 100 Open Startups na mídia</span>
+                        <span class="text">Ranking 100 Open Startups na mídia</span>
                     </h2><!--/.s-title -->
 
                     <ul class="s-n-list row align-items-center justify-content-between list-unstyled" id="s-n-list">
@@ -335,7 +365,7 @@
 
         <footer class="site-footer footer" id="site-footer">
 
-            <div class="footer-sitemap bg-dark text-light mt-5 py-5">
+            <div class="footer-sitemap bg-dark text-light py-5">
             <div class="footer-sitemap-container container">
 
                 <div class="footer-row row align-items-stretch">

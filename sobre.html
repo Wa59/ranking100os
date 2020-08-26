@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sobre - Ranking TOP 100 Open Startups</title>
+    <title>Sobre - Ranking 100 Open Startups</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -121,12 +121,12 @@
 
         <header class="site-header header" id="site-header">
 
-            <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+            <nav class="navbar navbar-expand-lg fixed-top" aria-label="Menu principal">
             <div class="navbar-container container">
 
                 <a class="navbar-brand" href="index.html">
                     <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
-                    <span class="txt-named d-none d-md-block">Ranking TOP 100 Open Startups</span>
+                    <span class="txt-named d-none d-md-block">Ranking 100 Open Startups</span>
                 </a><!--/.navbar-brand -->
 
                 <div class="navbar-collapse collapse" id="navbar-collapse">
@@ -142,13 +142,43 @@
 
                 </div><!--/.navbar-collapse -->
 
-                <a class="navbar-toggl btn-primary btn-sm btn ml-4 d-lg-none" href="#modal-menu" data-target="#modal-menu" data-toggle="modal">
+                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-lg-none" href="#modal-menu" role="button"
+                    data-target="#modal-menu" data-toggle="modal">
+                    <span class="text">Menu</span> 
                     <span class="icon fa fa-bars" aria-hidden="true"></span>
-                    <span class="text">Menu</span>
                 </a><!--/.navbar-toggl -->
 
             </div><!--/.navbar-container -->
             </nav><!--/.navbar -->
+
+            <nav class="navbar-ranking navbar navbar-expand-sm fixed-top navbar-dark" aria-label="Menu ranking">
+            <div class="navbar-container container px-0 px-lg-3 justify-content-center">
+
+                <span class="navbar-brand d-none d-lg-block mr-auto">
+                    <span class="text">Veja todos os<br class="d-block d-sm-none"> rankings publicados:</span>
+                </span><!--/.s-mockd -->
+
+                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-sm-none" href="#navbar-ranking-collapse" role="button"
+                    data-toggle="collapse" data-target="#navbar-ranking-collapse" 
+                    aria-controls="navbar-ranking-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text">Rankings</span> 
+                    <span class="icon fa fa-chevron-down" aria-hidden="true"></span>
+                </a><!--/.navbar-toggl -->
+
+                <div class="navbar-ranking-collapse collapse navbar-collapse" id="navbar-ranking-collapse">
+
+                    <ul class="navbar-nav ml-md-auto mt-2 mt-lg-0 flex-sm-row align-items-center justify-content-between">
+                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html">TOP 100 <strong>Open Startups</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html">TOP 100 <strong>Open Corps</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html">TOP 10 <strong>Investidores</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html">TOP 10 <strong>Ecossistema</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html">TOP 100 <strong>Avaliadores</strong></a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-ranking-collapse -->
+
+            </div><!--/.navbar-container -->
+            </nav><!--/.navbar-ranking -->
 
         </header><!--/.site-header -->
 
@@ -165,9 +195,9 @@
 
                     <div class="s-descr mt-4">
                         <p class="lead">Publicado desde 2016, o Ranking 100 Open Startups destaca anualmente as startups mais atraentes para o mercado corporativo e as empresas líderes mais engajadas no ecossistema de inovação.</p>
-                        <p>A 100 Open Startups é a plataforma internacional de maior impacto para conectar grandes empresas e startups (<a href="https://www.openstartups.net/site/sobre.html">saiba mais sobre nossa história</a>). Com <strong>mais de 9.400 relações de negócios</strong> validadas, a plataforma tornou-se case de estudo das principais universidades do mundo e desperta a cada dia em inúmeros executivos e empreendedores o interesse na colaboração para a inovação.</p>
+                        <p>O Ranking é publicado pela 100 Open Startups, a plataforma internacional de maior impacto na conexão entre grandes empresas e startups (<a href="https://www.openstartups.net/site/sobre.html">saiba mais sobre nossa história</a>).</p>
                         <p>Como parte do método que tem foco principal na geração de negócios, o movimento publica anualmente o Ranking 100 Open Startups com as startups mais atraentes para o mercado corporativo, com o objetivo dar alta visibilidade para as startups selecionadas pelo mercado e, com isso, ampliar as oportunidades para estas iniciativas que encontram-se em estágio adequado para a conexão com grandes empresas.</p>
-                        <p>Hoje, o Ranking 100 Open Startups tornou-se um dos grandes destaques da imprensa nacional e é usado como referência por grandes empresas e investidores. Publicado nos principais veículos de negócio do país, o ranking é posteriormente replicado por outras editorias, ampliando muito a visibilidade e, consequentemente, as oportunidades de negócios para as startups ranqueadas.</p>
+                        <p>Hoje, o Ranking 100 Open Startups tornou-se um dos grandes destaques da imprensa nacional e é usado como referência por grandes empresas e investidores.</p>
                     </div><!--/.s-descr -->
 
                 </div><!--/.s-hold -->
@@ -185,8 +215,9 @@
                     </h2><!--/.s-title -->
 
                     <div class="s-descr mt-4">
-                        <p class="lead">A metodologia do Ranking 100 Open Startups dá pontos para as startups que mais despertam interesse em grandes instituições.</p>
-                        <p>Atualmente, mais de 2.700 grandes empresas contribuem para a constituição do Ranking que destaca as startups com melhor desempenho no período de um ano, despertando interesse e fechando contratos com grandes empresas.</p>
+                        <p class="lead">A metodologia do Ranking 100 Open Startups dá pontos para as startups que mais despertam interesse em médias e grandes instituições a cada ano e, na outra ponta, para as médias e grandes empresas que mais estabelecem relações de negócio com startups.</p>
+                        <p>São consideradas elegíveis para o Ranking startups validadas enquanto tal por especialistas do ecossistema, executivos de empresas e investidores, de acordo com a metodologia da 100 Open Startups. Além disso, as startups devem ter faturamento inferior a R$ 10 milhões no exercício fiscal do ano anterior à publicação do Ranking, não ter recebido mais de R$ 10 milhões em investimento direto e não ser controlada por grupo econômico, mas sim por empreendedores à frente do negócio.</p>
+                        <p>Para a categoria TOP Open Corps, são consideradas elegíveis as empresas com faturamento superior a R$ 100 milhões ou mais de 100 funcionários.</p>
                     </div><!--/.s-descr -->
 
                 </div><!--/.s-hold -->
@@ -210,7 +241,7 @@
                         <div class="accordion-card-body-inside">
 
                             <div class="s-descr">
-                                <p>São considerados 16 tipos de relacionamento, divididos em 4 grandes grupos, com pontuação equivalente a 1, 5 ou 10 pontos, conforme detalhado na tabela a seguir.</p>
+                                <p>Para compor a pontuação, são consideradas a quantidade e a intensidade dos relacionamentos declarados, categorizados em 16 tipos, divididos em quatro grandes grupos, com pontuação equivalente a 1, 5 ou 10 pontos, conforme detalhado na tabela a seguir:</p>
                             </div><!--/.s-descr -->
 
                             <div class="table-responsive mt-4">
@@ -494,7 +525,7 @@
                     <div class="s-container container text-center">
 
                         <h2 class="s-title" id="lbl-benefits">
-                            <span class="text">Ranking TOP 100 Open Startups na mídia</span>
+                            <span class="text">Ranking 100 Open Startups na mídia</span>
                         </h2><!--/.s-title -->
 
                         <ul class="s-n-list row align-items-center justify-content-between list-unstyled" id="s-n-list">

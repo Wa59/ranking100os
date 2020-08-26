@@ -4,26 +4,36 @@
 .s-r-carousel-card {
     align-items: center;
     display: grid;
-    grid-template-columns: 290px 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 330px 1fr 360px;
     justify-content: center;
 }
 .s-r-carousel-card .grid-1 {
     border-right: 1px solid #eee;
     grid-row-start: 1;
     grid-row-end: 3;
+    height: 100%;
 }
 .s-r-carousel-card .grid-2 {
     grid-row-start: 1;
     grid-row-end: 3;
 }
+.s-r-carousel-card .grid-3,
+.s-r-carousel-card .grid-4 {
+    border-left: 1px solid #eee;
+}
+
 .s-r-carousel-card-grid {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
     padding: 3rem;
     text-align: center;
 }
 
     .s-r-carousel-card .card-ranking {
-        align-items: flex-end;
+        align-items: center;
         display: flex;
         height: 195px;
         justify-content: center;
@@ -55,18 +65,34 @@
         transform: translateX(0.75em);
     }
     
-    .s-r-carousel-card .card-image {
+    .s-r-carousel-card .card-image-bg {
+        border-radius: 0.5rem;
+        padding-top: 57%;
+    }
+
+    .s-r-carousel-card .card-image-logo {
         align-items: center;
         display: flex;
         height: 212px;
         justify-content: center;
         width: 100%;
     }
-    .s-r-carousel-card .card-image img {
+    .s-r-carousel-card .card-image-logo img {
         object-fit: scale-down;
         max-height: 100%;
         max-width: 290px;
     }
+
+    .s-r-carousel-card .s-mc-list-card,
+    .s-r-carousel-card .s-ot-list-card {
+        background: transparent;
+        box-shadow: none;
+        height: auto;
+    }
+    .s-r-carousel-card .card + .card {
+        margin-top: 3rem;
+    }
+
 
 
 /* MINUTO CEO & OPEN TALKS */

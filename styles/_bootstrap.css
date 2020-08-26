@@ -110,6 +110,7 @@
     .card .card-image-bg {
         background: #000 no-repeat 50% 50%;
         background-size: auto 150%;
+        overflow: hidden;
         padding-top: 100%
     }
     .card .card-holder {
