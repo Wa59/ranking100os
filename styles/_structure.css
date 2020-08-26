@@ -5,7 +5,7 @@
     width: 100%;
 }
 .site-header {
-    height: 90px;
+    height: 140px;
     position: relative;
 }
 
@@ -16,8 +16,7 @@
 .navbar {
     background: transparent;
     background-color: #fff;
-    box-shadow: 0 0 1.5rem rgba(0,0,0,0.05);
-    height: 90px;
+    height: 70px;
     position: fixed;
     top: 0; right: 0; left: 0;
     z-index: 1010;
@@ -33,7 +32,7 @@
         font-weight: 600;
     }
     .navbar-brand img {
-        width: 55px;
+        width: 50px;
     }
     .navbar-brand .txt-named {
         color: #222;
@@ -43,12 +42,20 @@
 
     .navbar-toggl {
         align-items: center;
+        background: transparent !important;
+        border: 0;
         border-radius: 0;
+        color: var(--startups);
         display: flex;
         font-size: 1.25em;
         height: 50px;
         justify-content: center;
-        padding: 0 1rem;
+        padding: 0 !important;
+    }
+    .navbar-toggl.btn:focus,
+    .navbar-toggl.btn:hover {
+        color: var(--startups);
+        text-decoration: none;
     }
     .navbar-toggl .icon {
         transform: translateY(0px);
@@ -56,7 +63,7 @@
     .navbar-toggl .text {
         font-size: 1rem;
         font-weight: 700;
-        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .navbar-nav .nav-link {
@@ -78,7 +85,7 @@
     .navbar-nav .nav-link.active::after {
         background: var(--startups);
         content: "";
-        display: block;
+        display: none;
         height: 15px;
         position: absolute;
         top: -10px; left: 50%;
@@ -88,6 +95,49 @@
     .navbar-nav .nav-link.active::after {
         top: auto; bottom: -10px;
     }
+
+
+    .navbar-ranking {
+        background: #003F7B;
+        box-shadow: 0 0 1.5rem rgba(0,0,0,0.1);
+        font-size: 0.875rem;
+        height: auto;
+        min-height: 70px;
+        top: 70px;
+    }
+    .navbar-ranking .navbar-toggl.btn {
+        color: #fff;
+    }
+    .navbar-ranking .navbar-toggl.btn:focus,
+    .navbar-ranking .navbar-toggl.btn:hover {
+        color: #fff;
+    }
+
+    .navbar-ranking .navbar-brand {
+        font-size: 1em;
+    }
+
+    .navbar-ranking .navbar-nav {
+        width: 100%;
+    }
+    .navbar-ranking .navbar-nav .nav-link {
+        color: #fff;
+        line-height: 1.2;
+    }
+    .navbar-ranking .navbar-nav .nav-link strong {
+        font-weight: 600;
+    }
+    .navbar-ranking .navbar-nav .nav-link.active::after {
+        display: block;
+    }
+    @media (min-width: 576px) {
+        .navbar-ranking .navbar-nav .nav-link strong { display: block; }
+    }
+    @media (min-width: 992px) {
+        .navbar-ranking .navbar-nav { width: auto; }
+        .navbar-ranking .navbar-nav .nav-link { margin-left: 1rem; }
+    }
+    
 
 
 /* MAIN */

@@ -20,3 +20,15 @@
         width: 20%;
     }
 }
+
+
+/* RANKINGS */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.rankings {
+    background: #003F7B;
+}
+.rankings .s-title {
+    color: #fff;
+    text-transform: uppercase;
+}

@@ -9,7 +9,7 @@ var openTalks = [
       "OK": "ok"
     },
     {
-      "Nome": "Paula Harraca/Rodrigo Carazolli",
+      "Nome": "Paula e Rodrigo",
       "Cargo": "Director - People, Communication, Social Investment & Innovation/Gerente Geral de Inovação, Novos Negócios e Açolab",
       "Empresa": "ArcelorMittal",
       "Position": 2,
