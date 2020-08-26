@@ -143,6 +143,7 @@
     font-size: 1.25em;
     text-transform: uppercase;
     margin-bottom: 1em;
+    margin-top: 0;
 }
 .site-insights .box-metodologia table {
     margin-bottom: 2em;
