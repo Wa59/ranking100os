@@ -12,7 +12,6 @@ $(document).ready(function($) {
             }
             
             var temp = baseHtml;
-            temp = temp.replace(/##ID##/i, item['ID']);
             temp = temp.replace(/##ITEM_HREF##/g, item['Link']);
             temp = temp.replace(/##ITEM_TITLE##/g, item['Empresa']);
             temp = temp.replace(/##ITEM_POINTS##/g, item['Pontos']);

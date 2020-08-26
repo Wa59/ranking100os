@@ -1,7 +1,7 @@
 /* CAROUSEL CARD */
 /* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
 
-.s-r-carousel-card {
+/* .s-r-carousel-card {
     align-items: center;
     display: grid;
     grid-template-columns: 330px 1fr 360px;
@@ -17,20 +17,61 @@
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.s-r-carousel-card .grid-3,
-.s-r-carousel-card .grid-4 {
+.s-r-carousel-card .grid-3 {
     border-left: 1px solid #eee;
 }
-
+*/
+.s-r-carousel-card {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
 .s-r-carousel-card-grid {
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    padding: 3rem;
     text-align: center;
 }
+.s-r-carousel-card .grid-3 {
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .s-r-carousel-card {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        padding: 1.5rem;
+    }
+    .s-r-carousel-card-grid {
+        height: auto;
+        padding: 1.5rem;
+    }
+    .s-r-carousel-card .grid-3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .s-r-carousel-card {
+        display: grid;
+        grid-template-columns: 290px 1fr 290px;
+        min-height: 512px;
+        padding: 1.5rem;
+    }
+    .s-r-carousel-card-grid {
+        height: auto;
+        padding: 1.5rem;
+    }
+    .s-r-carousel-card .grid-3 {
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+}
+
 
     .s-r-carousel-card .card-ranking {
         align-items: center;
@@ -75,12 +116,13 @@
         display: flex;
         height: 212px;
         justify-content: center;
+        max-width: 290px;
         width: 100%;
     }
     .s-r-carousel-card .card-image-logo img {
         object-fit: scale-down;
         max-height: 100%;
-        max-width: 290px;
+        max-width: 100%;
     }
 
     .s-r-carousel-card .s-mc-list-card,
@@ -88,9 +130,6 @@
         background: transparent;
         box-shadow: none;
         height: auto;
-    }
-    .s-r-carousel-card .card + .card {
-        margin-top: 3rem;
     }
 
 

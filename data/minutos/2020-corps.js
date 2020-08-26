@@ -28,7 +28,7 @@ var minutoCEO = [
   },
   {
     "Nome": "Carlos Andrade",
-    "Cargo": "Diretor-VP de Estratégia e Desenvolvimento de Negócios",
+    "Cargo": "Diretor-VP de Estratégia e Des. de Negócios",
     "Empresa": "EDP",
     "Position": 4,
     "TOP": "TOP 20",

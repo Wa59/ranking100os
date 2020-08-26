@@ -117,7 +117,7 @@
 </head>
 <body>
 
-    <div class="site site-ranking" id="site">
+    <div class="site site-rankings" id="site">
 
         <header class="site-header header" id="site-header">
 
@@ -184,9 +184,95 @@
 
         <div class="main" id="main" aria-labelledby="lbl-main">
 
-            <br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br>
+            <div class="results section pt-5">
+            <div class="results-container container text-center">
+
+                <div class="table-collapse fake-collapse" id="r-t-collapse" style="max-height: 2250px">
+                <div class="table-responsive">
+
+                    <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th width="01%"><span>Rank</span></th>
+                        <th width="232"><span>Empresa</span></th>
+                        <th>&nbsp;</th>
+                        <th><span>Categoria</span></th>
+                        <th width="01%"><span>Pontos</span></th>
+                        <th width="190"><span>Match</span></th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="8">Carregando...</td>
+                        </tr>
+                    </tbody>
+                    </table><!--/.table -->
+
+                </div><!--/.table-responsive -->
+                </div><!--/.table-collapse -->
+
+                <a class="s-buttn-collapse mt-5" href="#r-t-collapse" role="button" 
+                    data-target="#r-t-collapse" data-scroll-to="#tableBody tr:nth-child(20)" aria-hidden="true">
+                    <span class="icon fas fa-chevron-down mr-2" aria-hidden="true"></span>
+                    <span class="text is-visible">Voltar</span>
+                    <span class="text is-hidden">Ver as 100 empresas ranqueadas</span>
+                </a>
+                
+            </div><!--/.results-container -->
+            </div><!--/.results -->
+
+            <div class="category section pt-5" id="top-category">
+            <div class="category-container py-3 container text-center">
+
+                <h2 class="s-title h3 font-weight-bold">
+                    <span class="text">TOP Categoria Open Corps</span>
+                </h2><!--/.s-title -->
+
+                <div class="s-rows row justify-content-center" id="s-mc-list" data-col="col-6 col-sm-auto">
+                <div class="s-cols col col-12">
+                    <span class="loading">Carregando...</span>
+                </div><!--/.s-cols -->
+                </div><!--/.s-rows -->
+                </div><!--/.s-cont -->
+                
+            </div><!--/.category-container -->
+            </div><!--/.category -->
+
+            <section class="home-insights section py-5">
+
+                <div class="s-hold-container container pt-3">
+                <div class="s-hold bg-white" style="margin:1px; padding:1px">
+                <div class="s-rows row align-items-center">
+                <div class="s-cols col-12 col-lg-8 col-xl-7">
+
+                    <a class="s-i-list-card d-block p-3 p-sm-5 text-dark" href="insights-2020.html">
+
+                        <h2 class="s-title h3 font-weight-bold">
+                            <span class="text">Panorama da Open Innovation & Startups no Brasil | 2016-2020</span>
+                        </h2><!--/.s-title -->
+    
+                        <div class="s-descr mt-4">
+                            <p class="lead">Veja a análise completa dos dados do Ranking das 100 empresas que mais fazem open innovation com startups no Brasil.</p>
+                        </div><!--/.s-descr -->
+    
+                        <span class="s-buttn d-block mt-3 text-primary" style="font-weight:600;">
+                            <span class="text">Leia o nosso artigo</span>
+                            <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                        </span><!--/.s-buttn -->  
+    
+                    </a><!--/.s-i-list-card -->
+
+                </div><!--/.s-cols -->
+                <div class="s-cols col-12 col-lg-4 col-xl-5 d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1000">
+
+                    <img class="img-fluid logo-ranking" src="images/SELO_TOP_Ranking_cor.png" alt="" />
+
+                </div><!--/.s-cols -->
+                </div><!--/.s-rows -->               
+                </div><!--/.s-hold -->
+                </div><!--/.s-hold-container -->
+
+            </section><!--/.home-insights -->
 
         </div><!--/.main -->
 
@@ -317,6 +403,14 @@
     <script src="slick/slick.min.js"></script>
     <script src="scripts/plugins.js"></script>
     <script src="scripts/main.js"></script>
+    
+    <script src="data/rankings/corps/2018.js"></script>
+    <script src="data/rankings/corps/2019.js"></script>
+    <script src="data/rankings/corps/2020.js"></script>
+    <script src="data/rankings/corps/2020-category.js"></script>
+
+    <script src="data/rankings/corps/table.js"></script>
+    <script src="data/rankings/corps/category.js"></script>
 
     <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
 </body>

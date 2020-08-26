@@ -387,7 +387,7 @@ var openTalks = [
       "OK": "ok"
     },
     {
-      "Nome": "Cecília Varanda/Luis Dente",
+      "Nome": "Cecília e Luis",
       "Cargo": "Gerente de Transformação Digital & Colíder da Garagem de Inovação da Unilever Brasil/Diretor de Vendas, Trade & Transformação Digital da Unilever Foods Solutions",
       "Empresa": "Unilever",
       "Position": "",

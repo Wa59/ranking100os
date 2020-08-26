@@ -32,3 +32,33 @@
     color: #fff;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+.fake-collapse {
+    overflow: hidden;
+    position: relative;
+}
+.fake-collapse::before {
+    background: linear-gradient(to top, #fafafa, rgba(255, 255, 255, 0.1));
+    content: '';
+    opacity: 1;
+    position: absolute;
+    pointer-events: none;
+    right: 0; bottom: 0; left: 0;
+    transition: all 0.3s ease;
+    height: 300px;
+    z-index: 100;
+}
+.fake-collapse.visible {
+    max-height: 9999999px !important;
+}
+.fake-collapse.visible:before {
+    opacity: 0;
+}

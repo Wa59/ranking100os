@@ -462,6 +462,10 @@
                     html+= '</td>';
                     html+= '<td></td>';
                     html+= '<td class="points"><span>'+item.Pontos+'</span></td>';
+                    html+= '<td>';
+                        html+= '<img class="img-fluid" src="/assets/img/logos/'+item.Empresa+'.png" alt="Logotipo '+item.Empresa+'">';
+                        html+= '<h3 class="sr-only empresa">'+item.Empresa+'</h3>';
+                    html+= '</td>';
                     html+= '<td><span><a href="'+item.Link+'" class="btn">Quero me conectar</a></span></td>';
                 html+= '</tr>';
 

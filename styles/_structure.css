@@ -8,6 +8,9 @@
     height: 140px;
     position: relative;
 }
+.site.site-rankings {
+    background: #fafafa;
+}
 
 
 /* HEADER */
