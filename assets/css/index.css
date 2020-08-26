@@ -108,11 +108,11 @@
     padding: 2em;
 }
 
-#ATP .carousel-control-prev-icon {
+#ATP .carousel-control-prev {
     transform: translateX(-8.75em);
 }
 
-#ATP .carousel-control-next-icon {
+#ATP .carousel-control-next {
     transform: translateX(8em);
 }
 
@@ -318,8 +318,8 @@
     #ATP .box .ranking-container { border: initial; max-height: 100px; margin: 1em auto; }
     #ATP .box .ranking-container img { max-height: 80px; }
     #ATP .box .logo-container { height: 120px; margin: 0; }
-    #ATP .carousel-control-prev-icon { transform: translateX(-0.75em); }
-    #ATP .carousel-control-next-icon { transform: initial; }
+    #ATP .carousel-control-prev { transform: translateX(-0.75em); }
+    #ATP .carousel-control-next { transform: initial; }
     #ATP .carousel-control-prev-icon:after { color: #bbb; }
     #ATP .carousel-control-next-icon:after { color: #bbb; }
     #ATP .btn-container { padding: 0; border: 0; margin-top: 2em; }

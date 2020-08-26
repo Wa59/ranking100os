@@ -227,7 +227,7 @@ h3 {
 
 @media (max-width: 1300px) { 
     .site::before { left: -200px; }
-    .site::after { right: -200px; }
+    .site::after { display: none }
 }
 
 
