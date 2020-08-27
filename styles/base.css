@@ -18,3 +18,35 @@
     --darken-techs: #d36b12;
     --darken-startups: #0f83d7;
 }
+
+
+
+
+.test {
+    position: relative;
+    z-index: 2;
+    background: rgba(69,170,242,0.15);
+    font-weight: 500;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+.test .btn-link {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    color: #000;
+}
+.test .btn-link:active,
+.test .btn-link:hover,
+.test .btn-link:focus {
+    border-color: var(--startups);
+    text-decoration: none;
+}
+.test .btn-link.active {
+    border-color: var(--startups);
+    color: var(--startups);
+}
+.test .btn-link .text {
+    font-size: 1rem;
+    font-weight: 700;
+}

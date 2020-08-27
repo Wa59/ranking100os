@@ -95,7 +95,7 @@ var openTalks = [
       "Empresa": "Saint-Gobain",
       "Position": 14,
       "TOP": "TOP 20",
-      "Video": "Ja8FQRtRbRk",
+      "Video": "4nRF5PzvYlY",
       "OK": "ok"
     },
     {
@@ -113,7 +113,7 @@ var openTalks = [
       "Empresa": "Algar Telecom",
       "Position": 17,
       "TOP": "TOP 20",
-      "Video": "",
+      "Video": "DrWur2SyOUg",
       "OK": "cade o link ?"
     },
     {

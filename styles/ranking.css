@@ -1,0 +1,223 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background: #3fa9f5;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn:hover, .btn:active, .btn:focus {
+    color: white;
+    text-decoration: none;
+    background: #565656;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page-ranking {
+    margin-bottom: 5em;
+}
+
+.page-ranking .page__title {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin-top: 5em;
+}
+.page-ranking h2 {
+    text-align: center;
+    color: #000000;
+    font-weight: 900;
+    margin: 5em 0 2em 0;
+    font-size: 1.333em;
+}
+.page-ranking .box-years {
+    background: #eeeeee;
+    width: 85%;
+    margin: 5em auto 2em auto;
+    padding: 2em;
+}
+.page-ranking .box-years .year-list {
+    font-size: 1.25em;
+    list-style: none;
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+}
+.page-ranking .box-years .year-list a {
+    color: #000000;
+}
+.page-ranking .box-years .year-list a.selected {
+    text-decoration: underline;
+}
+.page-ranking .box-years .category-list {
+    width: 90%;
+    margin: 2em auto 0 auto;
+    font-size: 1.125em;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+.page-ranking .box-years .category-list a {
+    color: #444444;
+}
+.page-ranking .box-years .category-list a.selected {
+    font-weight: bold;
+}
+.page-ranking .box-years .category-list a:hover, .page-ranking .box-years .category-list a:focus, .page-ranking .box-years .category-list a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-ranking .cat-msg {
+    height: 0px;
+    overflow: hidden;
+    color: #444444;
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.page-ranking .cat-msg.active {
+    height: 60px;
+}
+.page-ranking .box-filters h2 {
+    text-align: left;
+    font-size: 1.5em;
+    color: #5d5d5d;
+    font-weight: 600;
+}
+.page-ranking .box-filters label {
+    font-size: 0.9em;
+}
+.page-ranking table {
+    width: 100%;
+}
+.page-ranking table th {
+    text-align: center;
+}
+.page-ranking table .number {
+    color: #3fa9f5;
+    font-weight: 900;
+    text-align: center;
+}
+.page-ranking table .points {
+    color: #444444;
+    text-align: center;
+    font-size: 0.75em;
+}
+.page-ranking table .btn {
+    font-size: 0.666em;
+}
+.page-ranking table .img-fluid {
+    max-height: 60px;
+    max-width: 60px;
+    width: auto;
+}
+.page-ranking table .selo {
+    width: 100px;
+    height: auto;
+}
+.page-ranking table td {
+    padding: 0.5em 1em;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+.page-ranking .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.page-ranking .box {
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 1em;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+    width: calc(20% - 2em);
+    height: 180px;
+}
+.page-ranking .box figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+}
+.page-ranking .box img {
+    max-height: 90px;
+    max-width: 90px;
+}
+.page-ranking .box .btn {
+    font-size: 0.666em;
+}
+
+
+.nav-pills-ranking {
+    margin: -20px -10px 0;
+    justify-content: center;
+}
+.nav-pills-ranking .nav-item {
+    flex: 0 0 50%;
+    padding: 20px 10px 0;
+}
+.nav-pills-ranking .nav-link {
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(69,170,242,0.15);
+    color: #666;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    line-height: 1.2;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.nav-pills-ranking .nav-link strong {
+    display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.nav-pills-ranking .nav-link.active,
+.nav-pills-ranking .nav-link:active,
+.nav-pills-ranking .nav-link:focus,
+.nav-pills-ranking .nav-link:hover {
+    background: var(--startups);
+    color: #fff;
+}
+
+@media (min-width: 576px) {
+    .nav-pills-ranking .nav-item { flex: 0 0 50.000%; }
+    .nav-pills-ranking .nav-link { font-size: 18px; }
+}
+@media (min-width: 768px) {
+    .nav-pills-ranking .nav-item { flex: 0 0 33.333%; }
+    .nav-pills-ranking .nav-link { font-size: 20px; }
+}
+@media (min-width: 992px) {
+    .nav-pills-ranking .nav-item { flex: 0 0 33.333%; }
+}
+@media (min-width:1200px) {
+    .nav-pills-ranking .nav-item { flex: 0 0 25.000%; }
+}
+
+.nav-pills-ranking.row .nav-item .nav-link {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
