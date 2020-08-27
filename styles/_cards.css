@@ -1,6 +1,51 @@
 /* CAROUSEL CARD */
 /* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
 
+.s-n-list-card {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    box-shadow: none;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.s-n-list-card .c-n-dated {
+    margin-bottom: 0.5rem;
+}
+@media (min-width: 576px) {
+    .s-n-list-card {
+        align-items: center;
+        flex-direction: row;
+    }
+    .s-n-list-card .c-n-dated {
+        flex-basis: 110px;
+        margin: 0 1rem 0 0;
+        text-align: center;
+    }
+}
+    .s-n-list-card .c-n-dated .dat {
+        color: var(--startups);
+        font-weight: 600;
+    }
+    .s-n-list-card .c-n-holdr .tit {
+        display: block;
+        font-weight: 600;
+    }
+    .s-n-list-card .c-n-holdr .com {
+        display: -webkit-box;
+        max-height: 1.4em;
+        overflow: hidden;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+
+/* CAROUSEL CARD */
+/* 0000000000000000000000000000000000000000000000000000000000000000000000000 */
+
 /* .s-r-carousel-card {
     align-items: center;
     display: grid;

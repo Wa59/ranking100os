@@ -1246,7 +1246,6 @@ var clippings = [
 $(document).ready(function($) {
 
     function load(baseHtml) {
-        console.log(baseHtml);
         var html = '';
         clippings.forEach(function(item, index){
             var temp = baseHtml;

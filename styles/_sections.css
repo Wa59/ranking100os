@@ -56,3 +56,7 @@
 .fake-collapse.visible:before {
     opacity: 0;
 }
+
+
+.s-news .s-rows { margin: 0; }
+.s-news .s-cols { padding: 0; }

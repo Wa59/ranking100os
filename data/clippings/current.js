@@ -12,10 +12,10 @@ var clippings = [
       href : 'https://cbn.globoradio.globo.com/media/audio/268577/pesquisa-mostra-startups-recordistas-de-investimen.htm',
     },
     {
-      name : 'As 100 startups brasileiras mais desejadas pelas empresas   ',
+      name : 'Natura, Alelo e Nestlé: veja as 20 empresas mais próximas das startups',
       desc : 'Exame',
       logo : 'data/clippings/images/exame.png',
-      href : 'https://exame.abril.com.br/pme/as-100-startups-brasileiras-mais-desejadas-pelas-empresas/',
+      href : 'https://exame.com/pme/veja-as-20-empresas-mais-proximas-das-startups-brasileiras/',
     },
     {
       name : 'Inovativa Brasil estende prazo de inscrição para a sua próxima edição',
