@@ -221,8 +221,8 @@ var openTalks = [
       "Empresa": "Johnson & Johnson",
       "Position": "A-Z",
       "TOP": "TOP 100",
-      "Video": "",
-      "OK": "cade o link ?"
+      "Video": "WpmeJcyZvgE",
+      "OK": "ok"
     },
     {
       "Nome": "Fernando Bocchi",
@@ -338,7 +338,7 @@ var openTalks = [
       "Empresa": "Vedacit",
       "Position": "A-Z",
       "TOP": "TOP 100",
-      "Video": "",
+      "Video": "QluPnDaaRy8",
       "OK": "cade o link ?"
     },
     {

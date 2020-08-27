@@ -17,6 +17,7 @@ $(document).ready(function($) {
             temp = temp.replace(/##ITEM_VIDEO##/g, item['Video']);
             temp = temp.replace(/##ITEM_TITLE##/g, item['Nome']);
             temp = temp.replace(/##ITEM_COMPANY##/g, item['Empresa']);
+            temp = temp.replace(/##ITEM_POSITION##/g, item['Cargo']);
             
             // Include column on the template
             html+= '<div class="s-cols col '+ cols + '">';
