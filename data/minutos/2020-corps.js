@@ -349,5 +349,14 @@ var minutoCEO = [
     "TOP": "TOP 100",
     "Video": "77EvNtIK3aA",
     "OK": "ok"
+  },
+  {
+    "Nome": "João Carlos Brega",
+    "Cargo": "Presidente da América Latina da Whirlpool",
+    "Empresa": "Whirlpool Corporation",
+    "Position": "A-Z",
+    "TOP": "TOP 100",
+    "Video": "DrW0e4gtgpQ",
+    "OK": "ok"
   }
 ];

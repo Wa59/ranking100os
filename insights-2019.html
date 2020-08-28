@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/insights-single.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
@@ -121,64 +122,63 @@
 
         <header class="site-header header" id="site-header">
 
-            <nav class="navbar navbar-expand-lg fixed-top" aria-label="Menu principal">
-            <div class="navbar-container container">
+            <nav class="navbar navbar-expand-md fixed-top" aria-label="Menu principal">
 
-                <a class="navbar-brand" href="index.html">
-                    <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
-                    <span class="txt-named d-none d-md-block">Ranking 100 Open Startups</span>
-                </a><!--/.navbar-brand -->
+                <div class="navbar-container container py-0 px-3 d-md-none">
+
+                    <a class="navbar-brand mr-auto d-lg-none" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <a class="navbar-toggl btn-link btn-sm btn p-0" href="#navbar-collapse" role="button"
+                        data-toggle="collapse" data-target="#navbar-collapse" 
+                        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Abrir/Fechar Menu">
+                        <span class="text">Menu</span> 
+                        <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    </a><!--/.navbar-toggl -->
+
+                </div><!--/.navbar-container -->
 
                 <div class="navbar-collapse collapse" id="navbar-collapse">
+                <div class="navbar-container container p-3 p-md-0">
+                <div class="navbar-row row">
+                <div class="navbar-col navbar-col-std col col-6 col-sm-4 col-md-12">
 
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="rankings.html">Rankings</a></li>
+                    <a class="navbar-brand d-none d-md-block mr-auto" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="insights.html">Insights</a></li>
                         <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>                    
                         <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-collapse -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-lg-none" href="#modal-menu" role="button"
-                    data-target="#modal-menu" data-toggle="modal">
-                    <span class="text">Menu</span> 
-                    <span class="icon fa fa-bars" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar -->
-
-            <nav class="navbar-ranking navbar navbar-expand-sm fixed-top navbar-dark" aria-label="Menu ranking">
-            <div class="navbar-container container px-0 px-lg-3 justify-content-center">
-
-                <span class="navbar-brand d-none d-lg-block mr-auto">
-                    <span class="text">Veja todos os<br class="d-block d-sm-none"> rankings publicados:</span>
-                </span><!--/.s-mockd -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-sm-none" href="#navbar-ranking-collapse" role="button"
-                    data-toggle="collapse" data-target="#navbar-ranking-collapse" 
-                    aria-controls="navbar-ranking-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="text">Rankings</span> 
-                    <span class="icon fa fa-chevron-down" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-                <div class="navbar-ranking-collapse collapse navbar-collapse" id="navbar-ranking-collapse">
-
-                    <ul class="navbar-nav ml-md-auto mt-2 mt-lg-0 flex-sm-row align-items-center justify-content-between">
-                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html">TOP 100 <strong>Open Startups</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html">TOP 100 <strong>Open Corps</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html">TOP 10 <strong>Investidores</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html">TOP 10 <strong>Ecossistema</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html">TOP 100 <strong>Avaliadores</strong></a></li>
+                    <ul class="navbar-nav navbar-nav-join d-none">
+                        <li class="nav-item"><a class="nav-link" href="participe.html">Participe</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-ranking-collapse -->
+                </div><!--/.navbar-col -->
+                <div class="navbar-col navbar-col-rkn col col-6 col-sm-6 col-md-12">
 
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar-ranking -->
+                    <span class="navbar-txt d-none d-xl-block mr-auto">Todos os Rankings:</span>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html"><small>TOP 100</small> Open Startups</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html"><small>TOP 100</small> Open Corps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html"><small>TOP 100</small> Avaliadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html"><small>TOP 10</small> Investidores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html"><small>TOP 10</small> Ecossistema</a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-col -->
+                </div><!--/.navbar-row -->
+                </div><!--/.navbar-container -->
+                </div><!--/.navbar-collapse -->
+            
+            </nav><!--/.navbar -->
 
         </header><!--/.site-header -->
 
@@ -187,13 +187,13 @@
             <section class="insights section py-5" id="insights" aria-labelledby="lbl-insights">
 
                 <div class="s-hold-container container">
-                <div class="s-hold text-center">
+                <div class="s-hold pt-3 mx-auto" style="max-width: 840px;">
 
-                    <h1 class="s-title mx-auto" style="max-width: 680px;" id="lbl-insights">
+                    <h1 class="s-title" style="max-width: 680px;" id="lbl-insights">
                         <span class="text">Um conduíte Open entre a inovação e a cultura corporativa</span>
                     </h1><!--/.s-title -->
 
-                    <div class="s-descr mt-4 mx-auto" style="max-width: 780px;">
+                    <div class="s-descr mt-4 mx-auto">
                         <p class="lead">“Excelentes empreendedores não começam com ideias brilhantes ou insights e previsões extraordinárias. Eles começam como eu ou você poderíamos começar: com quem são, o que sabem e quem conhecem”.</p>
                     </div><!--/.s-descr -->
 
@@ -204,10 +204,10 @@
 
             </section><!--/.insights -->
 
-            <section class="content section py-5 main-bg-white" id="content" aria-labelledby="lbl-content">
+            <section class="content section pb-5" id="content" aria-labelledby="lbl-content">
 
-                <div class="s-hold-container container">
-                <div class="s-hold pt-3 pb-5 mx-auto" style="max-width: 900px">
+                <div class="s-hold-container container px-0 px-sm-3">
+                <div class="s-hold bg-white px-3 py-5 px-sm-5">
                 <div class="s-descr">
                 
                     <p>São nessas palavras de Saras Sarasvathy, autora da lógica de ação empreendedora effectuation, e na vivência prática de Open Innovation, que trazem na bagagem desde os bancos da Unicamp, que os criadores da rede 100 Open Startups se inspiram.</p>
@@ -219,7 +219,7 @@
                     <p>Do ponto de vista de investimentos, por exemplo, os dados mostram que uma startup que pontua para entrar no ranking <strong>tem 2,5 vezes mais chances de captar funding</strong>. Historicamente, <strong>as startups ranqueadas aumentaram em 133% a captação de recursos</strong> após entrarem no ranking. E o valor médio de captação pós ranking declarado por startup foi de R$ 1,7 milhão.</p>
                     <p>Pode-se dizer que o ranking funciona como uma vitrine e como um imã: <strong>55% das startups que se inscreveram no programa</strong> sem nunca ter captado recursos <strong>conseguiram seu primeiro investimento após serem ranqueadas</strong> em um dos três anos anteriores.</p>
                     
-                    <h2 class="s-descr-title h4 mt-5 mb-4 text-primary">
+                    <h2 class="s-descr-title">
                         <span class="text">Atração para investidores</span>
                     </h2><!--/.s-descr-title -->
                     
@@ -227,7 +227,7 @@
                     <p>Quase dois terços dos founders (63%) declararam que investiram o próprio dinheiro em seus empreendimentos. Mas não ficaram sozinhos: 39,2% receberam investimentos de anjos, 14,2% de fundos semente ou venture capital, 9% de corporações e 19,8% de aceleradoras. E continuam na busca: 80,7% das startups querem mais investimento para crescer.</p>
                     <p>O lado atraente das 100 Open Startups aparece quando se olha as cifras investidas por alguns dos grupos tradicionais. O aporte de investidores anjo, por exemplo, cresceu de R$24,6 milhões em 2018 para R$ 33,4 milhões em 2019. E o investimento seed foi de R$ 19,7 milhões em 2018 para R$ 24,6 milhões em 2019. E as Open Corps compareceram com R$ 12,8 milhões para o ranking de 2019, o triplo do dinheiro investido em 2018, que foi de R$ 4,25 milhões.</p>
 
-                    <h2 class="s-descr-title h4 mt-5 mb-4 text-primary">
+                    <h2 class="s-descr-title">
                         <span class="text">Impacto socioeconômico</span>
                     </h2><!--/.s-descr-title -->
 
@@ -237,7 +237,7 @@
                     <p>O impacto socioeconômico das startups do ranking de 2019 não fica só em faturamento, mas também em geração de emprego: 1.888 colaboradores no final de 2018, que já chegaram a 2.455 nos primeiros cinco meses de 2019 (dados declarados por 177 ranqueadas). 41,4% das startups têm entre 5 e 10 funcionários.</p>
                     <p>Nesse item vale uma comparação. Um estudo recente publicado pela Lavca (Association for Private Capital Investment in Latin America) organização sem fins lucrativos dedicada a suportar o crescimento de private capital na América Latina e Caribe, mapeou o cenário de startups da região e mostrou que nos últimos dez anos, as 227 startups latino-americanas (incluindo as brasileiras) entrevistadas para o estudo geraram mais de 25 mil empregos na região. As 100 Open Startups de 2019 geraram em um ano 10% desse total, o que não uma informação a ser desprezada.</p>
                     
-                    <h2 class="s-descr-title h4 mt-5 mb-4 text-primary">
+                    <h2 class="s-descr-title">
                         <span class="text">Tecnologias disruptivas</span>
                     </h2><!--/.s-descr-title -->
                     
@@ -245,7 +245,7 @@
                     <p>Das 100 empresas da lista de Top 100 deste ano, <strong>20% são fornecedoras diretas de novas tecnologias</strong>. Oito empresas do ranking oferecem soluções de AR/VR. No cenário de Big Data e Analytics, as startups focam em entendimento do consumidor e em soluções que combinam reconhecimento de imagem e Analytics, por exemplo. </p>
                     <p>Deep Learning para reconhecimento de imagens está presente em aplicações de negócios, segurança e monitoramento. Uso de drones combinado com Analytics de imagem em Deep Learning permite monitorar grandes áreas e instalações de infraestrutura. Aplicações de Industria 4.0 e monitoramento via IoT de grandes frotas ou grandes áreas mostra que <strong>as startups estão acompanhando o movimento global de transformação digital</strong> e, portanto, ainda mais capacitadas a agregar inteligência e inventividade para as Open Corps.</p>                   
             
-                    <h2 class="s-descr-title h4 mt-5 mb-4 text-primary">
+                    <h2 class="s-descr-title">
                         <span class="text">A química da ruptura</span>
                     </h2><!--/.s-descr-title -->
 
@@ -266,7 +266,7 @@
 
         <footer class="site-footer footer" id="site-footer">
 
-            <div class="footer-sitemap bg-dark text-light py-5">
+            <div class="footer-sitemap bg-dark text-light mt-5 py-5">
             <div class="footer-sitemap-container container">
 
                 <div class="footer-row row align-items-stretch">

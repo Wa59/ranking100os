@@ -49,8 +49,29 @@
     transform: translate(-50%, -40%);
 }
 
+.home-minuto-ceo .s-cont {
+    overflow-x: scroll;
+}
+.home-minuto-ceo .s-cont::-webkit-scrollbar {
+    display: none;
+}
+.home-minuto-ceo .s-cont .s-rows {
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px 255px;
+    justify-items: stretch;
+}
+.home-minuto-ceo .s-mc-list-card {
+    width: 225px;
+}
+@media (min-width: 992px) {
+    .home-minuto-ceo .s-cont .s-rows {
+        justify-content: center;
+    }
+}
+
 .home-open-talks {
-    background: #003F7B;
+    background: #01274b;
     color: #fff;
     overflow: hidden;
     position: relative;

@@ -121,87 +121,86 @@
 
         <header class="site-header header" id="site-header">
 
-            <nav class="navbar navbar-expand-lg fixed-top" aria-label="Menu principal">
-            <div class="navbar-container container">
+            <nav class="navbar navbar-expand-md fixed-top" aria-label="Menu principal">
 
-                <a class="navbar-brand" href="index.html">
-                    <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
-                    <span class="txt-named d-none d-md-block">Ranking 100 Open Startups</span>
-                </a><!--/.navbar-brand -->
+                <div class="navbar-container container py-0 px-3 d-md-none">
+
+                    <a class="navbar-brand mr-auto d-lg-none" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <a class="navbar-toggl btn-link btn-sm btn p-0" href="#navbar-collapse" role="button"
+                        data-toggle="collapse" data-target="#navbar-collapse" 
+                        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Abrir/Fechar Menu">
+                        <span class="text">Menu</span> 
+                        <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    </a><!--/.navbar-toggl -->
+
+                </div><!--/.navbar-container -->
 
                 <div class="navbar-collapse collapse" id="navbar-collapse">
+                <div class="navbar-container container p-3 p-md-0">
+                <div class="navbar-row row">
+                <div class="navbar-col navbar-col-std col col-6 col-sm-4 col-md-12">
 
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link active" href="rankings.html">Rankings</a></li>
+                    <a class="navbar-brand d-none d-md-block mr-auto" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
                         <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>                    
                         <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-collapse -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-lg-none" href="#modal-menu" role="button"
-                    data-target="#modal-menu" data-toggle="modal">
-                    <span class="text">Menu</span> 
-                    <span class="icon fa fa-bars" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar -->
-
-            <nav class="navbar-ranking navbar navbar-expand-sm fixed-top navbar-dark" aria-label="Menu ranking">
-            <div class="navbar-container container px-0 px-lg-3 justify-content-center">
-
-                <span class="navbar-brand d-none d-lg-block mr-auto">
-                    <span class="text">Veja todos os<br class="d-block d-sm-none"> rankings publicados:</span>
-                </span><!--/.s-mockd -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-sm-none" href="#navbar-ranking-collapse" role="button"
-                    data-toggle="collapse" data-target="#navbar-ranking-collapse" 
-                    aria-controls="navbar-ranking-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="text">Rankings</span> 
-                    <span class="icon fa fa-chevron-down" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-                <div class="navbar-ranking-collapse collapse navbar-collapse" id="navbar-ranking-collapse">
-
-                    <ul class="navbar-nav ml-md-auto mt-2 mt-lg-0 flex-sm-row align-items-center justify-content-between">
-                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html">TOP 100 <strong>Open Startups</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html">TOP 100 <strong>Open Corps</strong></a></li>
-                        <li class="nav-item"><a class="nav-link active" href="rankings-investors.html">TOP 10 <strong>Investidores</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html">TOP 10 <strong>Ecossistema</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html">TOP 100 <strong>Avaliadores</strong></a></li>
+                    <ul class="navbar-nav navbar-nav-join d-none">
+                        <li class="nav-item"><a class="nav-link" href="participe.html">Participe</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-ranking-collapse -->
+                </div><!--/.navbar-col -->
+                <div class="navbar-col navbar-col-rkn col col-6 col-sm-6 col-md-12">
 
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar-ranking -->
+                    <span class="navbar-txt d-none d-xl-block mr-auto">Todos os Rankings:</span>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html"><small>TOP 100</small> Open Startups</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html"><small>TOP 100</small> Open Corps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html"><small>TOP 100</small> Avaliadores</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="rankings-investors.html"><small>TOP 10</small> Investidores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html"><small>TOP 10</small> Ecossistema</a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-col -->
+                </div><!--/.navbar-row -->
+                </div><!--/.navbar-container -->
+                </div><!--/.navbar-collapse -->
+            
+            </nav><!--/.navbar -->
 
         </header><!--/.site-header -->
 
         <div class="main" id="main" aria-labelledby="lbl-main">
 
-            <section class="home-insights section pb-5">
+            <section class="home-insights section main-bg-crazy py-5">
 
-                <div class="s-hold-container container">
-                <div class="s-hold mt-5 bg-white" style="margin:1px; padding:1px">
+                <div class="s-hold-container py-5 container">
+                <div class="s-hold bg-white" style="margin:1px; padding:1px">
                 <div class="s-rows row align-items-center">
                 <div class="s-cols col-12 col-lg-8 col-xl-7">
 
                     <a class="s-i-list-card d-block p-3 p-sm-5 text-dark" href="https://oiweek.com/">
 
-                        <h2 class="s-title h3 font-weight-bold">
+                        <h2 class="s-title h3">
                             <span class="text">TOP 10 Investidores</span>
                         </h2><!--/.s-title -->
     
                         <div class="s-descr mt-4">
-                            <p class="lead">A premiação oficial dos TOP 10 Investidores 2020 será realizada durante o Oiweek Setembro, que acontece nos dias 29 e 30 de setembro de 2020.</p>
+                            <p class="lead">A premiação oficial dos TOP 10 Investidores 2020 será realizada durante o Oiweek Setembro, que acontece nos <strong>dias 29 e 30 de setembro</strong> de 2020.</p>
                         </div><!--/.s-descr -->
     
-                        <span class="s-buttn d-block mt-3 text-primary" style="font-weight:600;">
+                        <span class="s-buttn d-block mt-4" style="font-weight:600;">
                             <span class="text">Saiba mais sobre a Oiweek</span>
                             <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
                         </span><!--/.s-buttn -->  
@@ -220,7 +219,7 @@
 
             </section><!--/.home-insights -->
 
-            <section class="older-rankings section pb-5">
+            <section class="older-rankings section py-5">
 
                 <div class="s-hold pt-3">
                 <div class="s-hold-container container">

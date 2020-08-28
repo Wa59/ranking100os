@@ -17,12 +17,14 @@
     --darken-corps: #222222;
     --darken-techs: #d36b12;
     --darken-startups: #0f83d7;
+
+    --font-family-highlight: 'Poppins', 'Axiforma', Arial, Helvetica, sans-serif;
 }
 
 
 
-
 .test {
+    border-radius: 1rem;
     position: relative;
     z-index: 2;
     background: rgba(69,170,242,0.15);

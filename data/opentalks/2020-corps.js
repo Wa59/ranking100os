@@ -158,7 +158,7 @@ var openTalks = [
       "Empresa": "CCP",
       "Position": "A-Z",
       "TOP": "TOP 100",
-      "Video": "NB_4CmaYuZ8",
+      "Video": "LYlFH9iTicM",
       "OK": "ok"
     },
     {

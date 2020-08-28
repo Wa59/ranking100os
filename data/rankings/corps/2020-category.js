@@ -25,7 +25,7 @@
     "Descricao": "Prêmio para a Empresa do setor de Alimentos e Bebidas que mais faz Open Innovation com Startups no Brasil"
   },
   {
-    "Premio": "Indústria da Construção",
+    "Premio": "Ind. da Construção",
     "Empresa": "Andrade Gutierrez",
     "Descricao": "Prêmio para a Empresa da Indústria da Construção que mais faz Open Innovation com Startups no Brasil"
   },
@@ -45,7 +45,7 @@
     "Descricao": "Prêmio para a Empresa do setor de Serviços de Saúde que mais faz Open Innovation com Startups no Brasil"
   },
   {
-    "Premio": "Tecnologia da Informação e Serviços",
+    "Premio": "TI e Serviços",
     "Empresa": "Accenture",
     "Descricao": "Prêmio para a Empresa do setor de Tecnologia da Informação e Serviços que mais faz Open Innovation com Startups no Brasil"
   },
@@ -80,7 +80,7 @@
     "Descricao": "Prêmio para a Empresa do setor de Software que mais faz Open Innovation com Startups no Brasil"
   },
   {
-    "Premio": "Transporte e Logística",
+    "Premio": "Transp. e Logística",
     "Empresa": "Tegma",
     "Descricao": "Prêmio para a Empresa do setor de Transporte e Logística que mais faz Open Innovation com Startups no Brasil"
   },
@@ -110,7 +110,7 @@
     "Descricao": "Prêmio para a Empresa do setor de Saneamento que mais faz Open Innovation com Startups no Brasil"
   },
   {
-    "Premio": "Lazer, viagens e turismo",
+    "Premio": "Lazer, Viagens e Turismo",
     "Empresa": "GJP Hotels & Resorts",
     "Descricao": "Prêmio para a Empresa do setor de Lazer, viagens e turismo que mais faz Open Innovation com Startups no Brasil"
   },

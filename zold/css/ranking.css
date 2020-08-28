@@ -67,7 +67,7 @@
     justify-content: space-around;
 }
 .page-ranking .box-years .category-list a {
-    color: #444444;
+    color: #445566444;
 }
 .page-ranking .box-years .category-list a.selected {
     font-weight: bold;
@@ -79,7 +79,7 @@
 .page-ranking .cat-msg {
     height: 0px;
     overflow: hidden;
-    color: #444444;
+    color: #445566444;
     text-align: center;
     font-size: 1.125em;
     margin-bottom: 1em;
@@ -110,7 +110,7 @@
     text-align: center;
 }
 .page-ranking table .points {
-    color: #444444;
+    color: #445566444;
     text-align: center;
     font-size: 0.75em;
 }

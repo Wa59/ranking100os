@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/insight2020.css" />
+    <link rel="stylesheet" href="styles/insights-single.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
@@ -122,109 +122,116 @@
 
         <header class="site-header header" id="site-header">
 
-            <nav class="navbar navbar-expand-lg fixed-top" aria-label="Menu principal">
-            <div class="navbar-container container">
+            <nav class="navbar navbar-expand-md fixed-top" aria-label="Menu principal">
 
-                <a class="navbar-brand" href="index.html">
-                    <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
-                    <span class="txt-named d-none d-md-block">Ranking 100 Open Startups</span>
-                </a><!--/.navbar-brand -->
+                <div class="navbar-container container py-0 px-3 d-md-none">
+
+                    <a class="navbar-brand mr-auto d-lg-none" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <a class="navbar-toggl btn-link btn-sm btn p-0" href="#navbar-collapse" role="button"
+                        data-toggle="collapse" data-target="#navbar-collapse" 
+                        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Abrir/Fechar Menu">
+                        <span class="text">Menu</span> 
+                        <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    </a><!--/.navbar-toggl -->
+
+                </div><!--/.navbar-container -->
 
                 <div class="navbar-collapse collapse" id="navbar-collapse">
+                <div class="navbar-container container p-3 p-md-0">
+                <div class="navbar-row row">
+                <div class="navbar-col navbar-col-std col col-6 col-sm-4 col-md-12">
 
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="rankings.html">Rankings</a></li>
+                    <a class="navbar-brand d-none d-md-block mr-auto" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="insights.html">Insights</a></li>
                         <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>                    
                         <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-collapse -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-lg-none" href="#modal-menu" role="button"
-                    data-target="#modal-menu" data-toggle="modal">
-                    <span class="text">Menu</span> 
-                    <span class="icon fa fa-bars" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar -->
-
-            <nav class="navbar-ranking navbar navbar-expand-sm fixed-top navbar-dark" aria-label="Menu ranking">
-            <div class="navbar-container container px-0 px-lg-3 justify-content-center">
-
-                <span class="navbar-brand d-none d-lg-block mr-auto">
-                    <span class="text">Veja todos os<br class="d-block d-sm-none"> rankings publicados:</span>
-                </span><!--/.s-mockd -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-sm-none" href="#navbar-ranking-collapse" role="button"
-                    data-toggle="collapse" data-target="#navbar-ranking-collapse" 
-                    aria-controls="navbar-ranking-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="text">Rankings</span> 
-                    <span class="icon fa fa-chevron-down" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-                <div class="navbar-ranking-collapse collapse navbar-collapse" id="navbar-ranking-collapse">
-
-                    <ul class="navbar-nav ml-md-auto mt-2 mt-lg-0 flex-sm-row align-items-center justify-content-between">
-                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html">TOP 100 <strong>Open Startups</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html">TOP 100 <strong>Open Corps</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html">TOP 10 <strong>Investidores</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html">TOP 10 <strong>Ecossistema</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html">TOP 100 <strong>Avaliadores</strong></a></li>
+                    <ul class="navbar-nav navbar-nav-join d-none">
+                        <li class="nav-item"><a class="nav-link" href="participe.html">Participe</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-ranking-collapse -->
+                </div><!--/.navbar-col -->
+                <div class="navbar-col navbar-col-rkn col col-6 col-sm-6 col-md-12">
 
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar-ranking -->
+                    <span class="navbar-txt d-none d-xl-block mr-auto">Todos os Rankings:</span>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html"><small>TOP 100</small> Open Startups</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html"><small>TOP 100</small> Open Corps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html"><small>TOP 100</small> Avaliadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html"><small>TOP 10</small> Investidores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html"><small>TOP 10</small> Ecossistema</a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-col -->
+                </div><!--/.navbar-row -->
+                </div><!--/.navbar-container -->
+                </div><!--/.navbar-collapse -->
+            
+            </nav><!--/.navbar -->
 
         </header><!--/.site-header -->
 
         <div class="main" id="main" aria-labelledby="lbl-main">
 
-            <section class="content section py-5 main-bg-white" id="content" aria-labelledby="lbl-content">
+            <section class="insights section py-5 py-lg-3" id="insights" aria-labelledby="lbl-insights">
 
                 <div class="s-hold-container container">
-                <div class="s-hold pt-3 pb-5 mx-auto" style="max-width: 900px">
+                <div class="s-hold">
+                <div class="s-rows row align-items-center">
+                <div class="s-cols col-12 col-lg-8 col-xl-6 offset-xl-1">
 
-                <div class="row title-holder">
-                <div class="col col-md-12 col-lg-7">
-                    <h1 class="page__title"><strong>Panorama da<br>Open Innovation &amp; Startups<br>no Brasil | 2016-2020</strong><br>E a análise do Ranking das<br>100 empresas que mais fazem<br>open innovation com startups no Brasil</h1>
-                    <p>Por Bruno Rondani, Rafael Levy e Carla Colonna</p>
-                </div><!--/.col -->
-                <div class="col col-md-12 col-lg-5 text-lg-right">
-                    <img class="img-fluid" src="images/SELO_TOP_Ranking_cor.png" alt="Logo 100 Open Startups">
-                </div><!--/.col -->
-                </div><!--/.row -->
+                    <h1 class="s-title" style="max-width: 680px;" id="lbl-insights">
+                        <span class="text">Panorama da Open Innovation & Startups no Brasil | 2016-2020</span>
+                    </h1><!--/.s-title -->
 
+                    <div class="s-descr mt-4" style="max-width: 680px;">
+                        <p class="lead">E a análise do Ranking das 100 empresas que mais fazem open innovation com startups no Brasil</p>
+                    </div><!--/.s-descr -->
+
+                    <p class="mt-4">Por <strong>Bruno Rondani</strong>, <strong>Rafael Levy</strong> e <strong>Carla Colonna</strong></p>
+
+                </div><!--/.s-cols -->
+                <div class="s-cols col-12 col-lg-4 col-xl-5 d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1000">
+
+                    <img class="img-fluid logo-ranking" src="images/SELO_TOP_Ranking_cor.png" alt="" />
+
+                </div><!--/.s-cols -->
+                </div><!--/.s-rows -->               
+                </div><!--/.s-hold -->
+                </div><!--/.s-hold-container -->
+
+            </section><!--/.insights -->
+
+            <section class="content section pb-5" id="content" aria-labelledby="lbl-content">
+
+                <div class="s-hold-container container px-0 px-sm-3">
+                <div class="s-hold bg-white px-3 py-5 px-sm-5">
                 <div class="s-descr">
-                    
+            
                     <p>Desde 2016, o Ranking 100 Open Startups destaca, anualmente, as startups mais atraentes para o mercado corporativo. A partir de 2018, passamos a publicar, também, o ranking das empresas líderes em open innovation com startups no Brasil.</p>
-
                     <p>Inicialmente com 50 nomes, a categoria de empresas do Ranking atingiu, na edição do 2020, um nível de densidade suficientemente grande para que pudéssemos estender a lista para 100 e, desta forma, denominá-la TOP 100 Open Corps.</p>
-
                     <p>O Ranking 100 Open Startups e suas categorias são construídos a partir da coleta de dados primários, validados por um processo de verificação e auditoria das nossas equipes. Em outras palavras, o Ranking mede, de forma objetiva, o volume e a intensidade das relações de open innovation estabelecidas entre startups e empresas, permitindo espelhar os pontos dados às empresas e às startups.</p>
-
                     <p>Além do reconhecimento às empresas e startups que encabeçam as listas de TOP 100, o exercício de coleta de dados sobre a prática de open innovation com startups no Brasil traz benefícios para todo o mercado.</p>
-                    
                     <p>A partir da análise desses dados, conseguimos identificar os principais movimentos de inovação no país, sua densidade e concentração. Somos capazes de identificar quais são as modalidades de relacionamento mais comuns, os valores envolvidos, e sabemos que setores trazem mais oportunidades.</p>
-
                     <p>A maioria das bases de insights sobre mercado de startups considera aquelas que já foram identificadas e investidas por fundos de venture capital. Para o Ranking 100 Open Startups, nosso foco está concentrado nas startups em estágios mais iniciais, realizando suas primeiras parcerias institucionais no mercado e atingindo seus primeiros resultados. Afinal, nosso foco é a evolução do ecossistema de inovação como um todo. Nosso objetivo é mapear os próximos movimentos de inovação que definem as tendências e a convergência de investimento no estágio seguinte. Procuramos identificar: o que vem a seguir? Quais são as startups emergentes que definirão o cenário da indústria nos próximos anos? Quais são as empresas mais preparadas para a transformação de seus setores? Quais são as tendências de inovação mais intensas, que têm mais participantes empresas e startups?</p>
-
                     <p>Para buscar respostas para essas questões, nos debruçamos na análise dos dados coletados para a construção do Ranking 100 Open Startups ao longo dos últimos cinco anos. A seguir, apresentamos alguns fatos relevantes e até então desconhecidos sobre Open Innovation &amp; Startups no Brasil.</p>
 
-                    <div class="box box-metodologia">
-                        <h2>Metodologia</h2>
-
+                    <div class="box my-5 p-5">
+                        <h2 class="mt-0 mb-3">Metodologia</h2>
                         <p>A metodologia do Ranking 100 Open Startups dá pontos para as startups que mais despertam interesse em médias e grandes instituições a cada ano e, na outra ponta, para as médias e grandes empresas que mais estabelecem relações de negócio com startups.</p>
-
                         <p>São consideradas elegíveis para o Ranking startups validadas enquanto tal por especialistas do ecossistema, executivos de empresas e investidores, de acordo com a metodologia da 100 Open Startups. Além disso, as startups devem ter faturamento inferior a R$ 10 milhões no exercício fiscal do ano anterior à publicação do Ranking, não ter recebido mais de R$ 10 milhões em investimento direto e não ser controlada por grupo econômico, mas sim por empreendedores à frente do negócio.</p>
-
                         <p>Para a categoria TOP Open Corps, são consideradas elegíveis as empresas com faturamento superior a R$ 100 milhões ou mais de 100 funcionários.</p>
-
                         <p>Para compor a pontuação, são consideradas a quantidade e a intensidade dos relacionamentos declarados, categorizados em 16 tipos, divididos em quatro grandes grupos, com pontuação equivalente a 1, 5 ou 10 pontos, conforme detalhado na tabela a seguir:</p>
                         
                         <div class="table-responsive mt-4">
@@ -311,14 +318,14 @@
                                     </tr>
                                 </tbody>
                             </table><!--/.table -->
-                       </div><!--/.table-responsive -->
+                        </div><!--/.table-responsive -->
 
-                       <p>O método de classificação se baseia nas informações enviadas formalmente por meio da plataforma 100 Open Startups. As próprias startups e empresas informam quando um relacionamento é estabelecido, qual é a natureza desse relacionamento e dos dados de verificação. Nosso papel é verificar, com a outra ponta, a coerência das informações cadastradas e validar a pontuação.</p>
-                    </div><!--/.box-metodologia -->
+                       <p class="mt-4">O método de classificação se baseia nas informações enviadas formalmente por meio da plataforma 100 Open Startups. As próprias startups e empresas informam quando um relacionamento é estabelecido, qual é a natureza desse relacionamento e dos dados de verificação. Nosso papel é verificar, com a outra ponta, a coerência das informações cadastradas e validar a pontuação.</p>
+                    </div><!--/.box -->
 
                     <p>Resumos dos principais aprendizados que a análise dos dados que compõem a categoria TOP 100 Open Corps nos traz e que serão discutidos em mais detalhes a seguir:</p>
 
-                    <ol class="strong">
+                    <ol>
                         <li><a href="#titulo-1">Empresas contam cada vez mais com startups para inovar</a></li>
                         <li><a href="#titulo-2">Executivos de empresas formam o maior grupo de profissionais que interagem com startups</a></li>
                         <li><a href="#titulo-3">Empresas que procuram startups, na maior parte das vezes, encontram</a></li>
@@ -327,15 +334,13 @@
                         <li><a href="#titulo-6">Open Innovation com startups é cada vez menos concentrado nas gigantes</a></li>
                     </ol>
 
-                    <img src="images/RankingTop100openStartups2020.png" class="img-fluid" alt="Ranking Top 100 Open Startups 2020">
+                    <img class="img-fluid mx-auto border mt-4" src="images/RankingTop100openStartups2020.png" alt="Ranking Top 100 Open Startups 2020" width="100%">
 
-                    <h2>Principais Insights do Ranking 100 Open Corps</h2>
-                    <h3 id="titulo-1">1- Empresas contam cada vez mais com startups para inovar:</h3>
+                    <h2 class="mt-5">Principais Insights do Ranking 100 Open Corps</h2>
+                    <h3 class="mt-5" id="titulo-1">1- Empresas contam cada vez mais com startups para inovar:</h3>
 
                     <p>Passamos por uma recente revolução nos modelos de inovação e empreendedorismo. Em 2003, Henry Chesbrough cunhou o termo Open Innovation para denominar o fenômeno da abertura do processo de inovação das grandes empresas em oposição ao modelo tradicional de Pesquisa &amp; Desenvolvimento (P&amp;D) fechado. Em 2011, Eric Ries publicou o método Lean Startup que, associado à metodologia de desenvolvimento do cliente criado por Steve Blank em 2007, passou a ser o novo paradigma para a criação de startups.</p>
-
                     <p>Ambos os fenômenos alteraram, em ritmo extremamente acelerado, o comportamento do ecossistema de inovação e empreendedorismo mundialmente. A partir de 2015, começaram a emergir os primeiros levantamentos internacionais sobre o que se passou a ser conhecido como <strong><em>Corporate Startup Engagement</em></strong> (CSE), com grandes empresas se abrindo para o relacionamento com startups e vice-versa, na busca de novos modelos de interação para a cocriação de inovações.</p>
-
                     <p>Passados cinco anos de coleta de dados do Ranking 100 Open Startups no Brasil, dentre todas as outras possibilidades de atores para se fazer open innovation, a busca de corporações por startups foi tão grande que o termo Open Innovation passou a ser utilizado quase como sinônimo de <strong><em>Corporate Startup Engagement</em></strong>. Daí o nosso ajuste linguístico e terminológico para <strong><em>Open Innovation com Startups</strong></em> para definir a prática.</p>
 
                     <figure>
@@ -347,36 +352,20 @@
 
                     <blockquote class="blockquote">
                         <p class="mb-0">Em 2016, apenas 82 empresas estabeleceram relacionamento de open innovation com startups. Hoje, são 1.635 empresas.</p>
-                        <footer class="blockquote-footer">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="whatsapp://send?text=Em 2016, apenas 82 empresas estabeleceram relacionamento de open innovation com startups. Hoje, são 1.635 empresas." data-action="share/whatsapp/share">compartilhe por whatsapp</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=Em 2016, apenas 82 empresas estabeleceram relacionamento de open innovation com startups. Hoje, são 1.635 empresas.">linkedin</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/intent/tweet?text=Em 2016, apenas 82 empresas estabeleceram relacionamento de open innovation com startups. Hoje, são 1.635 empresas.">twitter</a>
-                                </li>
-                            </ul>
-                        </footer>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="whatsapp://send?text=Em 2016, apenas 82 empresas estabeleceram relacionamento de open innovation com startups. Hoje, são 1.635 empresas." data-action="share/whatsapp/share">compartilhe por whatsapp</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=Em 2016, apenas 82 empresas estabeleceram relacionamento de open innovation com startups. Hoje, são 1.635 empresas.">linkedin</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/intent/tweet?text=Em 2016, apenas 82 empresas estabeleceram relacionamento de open innovation com startups. Hoje, são 1.635 empresas.">twitter</a></li>
+                        </ul><!--/.nav -->
                     </blockquote>
 
                     <blockquote class="blockquote">
                         <p class="mb-0">O volume de acordos de open innovation entre empresas e startups teve um crescimento exponencial de 20 vezes nos últimos 5 anos.</p>
-                        <footer class="blockquote-footer">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="whatsapp://send?text=EO volume de acordos de open innovation entre empresas e startups teve um crescimento exponencial de 20 vezes nos últimos 5 anos." data-action="share/whatsapp/share">compartilhe por whatsapp</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=O volume de acordos de open innovation entre empresas e startups teve um crescimento exponencial de 20 vezes nos últimos 5 anos.">linkedin</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/intent/tweet?text=O volume de acordos de open innovation entre empresas e startups teve um crescimento exponencial de 20 vezes nos últimos 5 anos.">twitter</a>
-                                </li>
-                            </ul>
-                        </footer>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="whatsapp://send?text=O volume de acordos de open innovation entre empresas e startups teve um crescimento exponencial de 20 vezes nos últimos 5 anos." data-action="share/whatsapp/share">compartilhe por whatsapp</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=O volume de acordos de open innovation entre empresas e startups teve um crescimento exponencial de 20 vezes nos últimos 5 anos.">linkedin</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/intent/tweet?text=O volume de acordos de open innovation entre empresas e startups teve um crescimento exponencial de 20 vezes nos últimos 5 anos.">twitter</a></li>
+                        </ul><!--/.nav -->
                     </blockquote>
 
                     <p>Esses números apontam para um crescimento da ordem de 20 vezes na prática de open innovation com startups no país em 5 anos e destoa largamente, de maior parte de levantamentos feitos sobre o tema no Brasil e em outros ecossistemas. Em geral, esses levantamento apontam para ordem de 100 empresas fazendo open innovation com startups em determinada país ou região.</p>
@@ -418,19 +407,11 @@
 
                     <blockquote class="blockquote">
                         <p class="mb-0">Em 2020, 58% das empresas que buscaram startups para inovar encontraram ao menos uma startup parceira.</p>
-                        <footer class="blockquote-footer">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="whatsapp://send?text=Em 2020, 58% das empresas que buscaram startups para inovar encontraram ao menos uma startup parceira." data-action="share/whatsapp/share">compartilhe por whatsapp</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=Em 2020, 58% das empresas que buscaram startups para inovar encontraram ao menos uma startup parceira.">linkedin</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/intent/tweet?text=Em 2020, 58% das empresas que buscaram startups para inovar encontraram ao menos uma startup parceira.">twitter</a>
-                                </li>
-                            </ul>
-                        </footer>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="whatsapp://send?text=Em 2020, 58% das empresas que buscaram startups para inovar encontraram ao menos uma startup parceira." data-action="share/whatsapp/share">compartilhe por whatsapp</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=Em 2020, 58% das empresas que buscaram startups para inovar encontraram ao menos uma startup parceira.">linkedin</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/intent/tweet?text=Em 2020, 58% das empresas que buscaram startups para inovar encontraram ao menos uma startup parceira.">twitter</a></li>
+                        </ul><!--/.nav -->
                     </blockquote>
 
                     <h3 id="titulo-4">4- O número de empresas com acordos com startups supera o número de startups com acordo com empresas:</h3>
@@ -441,21 +422,13 @@
                     </figure>
 
                     <p>Interessante notar que, segundo os dados do Ranking de 2020, o número de empresas com acordos com startups superou o número de startups com acordos com empresas.</p>
-
                     <p>Desde que iniciamos a coleta, já era curioso que o número de empresas com relacionamento com startups era muito próximo do número de startups (108 startups com 82 empresas). Mas isso era facilmente explicado pelo esforço de coordenação executado pelo ecossistema em justamente trazer dezenas de empresas para que cada uma avaliasse centenas de startups curadas. Ano a ano, o número de empresas e startups com relacionamento cresceu em proporção quase igual, mas a diferença foi diminuindo pouco a pouco, de 24% em 2016 até 2% em 2019.</p>
-
                     <p>O que poderia explicar o estouro da diferença agora de 34% em favor das empresas?</p>
-
                     <p>Formulamos algumas hipóteses a serem validadas:</p>
-
-                    <p>Hipotese #1: Boom de hubs físicos, criando efeito de super exposição de poucas startups para visita de muitas empresas.</p>
-
-                    <p>Hipotese #2: O Ranking 100 Open Startups tem como parte do método dar visibilidade maior para as startups ranqueadas. Como o limite para participar do Ranking é faturamento ou investimento menor do que R$ 10 milhões, muitas startups ficam com exposição máxima por mais de um ano.</p>
-
-                    <p>Hipotese #3: Muitas empresas novas adentram ao mercado de startups e escolhem as startups mais maduras no relacionamento com empresas, sem grande esforço de sourcing, e contam com as recomendações do ecossistema.</p>
-
-                    <p>Hipotese #4: Trata-se de uma convergência natural relacionada ao aumento da maturidade das startups e a intenção das empresas de trabalhar com soluções mais maduras, as denominadas <strong><em>scale-ups</em></strong>.</p>
-
+                    <p><strong class="d-block">Hipotese #1:</strong> Boom de hubs físicos, criando efeito de super exposição de poucas startups para visita de muitas empresas.</p>
+                    <p><strong class="d-block">Hipotese #2:</strong> O Ranking 100 Open Startups tem como parte do método dar visibilidade maior para as startups ranqueadas. Como o limite para participar do Ranking é faturamento ou investimento menor do que R$ 10 milhões, muitas startups ficam com exposição máxima por mais de um ano.</p>
+                    <p><strong class="d-block">Hipotese #3:</strong> Muitas empresas novas adentram ao mercado de startups e escolhem as startups mais maduras no relacionamento com empresas, sem grande esforço de sourcing, e contam com as recomendações do ecossistema.</p>
+                    <p><strong class="d-block">Hipotese #4:</strong> Trata-se de uma convergência natural relacionada ao aumento da maturidade das startups e a intenção das empresas de trabalhar com soluções mais maduras, as denominadas <strong><em>scale-ups</em></strong>.</p>
                     <p>Um grupo de hipóteses é relacionado a coordenação do ecossistema de startups; outro, ao aumento de maturidade das startups.</p>
 
                     <h3 id="titulo-5">5- Relacionamento entre empresas e startups é multisetorial:</h3>
@@ -467,39 +440,36 @@
 
                     <p>Na análise dos dados do Ranking 2020, mapeamos 33 setores com densidade de pelo menos seis empresas que fizeram open innovation com startups, de forma que esse relacionamento entre empresas e startups se multisetorial e bem distribuído.</p>
 
-                    <p>No universo das 1.635 empresas, os cinco setores com mais densidade foram:</p>
-                    <ul>
-                        <li>Serviços Financeiros</li>
-                        <li>Alimentos e Bebidas</li>
-                        <li>Varejo, Comércio e Serviços de Distribuição</li>
-                        <li>Energia</li>
-                        <li>Serviços Profissionais e Comerciais</li>
-                    </ul>
-
-                    <p>Entretanto, os setores de maior intensidade entre as TOP 100 foram:</p>
-                    <ul>
-                        <li>Serviços Financeiros</li>
-                        <li>Mineração e Metais</li>
-                        <li>Energia</li>
-                        <li>Cosméticos</li>
-                        <li>Alimentos e Bebidas</li>
-                    </ul>
+                    <div class="s-rows row mt-3 mx-0">
+                    <div class="s-cols col col-12 col-lg-6 p-0">
+                        <p>No universo das 1.635 empresas, os cinco setores com mais densidade foram:</p>
+                        <ul class="mb-0">
+                            <li><strong>Serviços Financeiros</strong></li>
+                            <li><strong>Alimentos e Bebidas</strong></li>
+                            <li><strong>Varejo, Comércio e Serviços de Distribuição</strong></li>
+                            <li><strong>Energia</strong></li>
+                            <li><strong>Serviços Profissionais e Comerciais</strong></li>
+                        </ul>
+                    </div><!--/.s-cols -->
+                    <div class="s-cols col col-12 col-lg-6 p-0">
+                        <p>Entretanto, os setores de maior intensidade entre as TOP 100 foram:</p>
+                        <ul class="mb-0">
+                            <li><strong>Serviços Financeiros</strong></li>
+                            <li><strong>Mineração e Metais</strong></li>
+                            <li><strong>Energia</strong></li>
+                            <li><strong>Cosméticos</strong></li>
+                            <li><strong>Alimentos e Bebidas</strong></li>
+                        </ul>
+                    </div><!--/.s-cols -->
+                    </div><!--/.s-rows -->
 
                     <blockquote class="blockquote">
                         <p class="mb-0">Os setores que mais fazem open innovation com startups no Brasil são: Serviços Financeiros, Alimentos & Bebidas e Varejo.</p>
-                        <footer class="blockquote-footer">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="whatsapp://send?text=Os setores que mais fazem open innovation com startups no Brasil são: Serviços Financeiros, Alimentos & Bebidas e Varejo." data-action="share/whatsapp/share">compartilhe por whatsapp</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=Os setores que mais fazem open innovation com startups no Brasil são: Serviços Financeiros, Alimentos & Bebidas e Varejo.">linkedin</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/intent/tweet?text=Os setores que mais fazem open innovation com startups no Brasil são: Serviços Financeiros, Alimentos & Bebidas e Varejo.">twitter</a>
-                                </li>
-                            </ul>
-                        </footer>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="whatsapp://send?text=Os setores que mais fazem open innovation com startups no Brasil são: Serviços Financeiros, Alimentos & Bebidas e Varejo." data-action="share/whatsapp/share">compartilhe por whatsapp</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=Os setores que mais fazem open innovation com startups no Brasil são: Serviços Financeiros, Alimentos & Bebidas e Varejo.">linkedin</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/intent/tweet?text=Os setores que mais fazem open innovation com startups no Brasil são: Serviços Financeiros, Alimentos & Bebidas e Varejo.">twitter</a></li>
+                        </ul><!--/.nav -->
                     </blockquote>
 
                     <h3 id="titulo-6">6- Open Innovation com startups é cada vez menos concentrado:</h3>
@@ -510,47 +480,43 @@
                     </figure>
 
                     <p>As 100 empresas que mais fazem open innovation representam 38% do total dos relacionamentos entre empresas e startups no país, o que significa que as outras 1.535 respondem pelos outros 62%.</p>
-
                     <p>Esse resultado, assim como o aumento no número de empresas entre 2019 e 2020, é um indicativo de que há cada vez mais empresas adentrando a prática de open innovation com startups, ainda que em volume baixo de relacionamentos, gerando um efeito de cauda longa.</p>
 
                     <blockquote class="blockquote">
                         <p class="mb-0">As TOP 100 Open Corps que mais fazem open innovation com startups no país representam 38% do total de contratos do mercado.</p>
-                        <footer class="blockquote-footer">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="whatsapp://send?text=As TOP 100 Open Corps que mais fazem open innovation com startups no país representam 38% do total de contratos do mercado." data-action="share/whatsapp/share">compartilhe por whatsapp</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=As TOP 100 Open Corps que mais fazem open innovation com startups no país representam 38% do total de contratos do mercado.">linkedin</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://twitter.com/intent/tweet?text=As TOP 100 Open Corps que mais fazem open innovation com startups no país representam 38% do total de contratos do mercado.">twitter</a>
-                                </li>
-                            </ul>
-                        </footer>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="whatsapp://send?text=As TOP 100 Open Corps que mais fazem open innovation com startups no país representam 38% do total de contratos do mercado." data-action="share/whatsapp/share">compartilhe por whatsapp</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&title=As TOP 100 Open Corps que mais fazem open innovation com startups no país representam 38% do total de contratos do mercado.">linkedin</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://twitter.com/intent/tweet?text=As TOP 100 Open Corps que mais fazem open innovation com startups no país representam 38% do total de contratos do mercado.">twitter</a></li>
+                        </ul>
                     </blockquote>
 
-                    <form id="knowmore-form">
+                    <form class="box my-5 p-5" id="knowmore-form">
+
                         <p class="lead">Sua empresa possui atividade de Open Innovation e gostaria de conhecer mais detalhes do sobre o Ranking? Registre seu e-mail e empresa e faremos contato</p>
 
                         <div id="response-alert" class="alert alert-success" role="alert" style="display:none"></div>
-                        
-                        <div id="your-data" class="row mt-3">
-                            <div class="form-group col-6 m-0">
-                                <label class="sr-only" for="email">E-mail</label>
-                                <input id="email" type="email" class="form-control email-input" placeholder="E-mail">
-                            </div>
-                            <div class="form-group col-6 m-0">
-                                <label class="sr-only" for="name">Empresa</label>
-                                <input id="name" type="text" class="form-control email-input" placeholder="Empresa">
-                            </div>
-                        </div>
-
                         <div id="warning-alert" class="alert alert-warning" role="alert" style="display: none;"></div>
-                        <button id="submit" type="submit" class="btn btn-primary mt-2 mb-5 py-3 font-weight-bold">ENVIAR</button>
-                    </form>
+                        
+                        <div class="form-row row mt-3" id="your-data">
+                        <div class="form-group col-12 col-md-auto mt-2 mb-0 flex-grow-1">
+                            <label class="sr-only" for="email">E-mail</label>
+                            <input id="email" type="email" class="form-control email-input" placeholder="E-mail">
+                        </div><!--/.form-group -->
+                        <div class="form-group col-auto mt-2 mb-0 flex-grow-1">
+                            <label class="sr-only" for="name">Empresa</label>
+                            <input id="name" type="text" class="form-control" placeholder="Empresa">
+                        </div><!--/.form-group -->
+                        <div class="form-group col-auto mt-2 mb-0 flex-grow-0">
+                            <button class="btn btn-primary py-2" id="submit" type="submit">
+                                <span class="text">ENVIAR</span>
+                            </button>
+                        </div><!--/.form-group -->
+                        </div><!--/.form-row -->
+                        
+                    </form><!--/.box -->
 
-                    <div class="creditoss">
+                    <div class="creditos">
                     
                         <h2>Créditos</h2>
 
@@ -586,13 +552,52 @@
                         </div><!--/.creditos-col -->
                         </div><!--/.creditos-row -->
 
-                    </div>
+                    </div><!--/.creditos-->
 
                 </div><!--/.s-descr -->
                 </div><!--/.s-hold -->
                 </div><!--/.s-hold-container -->
 
             </section><!--/.content -->
+
+            <section class="home-insights section main-bg-crazy py-5">
+
+                <div class="s-hold-container p-0 py-sm-5 container">
+                <div class="s-hold card p-0 mx-n4 mx-sm-0" style="margin:1px; padding:1px">
+                <div class="s-rows row m-0 align-items-stretch flex-xl-nowrap">
+                <div class="s-cols col-12 col-lg-4 col-xl-auto p-0">
+                    
+                    <div class="s-placeholder p-5 bg-white">
+                        <img class="img-fluid" src="images/Logo-TOP100-OpenCorps.png" alt="" width="400" />
+                    </div><!--/.s-placeholder -->
+
+                </div><!--/.s-cols -->
+                <div class="s-cols col-12 col-lg-8 col-xl-auto flex-shrink-1 p-0">
+
+                    <a class="s-i-list-card p-5 main-bg-light h-100 d-flex align-items-start flex-column justify-content-center"
+                         href="rankings-corps.html">
+
+                        <h2 class="s-title h3">
+                            <span class="text">Ranking TOP 100 Open Corps</span>
+                        </h2><!--/.s-title -->
+    
+                        <div class="s-descr mt-3">
+                            <p class="lead">Conheça as empresas que mais fazem open innovation com startups no Brasil.</p>
+                        </div><!--/.s-descr -->
+    
+                        <span class="s-buttn d-block mt-4">
+                            <span class="text">Ver todas as empresas</span>
+                            <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                        </span><!--/.s-buttn -->  
+    
+                    </a><!--/.s-i-list-card -->
+
+                </div><!--/.s-cols -->
+                </div><!--/.s-rows -->             
+                </div><!--/.s-hold -->
+                </div><!--/.s-hold-container -->
+
+            </section><!--/.home-insights -->
 
         </div><!--/.main -->
 

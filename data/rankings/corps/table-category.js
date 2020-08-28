@@ -9,13 +9,13 @@ $(document).ready(function($) {
 
     function load(baseHtml) {
         var html = '';
-
-        if (!years[cYear]) {
+    
+        if (!categories[cYear]) {
             $('#top-category').hide();
             return false;
         }
         $('#top-category').show();
-
+    
         categories[cYear].forEach(function(item, index){
             
             // Check if the Match is avaliable
@@ -43,5 +43,11 @@ $(document).ready(function($) {
     }
 
     $.get('templates/rankings/s-r-corps-category.html', load, 'html');
+
+    $('#year').on('change', function(ev) {
+        var value = ev.target.value;
+        cYear = value;
+        load();
+    });
 
 }); // document.ready

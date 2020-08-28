@@ -2,12 +2,21 @@ $(document).ready(function($) {
     $window = $(window);
 
     // Back2Init scroll listener
+    var lastScroll = 100;
     $window.scroll(function() {
+        if ($window.scrollTop() > lastScroll) {
+            $('.navbar.fixed-top').addClass('navbar-hidden');
+        } else {
+            $('.navbar.fixed-top').removeClass('navbar-hidden');
+        }
+        lastScroll = $window.scrollTop();
+
         if ($window.scrollTop() > 100) {
             $('.back2init').addClass('visible');
             return;
         }
         $('.back2init').removeClass('visible');
+        $('.navbar.fixed-top').removeClass('navbar-hidden');
     });
 
     // Close modal on link click

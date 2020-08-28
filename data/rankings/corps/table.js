@@ -14,6 +14,15 @@ $(document).ready(function($) {
             return false;
         }
 
+        if (years[cYear].length < 100) {
+            console.log(years[cYear].length);
+            $('.s-buttn-collapse').hide();
+            $('.fake-collapse').addClass('visible');
+        } else {
+            $('.s-buttn-collapse').show();
+            $('.fake-collapse').removeClass('visible');
+        }
+
         years[cYear].forEach(function(item, index){
 
             // Check if it has category
@@ -35,22 +44,29 @@ $(document).ready(function($) {
             // Include line on the table
             html+= '<tr>';
                 html+= '<td class="text-glow">' + item['Ranking'] + '</td>';
-                html+= '<td>';
+                html+= '<td class="d-none d-sm-table-cell">';
 
                     html+= '<div class="table-image">';
                         html+= '<img class="img-fluid" src="data/rankings/corps/logos/'+ item['Empresa'] +'.png" alt="Logotipo '+ item['Empresa'] +'">';
                     html+= '</div><!--/.table-image -->';
 
                 html+= '</td>';
-                html+= '<td class="text-left">' + item['Empresa'] + '</td>';
+                html+= '<td class="text-center text-sm-left"><strong>' + item['Empresa'] + '</strong></td>';
                 // html+= '<td>' + item['Categoria'] + '</td>';
                 html+= '<td>' + item['Pontos'] + '</td>';
                 html+= '<td>' + item['MatchLink'] + '</td>';
             html+= '</tr>';
         });
         $('#tableBody').html(html);
+        $('#name').change();
     }
 
     load();
+
+    $('#year').on('change', function(ev) {
+        var value = ev.target.value;
+        cYear = value;
+        load();
+    });
 
 }); // document.ready

@@ -122,64 +122,63 @@
 
         <header class="site-header header" id="site-header">
 
-            <nav class="navbar navbar-expand-lg fixed-top" aria-label="Menu principal">
-            <div class="navbar-container container">
+            <nav class="navbar navbar-expand-md fixed-top" aria-label="Menu principal">
 
-                <a class="navbar-brand" href="index.html">
-                    <img class="img-fluid" src="images/logo-100os.svg" alt="Logotipo do 100 Open Startups" />
-                    <span class="txt-named d-none d-md-block">Ranking 100 Open Startups</span>
-                </a><!--/.navbar-brand -->
+                <div class="navbar-container container py-0 px-3 d-md-none">
+
+                    <a class="navbar-brand mr-auto d-lg-none" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <a class="navbar-toggl btn-link btn-sm btn p-0" href="#navbar-collapse" role="button"
+                        data-toggle="collapse" data-target="#navbar-collapse" 
+                        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Abrir/Fechar Menu">
+                        <span class="text">Menu</span> 
+                        <span class="icon fa fa-bars" aria-hidden="true"></span>
+                    </a><!--/.navbar-toggl -->
+
+                </div><!--/.navbar-container -->
 
                 <div class="navbar-collapse collapse" id="navbar-collapse">
+                <div class="navbar-container container p-3 p-md-0">
+                <div class="navbar-row row">
+                <div class="navbar-col navbar-col-std col col-6 col-sm-4 col-md-12">
 
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="rankings.html">Rankings</a></li>
+                    <a class="navbar-brand d-none d-md-block mr-auto" href="index.html">
+                        <img class="img-fluid" src="images/logo-top.svg" alt="Logotipo do Ranking 100 Open Startups" />
+                    </a><!--/.navbar-brand -->
+
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
                         <li class="nav-item"><a class="nav-link" href="minuto-ceo.html">Minuto CEO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="open-talks.html">OpenTalks</a></li>                    
                         <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="regulamento.html">Regulamento</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-collapse -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-lg-none" href="#modal-menu" role="button"
-                    data-target="#modal-menu" data-toggle="modal">
-                    <span class="text">Menu</span> 
-                    <span class="icon fa fa-bars" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar -->
-
-            <nav class="navbar-ranking navbar navbar-expand-sm fixed-top navbar-dark" aria-label="Menu ranking">
-            <div class="navbar-container container px-0 px-lg-3 justify-content-center">
-
-                <span class="navbar-brand d-none d-lg-block mr-auto">
-                    <span class="text">Veja todos os<br class="d-block d-sm-none"> rankings publicados:</span>
-                </span><!--/.s-mockd -->
-
-                <a class="navbar-toggl btn-link btn-sm btn ml-4 d-sm-none" href="#navbar-ranking-collapse" role="button"
-                    data-toggle="collapse" data-target="#navbar-ranking-collapse" 
-                    aria-controls="navbar-ranking-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="text">Rankings</span> 
-                    <span class="icon fa fa-chevron-down" aria-hidden="true"></span>
-                </a><!--/.navbar-toggl -->
-
-                <div class="navbar-ranking-collapse collapse navbar-collapse" id="navbar-ranking-collapse">
-
-                    <ul class="navbar-nav ml-md-auto mt-2 mt-lg-0 flex-sm-row align-items-center justify-content-between">
-                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html">TOP 100 <strong>Open Startups</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html">TOP 100 <strong>Open Corps</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html">TOP 10 <strong>Investidores</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html">TOP 10 <strong>Ecossistema</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html">TOP 100 <strong>Avaliadores</strong></a></li>
+                    <ul class="navbar-nav navbar-nav-join d-none">
+                        <li class="nav-item"><a class="nav-link" href="participe.html">Participe</a></li>
                     </ul><!--/.navbar-nav -->
 
-                </div><!--/.navbar-ranking-collapse -->
+                </div><!--/.navbar-col -->
+                <div class="navbar-col navbar-col-rkn col col-6 col-sm-6 col-md-12">
 
-            </div><!--/.navbar-container -->
-            </nav><!--/.navbar-ranking -->
+                    <span class="navbar-txt d-none d-xl-block mr-auto">Todos os Rankings:</span>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="rankings-startups.html"><small>TOP 100</small> Open Startups</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-corps.html"><small>TOP 100</small> Open Corps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-evaluators.html"><small>TOP 100</small> Avaliadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-investors.html"><small>TOP 10</small> Investidores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings-ecosystem.html"><small>TOP 10</small> Ecossistema</a></li>
+                    </ul><!--/.navbar-nav -->
+
+                </div><!--/.navbar-col -->
+                </div><!--/.navbar-row -->
+                </div><!--/.navbar-container -->
+                </div><!--/.navbar-collapse -->
+            
+            </nav><!--/.navbar -->
 
         </header><!--/.site-header -->
 
@@ -190,19 +189,24 @@
                 <div class="s-hold-container container">
                 <div class="s-hold pt-3 pb-5 mx-auto text-center" style="max-width: 840px;">
  
-                    <h2 class="s-title h3 font-weight-bold">
+                    <h2 class="s-title">
                         <span class="text">Destaques TOP 100 Open Corps 2020</span>
                     </h2><!--/.s-title -->
 
                     <div class="s-descr mt-4">
                         <p class="lead">Conheça as empresas que mais fazem open innovation com startups no Brasil.</p>
                     </div><!--/.s-descr -->
+
+                    <a class="s-buttn mt-4" href="rankings-corps.html">
+                        <span class="text">Veja todas as empresas ranqueadas</span>
+                        <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                    </a><!--/.s-buttn -->
                 
                 </div><!--/.s-hold -->
                 </div><!--/.s-hold-container -->
 
                 <div class="s-cont container">
-                <div class="s-hold carousel slide" id="carouselRanking" data-ride="carousel" data-interval="false">
+                <div class="s-hold carousel slide" id="carouselRanking" data-ride="carousel">
 
                     <ol class="carousel-inner bg-white">
                     <li class="carousel-item active">
@@ -229,24 +233,33 @@
                 
             </section><!--/.ranking -->
                     
-            <section class="home-insights section pb-5">
+            <section class="home-insights section main-bg-crazy py-5">
 
-                <div class="s-hold-container container">
-                <div class="s-hold mt-3 bg-white" style="margin:1px; padding:1px">
-                <div class="s-rows row align-items-center">
-                <div class="s-cols col-12 col-lg-8 col-xl-7">
+                <div class="s-hold-container py-5 container">
+                <div class="s-hold card p-0 mx-n4 mx-sm-0" style="margin:1px; padding:1px">
+                <div class="s-rows row m-0 align-items-center">
+                <div class="s-cols col-12 col-xl-6 p-0">
 
-                    <a class="s-i-list-card d-block p-3 p-sm-5 text-dark" href="insights-2020.html">
+                    <a class="s-i-list-card p-5 d-block main-bg-light" href="insights-2020.html">
 
-                        <h2 class="s-title h3 font-weight-bold">
+                        <h2 class="s-title">
                             <span class="text">Panorama da Open Innovation & Startups no Brasil | 2016-2020</span>
                         </h2><!--/.s-title -->
+
+                        <div class="s-image mt-4 mx-n5 py-4 px-5 bg-white d-lg-none">
+                            <img class="img-fluid" src="images/insights-2020-graph.jpg" alt="" />
+                        </div><!--/.s-image -->
     
                         <div class="s-descr mt-4">
                             <p class="lead">Veja a análise completa dos dados do Ranking das 100 empresas que mais fazem open innovation com startups no Brasil.</p>
                         </div><!--/.s-descr -->
+
+                        <span class="s-buttn mt-4 py-2 d-sm-none">
+                            <span class="text">Leia o nosso artigo</span>
+                            <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
+                        </span><!--/.s-buttn -->  
     
-                        <span class="s-buttn d-block mt-3 text-primary" style="font-weight:600;">
+                        <span class="s-buttn btn-primary btn mt-4 py-2 d-none d-sm-inline-block">
                             <span class="text">Leia o nosso artigo</span>
                             <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
                         </span><!--/.s-buttn -->  
@@ -254,9 +267,11 @@
                     </a><!--/.s-i-list-card -->
 
                 </div><!--/.s-cols -->
-                <div class="s-cols col-12 col-lg-4 col-xl-5 d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="s-cols col-12 col-xl-6 d-none d-xl-block p-0">
 
-                    <img class="img-fluid logo-ranking" src="images/SELO_TOP_Ranking_cor.png" alt="" />
+                    <div class="s-placeholder p-5 bg-white">
+                        <img class="img-fluid" src="images/insights-2020-graph.jpg" alt="" />
+                    </div><!--/.s-placeholder -->
 
                 </div><!--/.s-cols -->
                 </div><!--/.s-rows -->               
@@ -268,18 +283,19 @@
             <section class="home-minuto-ceo section py-5">
 
                 <div class="s-hold-container container">
-                <div class="s-hold py-3 mx-auto text-center" style="max-width: 840px;">
+                <div class="s-hold pt-5 pb-0 mx-auto text-lg-center" style="max-width: 840px;">
  
-                    <h2 class="s-title h3 font-weight-bold">
+                    <h2 class="s-title">
                         <span class="text">Minuto CEO</span>
                     </h2><!--/.s-title -->
 
-                    <div class="s-descr mt-4">
+                    <div class="s-descr mt-4 mx-lg-auto" style="max-width: 640px;">
                         <p class="lead">O que dizem os CEOs das empresas líderes do Ranking sobre a importância da open innovation e desta conquista?</p>
                     </div><!--/.s-descr -->
                     
                     <a class="s-buttn mt-4" href="minuto-ceo.html">
-                        <span class="text">Veja todos os vídeos enviados</span>
+                        <span class="text d-none d-sm-inline">Veja todos os vídeos enviados</span>
+                        <span class="text d-inline d-sm-none">Veja todos os vídeos</span>
                         <span class="icon fas fa-long-arrow-alt-right ml-2" aria-hidden="true"></span>
                     </a><!--/.s-buttn -->
                 
@@ -287,7 +303,7 @@
                 </div><!--/.s-hold-container -->
                 
                 <div class="s-cont py-5 px-3 px-md-5 mx-auto" style="max-width: 1900px;">
-                <div class="s-rows row justify-content-center" id="s-mc-list" data-num="5" data-col="col-6 col-sm-auto">
+                <div class="s-rows row" id="s-mc-list" data-num="5" data-col="col-6 col-sm-auto">
                 <div class="s-cols col col-12">
                     <span class="loading">Carregando...</span>
                 </div><!--/.s-cols -->
@@ -298,11 +314,11 @@
 
             <section class="home-open-talks section py-5">
 
-                <div class="s-cont py-5 container">
+                <div class="s-cont pt-5 container">
                 <div class="s-rows row align-items-center">
-                <div class="s-cols col col-12 col-md-6 col-lg-8 col-xl-7">
+                <div class="s-cols col col-12 col-md-6 col-lg-6 col-xl-7">
 
-                    <h2 class="s-title h3 font-weight-bold">
+                    <h2 class="s-title">
                         <span class="text">OpenTalks</span>
                     </h2><!--/.s-title -->
 
@@ -316,9 +332,9 @@
                     </a><!--/.s-buttn -->
 
                 </div><!--/.s-cols -->
-                <div class="s-cols col col-12 col-md-6 col-lg-4 offset-xl-1">
+                <div class="s-cols col col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-1">
 
-                    <div class="s-hot-list-card p-5" style="background: rgba(0,0,0,0.1);">
+                    <div class="s-hot-list-card p-5 mx-n5 mx-md-0">
                         <p class="s-descr my-0">As Open Talks com líderes em open innovation são parte da Oiweek. Acompanhe todo mês destaques com a visão e as oportunidades das empresas líderes do mercado.</p>
                         <a class="s-buttn mt-4" href="http://oiweek.com.br/">
                             <span class="text">Conheça a Oiweek</span>
