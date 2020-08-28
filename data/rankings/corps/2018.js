@@ -194,7 +194,7 @@ var topCorps2018 = [
     {
         _id: "59d400b6d8c987b0196efe6d",
         "Ranking": "33",
-        "Empresa": "Rhodia / Solvay",
+        "Empresa": "Rhodia Solvay Group",
         "Pontos": "79.1"
     },
     {
