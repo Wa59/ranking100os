@@ -219,40 +219,53 @@
 
             </section><!--/.home-insights -->
 
-            <section class="older-rankings section py-5">
+            <form class="filters section container pt-5">
 
-                <div class="s-hold pt-3">
-                <div class="s-hold-container container">
+                <div class="form-rows row align-items-end" id="your-data">
+                <div class="form-cols col-auto mt-2 mb-0 flex-grow-0">
+                    <label class="small mb-1" for="year">Ano do Ranking</label>
+                    <select id="year" class="form-control">
+                        <option value="2019">2019</option>
+                    </select>
+                </div><!--/.form-cols -->
+                <div class="form-cols col-auto mt-2 mb-0 flex-grow-1">
+                    <label class="small mb-1" for="name">Buscar ecossistema</label>
+                    <input id="name" type="text" class="form-control" placeholder="Digite o nome ou pontuação">
+                </div><!--/.form-cols -->
+                <div class="form-cols col-auto mt-2 mb-0 flex-grow-0">
+                    <button class="btn btn-primary py-2 px-3" id="submit" type="submit">
+                        <span class="text sr-only">Buscar</span>
+                        <span class="icon fa fa-search" aria-hidden="true"></span>
+                    </button>
+                </div><!--/.form-cols -->
+                </div><!--/.form-rows -->
 
-                    <div class="test d-lg-flex align-items-center justify-content-lg-between text-center text-lg-left mt-0">
+            </form><!--/.filters -->
 
-                        <p class="lead m-0" style="transform: translateY(2px);">Veja todos os rankings publicados:</p>
+            <div class="results section py-5">
+            <div class="results-container container text-center">
 
-                        <ul class="s-lists nav-pills nav m-0 p-0 justify-content-center flex-column flex-lg-row">
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-primary btn-block btn pt-2 pb-2" href="rankings-list.html?tab=top-2019">
-                                <span class="text d-block" style="transform:translateY(2px);">2019</span>
-                            </a></li>
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-primary btn-block btn pt-2 pb-2" href="rankings-list.html?tab=top-2018">
-                                <span class="text d-block" style="transform:translateY(2px);">2018</span>
-                            </a></li>
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-primary btn-block btn pt-2 pb-2" href="rankings-list.html?tab=top-2017">
-                                <span class="text d-block" style="transform:translateY(2px);">2017</span>
-                            </a></li>
-                            <li class="nav-item pt-3 pt-lg-0 pl-lg-3">
-                            <a class="btn-primary btn-block btn pt-2 pb-2" href="rankings-list.html?tab=top-2016">
-                                <span class="text d-block" style="transform:translateY(2px);">2016</span>
-                            </a></li>
-                        </ul><!--/.s-lists -->
+                <div class="table-responsive">
 
-                    </div><!--/.test -->
+                    <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th width="01%"><span>Rank</span></th>
+                        <th class="text-left" width="98%"><span>Nome</span></th>
+                        <th width="01%"><span>Pontos</span></th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="8">Carregando...</td>
+                        </tr>
+                    </tbody>
+                    </table><!--/.table -->
 
-                </div><!--/.s-hold-container -->
-                </div><!--/.s-hold -->
-
-            </section><!--/.older-rankings -->
+                </div><!--/.table-responsive -->
+                
+            </div><!--/.results-container -->
+            </div><!--/.results -->
 
         </div><!--/.main -->
 
@@ -383,6 +396,13 @@
     <script src="slick/slick.min.js"></script>
     <script src="scripts/plugins.js"></script>
     <script src="scripts/main.js"></script>
+
+    <script src="data/rankings/ecosystem/2018.js"></script>
+    <script src="data/rankings/ecosystem/2019.js"></script>
+
+    <script src="data/rankings/ecosystem/table.js"></script>
+
+    <script src="data/rankings/ecosystem/search.js"></script>
 
     <noscript>Esse site utiliza Javascript para algumas funcionalidades.</noscript>
 </body>
